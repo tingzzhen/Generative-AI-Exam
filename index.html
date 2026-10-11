@@ -133,6 +133,15 @@
     font-size: clamp(15px, 1.4vw, 17px);
     color: var(--accent-blue);
     white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    padding: 4px 6px;
+    border-radius: 6px;
+    transition: opacity 0.15s ease;
+  }
+
+  .brand-title.brand-hidden {
+    opacity: 0;
   }
 
   .search-box {
@@ -254,17 +263,19 @@
     color: var(--accent-blue);
   }
 
-  /* Main Content Area shifts right when sidebar is open on desktop */
+  /* Main Content Area stretches full remaining width with zero right-side gap */
   .main-content {
     margin-left: var(--sidebar-width);
-    max-width: 1180px;
-    padding: clamp(18px, 3vw, 32px) clamp(14px, 3.5vw, 40px) 80px;
-    transition: margin-left 0.22s ease;
+    width: calc(100% - var(--sidebar-width));
+    max-width: none;
+    padding: clamp(18px, 2.2vw, 28px) clamp(16px, 2.5vw, 32px) 80px;
+    transition: margin-left 0.22s ease, width 0.22s ease;
   }
 
   body.sidebar-closed .main-content {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    width: 100%;
+    max-width: none;
   }
 
   .part-heading {
@@ -599,6 +610,7 @@
   @media (max-width: 1024px) {
     .main-content {
       margin-left: 0;
+      width: 100%;
     }
     .sidebar {
       width: min(82vw, 310px);
@@ -664,7 +676,7 @@
 <nav class="top-bar" id="top-bar">
   <div class="top-bar-left">
     <button class="btn active" id="toggle-sidebar-btn">&#x2630; &#x7AE0;&#x7BC0;&#x76EE;&#x9304;</button>
-    <span class="brand-title">&#x1F4DA; &#x751F;&#x6210;&#x5F0F; AI &#x96A8;&#x8EAB;&#x66F8;</span>
+    <span class="brand-title" id="brand-title" title="&#x9EDE;&#x64CA;&#x53EF;&#x96B1;&#x85CF;&#xFF0F;&#x986F;&#x793A;&#x6A19;&#x984C;">&#x1F4DA; &#x751F;&#x6210;&#x5F0F; AI &#x96A8;&#x8EAB;&#x66F8;</span>
   </div>
   <div class="search-box">
     <input type="search" id="search-input" placeholder="&#x1F50D; &#x641C;&#x5C0B;&#x95DC;&#x9375;&#x5B57;&#x7BE9;&#x9078;&#x7AE0;&#x7BC0; (&#x5982;: RAG, LoRA, Runway, ToT)..." />
@@ -4545,7 +4557,15 @@
 <script>
   const topBar = document.getElementById('top-bar');
   const toggleSidebarBtn = document.getElementById('toggle-sidebar-btn');
+  const brandTitle = document.getElementById('brand-title');
   const fabTop = document.getElementById('fab-top');
+
+  // Click top-left brand title to hide it; only clicking that exact spot again reveals it
+  if (brandTitle) {
+    brandTitle.addEventListener('click', () => {
+      brandTitle.classList.toggle('brand-hidden');
+    });
+  }
 
   // Dynamically sync --topbar-height so fixed top-bar and fixed sidebar align to the exact pixel
   function syncTopbarHeight() {
