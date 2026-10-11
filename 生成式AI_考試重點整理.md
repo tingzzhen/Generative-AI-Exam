@@ -19,30 +19,29 @@
   - [1.7 擴散模型 (Diffusion)](#17-擴散模型-diffusion)
   - [1.8 多模態 AI 與影片生成技術](#18-多模態-ai-與影片生成技術)
   - [1.9 模型預訓練 從無到有的知識建立](#19-模型預訓練-從無到有的知識建立)
-  - [1.10 模型的運作 (推理) AI 怎麼看懂輸入與生出結果](#110-模型的運作-推理-ai-怎麼看懂輸入與生出結果)
-  - [1.11 模型最佳化 訓練技巧與過擬合](#111-模型最佳化-訓練技巧與過擬合)
-  - [1.12 資料清理與 ETL](#112-資料清理與-etl)
-  - [1.13 正規化 vs 標準化](#113-正規化-vs-標準化)
-  - [1.14 五大學習範式與經典演算法](#114-五大學習範式與經典演算法)
-  - [1.15 模型評估指標 F1-score R-squared 與 BLEU](#115-模型評估指標-f1-score-r-squared-與-bleu)
-  - [1.16 AIGC 核心概念](#116-aigc-核心概念)
+  - [1.10 模型最佳化 訓練技巧與過擬合](#110-模型最佳化-訓練技巧與過擬合)
+  - [1.11 模型的運作 (推理) AI 怎麼看懂輸入與生出結果](#111-模型的運作-推理-ai-怎麼看懂輸入與生出結果)
+  - [1.12 資料基本概念 收集清理與前處理](#112-資料基本概念-收集清理與前處理)
+  - [1.13 五大學習範式與經典演算法](#113-五大學習範式與經典演算法)
+  - [1.14 模型評估指標 F1-score R-squared 與 BLEU](#114-模型評估指標-f1-score-r-squared-與-bleu)
+  - [1.15 AIGC 核心概念](#115-aigc-核心概念)
 - [第二部分 生成式AI能力強化](#第二部分-生成式ai能力強化)
   - [2.1 大語言模型 (LLM) 原理 微調與應用模式](#21-大語言模型-llm-原理-微調與應用模式)
-  - [2.2 提示工程 In-Context Learning 與思維樹 (ToT)](#22-提示工程-in-context-learning-與思維樹-tot)
-  - [2.3 程式邏輯理解 語法分析器](#23-程式邏輯理解-語法分析器)
+  - [2.2 提示工程 原則 咒語 框架提示與三大思維推理](#22-提示工程-原則-咒語-框架提示與三大思維推理)
+  - [2.3 生成式 AI 進階強化 RAG RLHF LoRA 與語法分析器](#23-生成式-ai-進階強化-rag-rlhf-lora-與語法分析器)
 - [第三部分 生成式AI應用技能](#第三部分-生成式ai應用技能)
-  - [3.1 影片生成工具與模型](#31-影片生成工具與模型)
-  - [3.2 資料視覺化設計原則](#32-資料視覺化設計原則)
-  - [3.3 商業文案與簡報生成](#33-商業文案與簡報生成)
-  - [3.4 AI 學習平台 Kaggle](#34-ai-學習平台-kaggle)
-  - [3.5 自動化工具 Zapier](#35-自動化工具-zapier)
-  - [3.6 音樂創作 AIVA](#36-音樂創作-aiva)
-  - [3.7 程式生成 Copilot](#37-程式生成-copilot)
+  - [3.1 文字與商業文案生成應用](#31-文字與商業文案生成應用)
+  - [3.2 圖片生成工具與應用](#32-圖片生成工具與應用)
+  - [3.3 聲音 (TTS) 與音樂生成應用](#33-聲音-tts-與音樂生成應用)
+  - [3.4 影片生成流程與應用場景](#34-影片生成流程與應用場景)
+  - [3.5 簡報生成流程與工具組合](#35-簡報生成流程與工具組合)
+  - [3.6 程式生成應用與開發工具](#36-程式生成應用與開發工具)
+  - [3.7 數據分析 視覺化與自動化工具](#37-數據分析-視覺化與自動化工具)
 - [第四部分 生成式AI倫理法律](#第四部分-生成式ai倫理法律)
-  - [4.1 深度偽造 (Deepfake)](#41-深度偽造-deepfake)
-  - [4.2 歐盟 AI 法案 AI 治理與臺灣 TAIDE 計畫](#42-歐盟-ai-法案-ai-治理與臺灣-taide-計畫)
-  - [4.3 資料治理三大目標與資安防護](#43-資料治理三大目標與資安防護)
-  - [4.4 隱私法規 GDPR HIPAA 與個資法](#44-隱私法規-gdpr-hipaa-與個資法)
+  - [4.1 AI 治理核心原則 歐盟 AI 法案與治理制度](#41-ai-治理核心原則-歐盟-ai-法案與治理制度)
+  - [4.2 AI 倫理五大原則 各國架構與臺灣 TAIDE 計畫](#42-ai-倫理五大原則-各國架構與臺灣-taide-計畫)
+  - [4.3 生成式 AI 著作權 深度偽造 (Deepfake) 與系統風險](#43-生成式-ai-著作權-深度偽造-deepfake-與系統風險)
+  - [4.4 資料治理 四大隱私保護策略與隱私法規](#44-資料治理-四大隱私保護策略與隱私法規)
   - [4.5 模型可解釋性 LIME vs SHAP](#45-模型可解釋性-lime-vs-shap)
 - [第五部分 生成式AI工具與開發商總覽](#第五部分-生成式ai工具與開發商總覽)
   - [5.1 文本與對話語言模型 (LLMs)](#51-文本與對話語言模型-llms)
@@ -199,10 +198,11 @@
   | **典型應用** | 臉部辨識、**光學字元辨識 (OCR, Optical Character Recognition)**、自駕車視覺、<span style="color: #7aa2f7">神經風格轉換</span> (NST, Neural Style Transfer) | ① <span style="color: #7aa2f7">語音辨識</span> (Speech Recognition：**Google Assistant / Siri**)、② <span style="color: #7aa2f7">自動字幕生成</span> (Automatic Subtitling：**YouTube 即時字幕**)、③ <span style="color: #7aa2f7">機器翻譯</span> (Machine Translation：**Google 翻譯**)、音樂旋律生成 |
 
 <details>
-<summary><b>💡 點擊展開白話案例：CNN 拼圖偵探 vs RNN 傳話遊戲與三大時序應用（原著範例）</b></summary>
+<summary><b>💡 點擊展開白話案例：CNN 拼圖偵探、梵谷濾鏡 (神經風格轉換 NST) vs RNN 傳話遊戲（原著範例）</b></summary>
 
-> 🔍 **1. CNN（拼圖偵探）**：
-> 就像偵探拿放大鏡看照片，先用「卷積層」掃描貓咪的耳朵、鬍鬚（**找特徵**）；再用「池化層」濾除背景雜訊、縮小存檔（**記住重要資訊**）；最後「全連接層」整合所有特徵判定：「95% 是一隻貓！」。
+> 🔍 **1. CNN（拼圖偵探）＆ 為什麼「神經風格轉換 (NST)」要靠 CNN？**：
+> * **拼圖偵探看圖**：先用「卷積層」掃描貓咪的耳朵、鬍鬚（**找特徵**）；再用「池化層」濾除背景雜訊、縮小存檔（**記住重要資訊**）；最後「全連接層」整合所有特徵判定：「95% 是一隻貓！」。
+> * **為什麼「神經風格轉換 (Neural Style Transfer, NST)」是用 CNN？**：NST 就是「**留住 A 照片的骨架（內容），換上 B 名畫的皮囊（畫風）**」（如把台北 101 照片換成梵谷《星夜》油畫風）。因為 **CNN 看圖是分層的**——**淺層**專門抓局部的「**筆觸、紋理與配色（畫風 Style）**」，**深層**專門抓整張圖的「**建築與物體大輪廓（內容 Content）**」，只有 CNN 能把「輪廓」跟「畫風」拆開擷取再重新融合！
 >
 > 🎧 **2. RNN 為何需要「記住過去」與「理解順序」？（時序依賴三例）**：
 > * **語音識別**：AI 必須記住前面講過的單詞，才能聽懂整句話的意思（如 **Google Assistant、Apple Siri**）。
@@ -215,7 +215,7 @@
 
 * **1.2 考點精華標記**：
   * **🔥 考試常考**：
-    1. **CNN 三大層分工**：<span style="color: #7aa2f7">卷積層找特徵</span>、<span style="color: #7aa2f7">池化層記住重要資訊</span>（降維）、<span style="color: #7aa2f7">全連接層整合特徵</span>做出分類決策；延伸應用為<span style="color: #7aa2f7">神經風格轉換</span> (NST)。
+    1. **CNN 三大層分工與 NST**：<span style="color: #7aa2f7">卷積層找特徵</span>、<span style="color: #7aa2f7">池化層記住重要資訊</span>（降維）、<span style="color: #7aa2f7">全連接層整合特徵</span>做出分類決策；圖片生成中使用「<span style="color: #7aa2f7">神經風格轉換 (Neural Style Transfer, NST)</span>」（留住 A 圖內容輪廓、換上 B 圖筆觸畫風）主要基於 **<span style="color: #7aa2f7">CNN</span>**。
     2. **RNN 兩大關鍵機制**：<span style="color: #7aa2f7">記憶機制</span> (Recurrent Connections，循環連結把前一刻資訊傳給現在的自己) 與 <span style="color: #7aa2f7">時序依賴性</span> (Sequential Dependency，捕捉順序關係)。
     3. **RNN 三大經典應用代表**：<span style="color: #7aa2f7">語音辨識</span>（Google Assistant、Siri）、<span style="color: #7aa2f7">自動字幕生成</span>（YouTube 即時字幕）、<span style="color: #7aa2f7">機器翻譯</span>（Google 翻譯）。
     4. **RNN 梯度消失數學本質**：誤差訊號在反向傳播過程中呈「<span style="color: #e06c75">指數級衰減</span>」，導致<span style="color: #e06c75">無法學習長距離依賴</span>關係。
@@ -265,25 +265,36 @@
 ### 1.4 VAE GAN 與 Seq2Seq
 * **🔗 上下游串聯**：承接 1.2～1.3 節——AI 從「只會辨識分類（鑑別式）」跨入 2014「無中生有（生成式）」分水嶺，誕生圖像生成雙雄（**VAE、GAN**）與結合 RNN/LSTM 的序列翻譯模型（**Seq2Seq**）。
 * **核心名詞全稱**：
-  * **AE（自編碼器, Autoencoder）** ➔ **VAE（變分自編碼器, Variational Autoencoder）**
+  * **AE（自編碼器, Autoencoder）** ➔ **VAE（變分自編碼器, Variational Auto-Encoder）**
+  * **Mean and Variance（平均值與變異數，潛在變數 $z$ 的機率分佈參數）**
   * **GAN（生成對抗網路, Generative Adversarial Network）**
   * **Seq2Seq（序列到序列模型, Sequence-to-Sequence）**
   * **Word Embedding（詞向量 / 詞嵌入）**、**Sentence Embedding（句向量 / 句嵌入）**、**LDM（潛在擴散模型, Latent Diffusion Model）**
-* **VAE 機率生成 3 步流**：`① 編碼器 (Encoder：把圖片特徵壓縮成一個「機率範圍 μ, σ」，而非死背單一密碼)` ➔ `② 潛在空間抽樣 (Latent Space Sampling：從範圍內抽樣座標)` ➔ `③ 解碼器 (Decoder：還原畫出全新的相似圖片)`
+* **VAE「壓縮師＋重建師」3 步流（邊壓縮、邊隨機抽樣再還原）**：`① 編碼器 (Encoder 壓縮師：把輸入資料轉成潛在變數 z 的「平均值與變異數 Mean and Variance」機率分佈，而非固定數值)` ➔ `② 潛在空間隨機抽樣 (從機率分佈抽樣出一個潛在向量，賦予隨機性與多樣性)` ➔ `③ 解碼器 (Decoder 重建師：將潛在向量還原成圖片、語音等類似原來的資料)`
 * **Seq2Seq 向量空間翻譯 2 階段流（以 `How are you?` ➔ `你好嗎` 為例）**：
   `① 編碼階段 (Encoding：將詞/句轉為詞向量或句向量，壓縮成單一高維「語意向量 V₁」)` ➔ `② 解碼階段 (Decoding：解碼器依「語意向量 V₁ ＋ 目前已生成上下文」一詞一詞逐步預測：「你」➔「好」➔「嗎」)`
 * **2014 早期生成三劍客演進**：`VAE（機率分佈抽樣生圖）` ＆ `GAN（對抗博弈生逼真圖）` ＆ `Seq2Seq（序列編解碼生文字）` ➔ `突破記憶與檢查瓶頸，催生 Attention 與 Transformer`
 
-* **VAE vs GAN vs Seq2Seq 核心對照表（🔥 2014 生成分水嶺三大代表）**：
+* **一、 VAE vs GAN vs Seq2Seq 核心對照表（🔥 2014 生成分水嶺三大代表）**：
   | 比較維度 | VAE (變分自編碼器, ~2014) | GAN (生成對抗網路, 2014) | Seq2Seq (序列到序列, Google 2014) |
   | :--- | :--- | :--- | :--- |
-  | **核心定位** | 早期機率式圖像生成與特徵壓縮（非監督式） | 早期高逼真圖像對抗生成基石 | 早期文字序列生成與機器翻譯基石 |
-  | **運作架構** | <span style="color: #7aa2f7">編碼器</span> (Encoder) ＋ 潛在空間 ＋ <span style="color: #7aa2f7">解碼器</span> (Decoder) | <span style="color: #7aa2f7">生成器</span> (Generator) ＋ <span style="color: #7aa2f7">判別器</span> (Discriminator) 博弈對抗 | <span style="color: #7aa2f7">編碼器</span> (Encoder) ＋ 語意向量 $V_1$ ＋ <span style="color: #7aa2f7">解碼器</span> (Decoder) |
-  | **招牌特色** | 學會資料的「<span style="color: #7aa2f7">潛在機率分佈</span>」（神韻範圍），從中抽樣生新圖，訓練穩定 | 像假鈔集團與警察過招，擅長從「<span style="color: #7aa2f7">隨機雜訊</span> (Random Noise)」畫出超逼真圖片 | 打破輸入與輸出「<span style="color: #7aa2f7">序列長度相等</span>」（字數要一樣多）的限制，在向量空間逐步生成 |
-  | **代表應用** | 影像去噪、人臉表情平滑插值、潛在擴散模型 (LDM, Latent Diffusion Model) 壓縮底座 | **StyleGAN (NVIDIA)** 生成虛擬人臉、**Google** 黑白老照片上色 | 跨語言整句機器翻譯、早期語義理解與生成回答 |
+  | **核心定位** | 「<span style="color: #7aa2f7">壓縮師＋重建師</span>」機率式生成與特徵壓縮（非監督式） | 早期高逼真圖像對抗生成基石 | 早期文字序列生成與機器翻譯基石 |
+  | **運作架構** | <span style="color: #7aa2f7">編碼器</span> (轉機率分佈) ＋ 隨機抽樣 ＋ <span style="color: #7aa2f7">解碼器</span> (還原資料) | <span style="color: #7aa2f7">生成器</span> (Generator) ＋ <span style="color: #7aa2f7">判別器</span> (Discriminator) 博弈對抗 | <span style="color: #7aa2f7">編碼器</span> (Encoder) ＋ 語意向量 $V_1$ ＋ <span style="color: #7aa2f7">解碼器</span> (Decoder) |
+  | **招牌特色** | 轉成潛在變數 $z$ 的「<span style="color: #7aa2f7">平均值與變異數</span>」機率分佈（<span style="color: #e06c75">非固定數值</span>），邊壓縮邊抽樣還原 | 像假鈔集團與警察過招，擅長從「<span style="color: #7aa2f7">隨機雜訊</span> (Random Noise)」畫出超逼真圖片 | 打破輸入與輸出「<span style="color: #7aa2f7">序列長度相等</span>」（字數要一樣多）的限制，在向量空間逐步生成 |
+  | **代表應用** | <span style="color: #7aa2f7">修補影片/圖像缺失</span>、<span style="color: #7aa2f7">醫療合成資料生成</span>、<span style="color: #7aa2f7">工廠故障預測</span>、潛在擴散模型 (LDM) 壓縮底座 | **StyleGAN (NVIDIA)** 生成虛擬人臉、**Google** 黑白老照片上色 | 跨語言整句機器翻譯、早期語義理解與生成回答 |
   | **致命瓶頸** | 生成<span style="color: #e06c75">圖像邊緣較模糊</span> (Blurry，因追求平均穩健而帶柔焦感) | 訓練易失衡、<span style="color: #e06c75">模式崩潰</span> (Mode Collapse，只會畫同一種圖、沒變化) | 整句壓入<span style="color: #e06c75">單一固定向量</span>且<span style="color: #e06c75">無法回頭檢查</span>原句字詞，句子一長就忘光 |
 
-* **跨領域橋樑與最終催生工具**：
+* **二、 VAE（變分自編碼器）白話拆解：「壓縮師＋重建師」與 3 大實務應用**：
+  * **整體結構比喻**：長得像一台「<span style="color: #7aa2f7">壓縮資料再還原</span>」的機器（資料的「**<span style="color: #7aa2f7">壓縮師＋重建師</span>**」），先把複雜資料濃縮成精簡但有意義的向量，再從中重新生出類似原來的資料。
+  * **兩大核心角色（「邊壓縮、邊隨機抽樣再還原」兼具結構保留與創造力）**：
+    1. **A. 編碼器 (Encoder，壓縮師)**：負責把輸入資料轉換成一組「<span style="color: #7aa2f7">機率分佈</span>」（⚠️ <span style="color: #e06c75">不是固定數值！</span>），也就是潛在變數 $z$ 的「**<span style="color: #7aa2f7">平均值與變異數 (Mean and Variance)</span>**」，讓生成結果帶有隨機性和多樣性。
+    2. **B. 解碼器 (Decoder，重建師)**：從這個機率分佈中「<span style="color: #7aa2f7">抽樣出一個潛在向量</span>」，再把它**還原成一筆資料**（如圖片、語音或其他原始格式）。
+  * **3 大經典實務應用例子（原著必背）**：
+    1. **<span style="color: #7aa2f7">修補影片或圖像缺失</span>**：把壞掉或破洞的畫面補得自然。
+    2. **<span style="color: #7aa2f7">醫療合成資料生成</span>**：創造臨床上不易取得的稀有病症資料。
+    3. **<span style="color: #7aa2f7">工廠故障預測</span>**：讓 AI 先學會正常情況的資料分佈，進而從異常中發現問題。
+
+* **三、 跨領域橋樑與最終催生工具**：
   * **向量 (Vector) 與向量空間**：將影像特徵（如體型、耳朵大小）或文字轉為空間座標點（<span style="color: #7aa2f7">詞向量 / 句向量</span>）；特徵相似者<span style="color: #7aa2f7">向量距離近</span>，不同類者<span style="color: #7aa2f7">向量距離遠</span>，成為跨越影像分類與語言翻譯的橋樑。
   * **催生現代代表工具**：突破 Seq2Seq 限制後誕生 **Attention（注意力機制）** 與 **Transformer**，進而催生 **ChatGPT**（**OpenAI** 對話大模型）、**DALL-E**（**OpenAI** 文字生圖像模型）。
 
@@ -293,8 +304,8 @@
 > 🐾 **1. 貓和狗在 2D 向量空間的距離（原著圖 4-3 範例）**：
 > 把 X 軸設為「體型大小」、Y 軸設為「耳朵大小」：波斯貓 ($A_1$) 與暹羅貓 ($A_2$) 體型和耳朵相似，座標點距離很近；兩隻貴賓狗 ($B_1, B_2$) 座標點也很靠近，但**貓和狗的向量距離很遠**。此時只要畫一條直線，就能清楚把左邊的貓和右邊的狗區分開來！
 >
-> 🧪 **2. 傳統 AE（影印壓縮包）vs VAE（掌握「神韻機率分佈」的配方師）**：
-> 傳統 AE 像把貓照片壓成固定密碼 `88`，只能還原同一隻貓；**VAE** 則學會貓咪特徵的「**機率分佈範圍**」，隨機抽樣座標就能畫出全新的貓，只是因追求平均穩健，畫面常帶點「柔焦模糊感」。
+> 🧪 **2. 傳統 AE（影印壓縮包）vs VAE（掌握「平均值與變異數」的壓縮師＋重建師）**：
+> 傳統 AE 像把貓照片壓成固定密碼 `88`（固定數值），只能死板還原同一隻貓；**VAE** 的編碼器則把貓照片轉成潛在變數 $z$ 的「**平均值與變異數（機率分佈範圍）**」，解碼器再從這個範圍隨機抽樣一個向量還原，因此既能保留貓咪結構，又能畫出帶點變化彈性的全新貓咪（也可用來修補壞掉畫面、生成罕見疾病資料或偵測工廠異常），只是因追求平均穩健，畫面邊緣常帶點「柔焦模糊感」。
 >
 > 🏃 **3. GAN 的「賽跑失衡」與模式崩潰 (Mode Collapse)（原著範例）**：
 > 生成器（負責畫）與判別器（負責挑錯）像在賽跑：若**判別器太強**，生成器畫什麼都被嫌棄，永遠學不會；若**生成器跑太快**，判別器還沒搞清楚真假就輸了。這種「沒好好競爭」的失衡結果，會導致**模式崩潰**——AI 只學會畫出一種風格或幾張類似的圖，沒創意也沒變化！
@@ -306,12 +317,13 @@
 
 * **1.4 考點精華標記**：
   * **🔥 考試常考**：
-    1. **VAE (變分自編碼器)**：透過「<span style="color: #7aa2f7">編碼器＋解碼器</span>」學習資料的<span style="color: #7aa2f7">潛在機率分佈</span>並抽樣生成新資料（訓練穩定，但<span style="color: #e06c75">圖像較模糊</span>）。
+    1. **VAE (變分自編碼器)**：扮演資料的「<span style="color: #7aa2f7">壓縮師＋重建師</span>」——**編碼器**將資料轉成潛在變數 $z$ 的「<span style="color: #7aa2f7">平均值與變異數 (Mean and Variance)</span>」機率分佈（<span style="color: #e06c75">非固定數值</span>），**解碼器**從中抽樣潛在向量還原資料；三大應用為「<span style="color: #7aa2f7">修補影片或圖像缺失、醫療合成資料生成、工廠故障預測</span>」（訓練穩定，但<span style="color: #e06c75">圖像較模糊</span>）。
     2. **GAN (生成對抗網路)**：由「<span style="color: #7aa2f7">生成器＋判別器</span>」相互對抗，以從「<span style="color: #7aa2f7">隨機雜訊</span>」產生逼真圖片聞名；若兩者競爭失衡（一方太強或跑太快）會導致<span style="color: #e06c75">模式崩潰</span>（只畫單一風格、喪失多樣性）。
     3. **Seq2Seq 運作與瓶頸**：編碼階段將單詞/句子轉為<span style="color: #7aa2f7">詞向量 / 句向量</span>並壓成「<span style="color: #7aa2f7">語意向量</span> $V_1$」，解碼階段依「<span style="color: #7aa2f7">$V_1$ ＋ 已生成上下文</span>」<span style="color: #7aa2f7">一詞一詞逐步生成</span>；致命瓶頸為整句僅靠<span style="color: #e06c75">單一固定向量</span>且<span style="color: #e06c75">無法回頭檢查原句字詞</span>，長句易失憶。
   * **⚠️ 易錯陷阱**：
-    1. **VAE vs GAN vs LLM 缺陷辨析**：**VAE** 缺點是「<span style="color: #e06c75">圖像較模糊</span>」；**GAN** 缺點是「<span style="color: #e06c75">模式崩潰</span>」；而「<span style="color: #e06c75">幻覺</span>」則是 **LLM** 的缺陷，三者切勿張冠李戴！
-    2. **Seq2Seq 解碼陷阱**：Seq2Seq 翻譯<span style="color: #e06c75">並非</span>「將英文向量直接轉成中文向量找最接近句子」，而是透過解碼器<span style="color: #7aa2f7">一詞一詞逐步預測生成</span>！
+    1. **VAE 編碼輸出陷阱**：VAE 編碼器輸出的是潛在變數 $z$ 的「<span style="color: #7aa2f7">機率分佈（平均值與變異數）</span>」，<span style="color: #e06c75">絕非單一固定數值</span>！
+    2. **VAE vs GAN vs LLM 缺陷辨析**：**VAE** 缺點是「<span style="color: #e06c75">圖像較模糊</span>」；**GAN** 缺點是「<span style="color: #e06c75">模式崩潰</span>」；而「<span style="color: #e06c75">幻覺</span>」則是 **LLM** 的缺陷，三者切勿張冠李戴！
+    3. **Seq2Seq 解碼陷阱**：Seq2Seq 翻譯<span style="color: #e06c75">並非</span>「將英文向量直接轉成中文向量找最接近句子」，而是透過解碼器<span style="color: #7aa2f7">一詞一詞逐步預測生成</span>！
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
@@ -548,11 +560,11 @@
   | **第 2 層：跨幀時間一致性** | 🎬 **導演控場** | <span style="color: #7aa2f7">時序感知模組 ＋ Transformer</span> | 指揮前後幀動作連貫性，<span style="color: #7aa2f7">控制每一幀接下來畫什麼，防止畫面閃爍跳幀</span> |
   | **第 3 層：語意故事線對齊** | 📝 **編劇導引** | <span style="color: #7aa2f7">語意編碼 (Transformer 條件控制器)</span> | 理解長篇文字前後文與語意順序，作為<span style="color: #7aa2f7">引導模組</span>讓畫面精準對齊故事線 |
 
-* **多模態影片生成系統技術比較表（原著核心對照）**：
+* **多模態影片生成系統技術比較表（原著核心對照＋認證考題補充）**：
   | 系統名稱 | 技術基礎 | 特點／應用方向 | 優勢特色與必考重點 |
   | :--- | :--- | :--- | :--- |
   | **Sora (OpenAI)** | <span style="color: #7aa2f7">Diffusion + Transformer</span>（畫圖工人＋導演編劇） | 文生成影片（<span style="color: #7aa2f7">語意驅動敘事</span>） | <span style="color: #7aa2f7">畫質佳、敘事強、世界理解力高</span>（可生成長達 60 秒高連貫電影級影片） |
-  | **Runway Gen-2** (及 Gen-1 ~ Gen-4) | <span style="color: #7aa2f7">改良版 Diffusion</span> | <span style="color: #7aa2f7">創作者影片草圖、剪輯特效</span> | <span style="color: #7aa2f7">操作簡易、生成快速、商業應用已落地</span>（專門協助「<span style="color: #7aa2f7">非專業創作者</span>」） |
+  | **Runway Gen-2** (及 Gen-1 ~ Gen-4) | <span style="color: #7aa2f7">改良版 Diffusion</span>；認證考題常考核心技術原理為「<span style="color: #7aa2f7">GAN (生成對抗網路) ＋ 自動編碼器 (Autoencoder)</span>」 | <span style="color: #7aa2f7">創作者影片草圖、剪輯特效</span> | <span style="color: #7aa2f7">操作簡易、生成快速、商業應用已落地</span>（專門協助「<span style="color: #7aa2f7">非專業創作者</span>」） |
   | **Pika Labs (Pika)** | <span style="color: #7aa2f7">動畫導向 Diffusion + 多模態控制</span> | <span style="color: #7aa2f7">原創角色動畫、社群短片</span> | <span style="color: #7aa2f7">風格自由、互動性高、創作流程友善</span> |
   | **Google Lumiere** (及 Google Veo) | <span style="color: #7aa2f7">Space-Time U-Net</span>（時空 U-Net 架構） | <span style="color: #7aa2f7">高畫質敘事影片</span> | <span style="color: #7aa2f7">畫面穩定、邏輯一致、細節表現極佳</span>（一次生成整段時空連貫影片） |
 
@@ -574,7 +586,7 @@
   * **🔥 考試常考**：
     1. **多模態核心價值與技術**：結合原本獨立的語言、影像、語音模型達成「<span style="color: #7aa2f7">共同理解語意</span>」；底層結合「<span style="color: #7aa2f7">深度學習與神經網路</span>」；代表大模型為 **Gemini、GPT-4o、Claude**。
     2. **影片生成角色分工（必考比喻）**：<span style="color: #7aa2f7">Diffusion 是「畫圖工人」</span>（負責單幀畫質細節）；<span style="color: #7aa2f7">Transformer 是「導演或編劇」</span>（作為<span style="color: #7aa2f7">引導模組 / 條件控制器</span>，管前後文、語意順序與跨幀連貫）。
-    3. **四大影片生成系統配對**：**Sora**（<span style="color: #7aa2f7">Diffusion + Transformer</span>，語意驅動敘事）、**Runway Gen-2**（<span style="color: #7aa2f7">改良版 Diffusion</span>，影片草圖/剪輯特效，助非專業創作者）、**Pika Labs**（<span style="color: #7aa2f7">動畫導向 Diffusion + 多模態控制</span>，角色動畫/社群短片）、**Google Lumiere**（<span style="color: #7aa2f7">Space-Time U-Net</span>，高畫質敘事影片，畫面穩定邏輯一致）。
+    3. **四大影片生成系統配對**：**Sora**（<span style="color: #7aa2f7">Diffusion + Transformer</span>，語意驅動敘事）、**Runway Gen**（核心技術原理考題選 <span style="color: #7aa2f7">GAN 與自動編碼器 Autoencoder</span> 或教材之 <span style="color: #7aa2f7">改良版 Diffusion</span>，助<span style="color: #7aa2f7">非專業創作者</span>做影片草圖與剪輯特效）、**Pika Labs**（<span style="color: #7aa2f7">動畫導向 Diffusion + 多模態控制</span>，角色動畫/社群短片）、**Google Lumiere**（<span style="color: #7aa2f7">Space-Time U-Net</span>，高畫質敘事影片，畫面穩定邏輯一致）。
     4. **情感語音生成最重要要素**：<span style="color: #7aa2f7">情緒標註資料</span>。
   * **⚠️ 易錯陷阱**：
     1. Transformer 在影片生成中是「<span style="color: #7aa2f7">引導模組 / 條件控制器（導演）</span>」，<span style="color: #e06c75">並非直接動手畫畫或主導整個畫面的產生</span>（畫圖工人是 Diffusion）！
@@ -585,7 +597,7 @@
 ---
 
 ### 1.9 模型預訓練 從無到有的知識建立
-* **🔗 上下游串聯**：總結 1.1～1.8 節的各類 AI 模型——介紹 AI 學徒如何透過 **6 大預訓練步驟** 從無到有學會知識，並與下一節 **1.10 模型的運作（推理）** 共用同一個「**5 大內部結構單元**」舞台。
+* **🔗 上下游串聯**：總結 1.1～1.8 節的各類 AI 模型——介紹 AI 學徒如何透過 **6 大預訓練步驟** 從無到有學會知識（其中 Step 4 訓練問題詳見 **1.10 模型最佳化**），並與畢業上線後的 **1.11 模型的運作（推理）** 共用同一個「**5 大內部結構單元**」舞台。
 * **核心名詞全稱**：
   * **Pre-training（模型預訓練：從無到有的知識建立過程）**
   * **Encoder（編碼器）**、**Latent Space Representation（潛在空間表示）**、**Decoder（解碼器）**
@@ -604,9 +616,9 @@
   | **Step 1** | **資料收集與處理** | `① 接收輸入` | 📚 **先給 AI 學徒教材** | 收集照片、文字、語音等資料，並先經過「<span style="color: #7aa2f7">清洗、統一格式、去除錯誤</span>」（詳見 1.12 節），準備好乾淨教材 |
   | **Step 2** | **選擇適當模型** | `② 編碼器` | 🧠 **選對大腦才能聰明學** | 依任務選對 AI 模型（如 RNN、Transformer、GAN、Diffusion），並微調「<span style="color: #7aa2f7">超參數</span>」（層數、學習率、批次大小） |
   | **Step 3** | **決定損失函數** | `③ 潛在空間表示` | 📏 **設計一個評分標準** | 用「<span style="color: #7aa2f7">損失函數 (Loss Function)</span>」幫 AI 打分數，衡量預測結果與真實答案差多遠（<span style="color: #7aa2f7">選對損失函數＝選對訓練方向</span>） |
-  | **Step 4** | **參數最佳化** | `③ 潛在空間表示` | 🔧 **錯了就調整、變聰明** | 與 Step 3 同步互動；算出誤差後，用「<span style="color: #7aa2f7">梯度下降</span>」與「<span style="color: #7aa2f7">反向傳播</span>」自動微調內部參數，讓下次更準（詳見 1.11 節） |
+  | **Step 4** | **參數最佳化** | `③ 潛在空間表示` | 🔧 **錯了就調整、變聰明** | 與 Step 3 同步互動；算出誤差後，用「<span style="color: #7aa2f7">梯度下降</span>」與「<span style="color: #7aa2f7">反向傳播</span>」自動微調內部參數，讓下次更準（詳見 1.10 節） |
   | **Step 5** | **生成、評估與反覆運算** | `④ 解碼器` | 📝 **驗收成績、持續修正** | 透過訓練中的「內部生成」練習，並用「<span style="color: #7aa2f7">驗證集（練習考）</span>」與「<span style="color: #7aa2f7">測試集（期末考）</span>」驗收成績、反覆檢討修正 |
-  | **Step 6** | **結果轉成文字（正式上線）** | `⑤ 輸出` | 🎓 **畢業正式上線應用** | 預訓練完成且表現穩定後，根據使用者輸入的「<span style="color: #7aa2f7">提示 (Prompt)</span>」產生新文字、圖片、音樂（如 ChatGPT、文生圖工具，詳見 1.10 節） |
+  | **Step 6** | **結果轉成文字（正式上線）** | `⑤ 輸出` | 🎓 **畢業正式上線應用** | 預訓練完成且表現穩定後，根據使用者輸入的「<span style="color: #7aa2f7">提示 (Prompt)</span>」產生新文字、圖片、音樂（如 ChatGPT、文生圖工具，詳見 1.11 節） |
 
 * **3. Step 2 重點拆解：不同任務怎麼選對「大腦（模型）」與調「超參數」？**：
   * **選對模型大腦（就像畫漫畫要選筆、紙和畫板，而不是選油漆和刷子）**：
@@ -640,7 +652,8 @@
 * **1.9 考點精華標記**：
   * **🔥 考試常考**：
     1. **深度生成式 AI 的 5 大內部結構單元**：`接收輸入 ➔ 編碼器 ➔ 潛在空間表示 ➔ 解碼器 ➔ 輸出`。
-    2. **模型預訓練 6 大步驟順序**：`① 資料收集與處理 ➔ ② 選擇適當模型 ➔ ③ 決定損失函數 ➔ ④ 參數最佳化 ➔ ⑤ 生成、評估與反覆運算 ➔ ⑥ 正式上線應用（結果輸出）`。
+    2. **模型預訓練 6 大步驟順序與記憶錨點**：`① 資料收集與處理 ➔ ② 選擇適當模型 ➔ ③ 決定損失函數 ➔ ④ 參數最佳化 ➔ ⑤ 生成、評估與反覆運算 ➔ ⑥ 正式上線應用（結果輸出）`。
+       * 💡 **秒記錨點（5 個單元配 6 個步驟）**：唯一**兩個步驟同時發生在同一個單元**的就是「<span style="color: #7aa2f7">③ 潛在空間表示 (Latent Space Representation)</span>」＝ **<span style="color: #7aa2f7">Step 3 決定損失函數 ＋ Step 4 參數最佳化</span>**！
     3. **任務與模型大腦配對**：理解時間順序選 <span style="color: #7aa2f7">RNN</span>、快速吸收全域訊息選 <span style="color: #7aa2f7">Transformer</span>、創造新圖片選 <span style="color: #7aa2f7">GAN / Diffusion</span>；微調「<span style="color: #7aa2f7">超參數</span>」包含<span style="color: #7aa2f7">層數、學習率、批次大小</span>。
     4. **練習考 vs 期末考**：<span style="color: #7aa2f7">驗證集 (Validation Set)</span> 像「**練習考**」（邊學邊調整模型）；<span style="color: #7aa2f7">測試集 (Test Set)</span> 像「**期末考**」（用從沒見過的新題驗收成績）。
   * **⚠️ 易錯陷阱**：Step 5 訓練過程中的生成動作（如預測下一字、還原遮蔽詞、從雜訊重建圖片）屬於「<span style="color: #7aa2f7">內部生成 / 模擬推理</span>」，目的是幫模型算損失與調參數，<span style="color: #e06c75">不會直接對外輸出給使用者</span>（Step 6 才會根據 Prompt 正式對外輸出）！
@@ -649,39 +662,103 @@
 
 ---
 
-### 1.10 模型的運作 (推理) AI 怎麼看懂輸入與生出結果
-* **🔗 上下游串聯**：承接 1.9 節預訓練的「**Step 6 正式上線**」——當 AI 畢業後，面對使用者提問時，如何在同一個「**5 大內部結構單元**」舞台上執行 5 步推理並生出答案。
+### 1.10 模型最佳化 訓練技巧與過擬合
+* **🔗 上下游串聯**：直接承接 **1.9 節預訓練的「Step 4 參數最佳化」** 與 1.1 節「**梯度下降**」——專門解決模型在訓練階段卡關的 4 大重要問題（梯度消失、梯度爆炸、過擬合、欠擬合），解決後即可進入下一節 **1.11 模型的運作（上線推理）**。
+* **核心名詞全稱**：
+  * **Vanishing Gradient（梯度消失）**、**Exploding Gradient（梯度爆炸）**
+  * **Overfitting（過擬合）**、**Underfitting（欠擬合）**、**Generalization Ability（概括能力 / 泛化能力）**
+  * **Activation Function（啟動函數，如 Sigmoid、ReLU [線性整流函數, Rectified Linear Unit]）**
+  * **Optimizer（最佳化器 / 優化器）**：**SGD（隨機梯度下降, Stochastic Gradient Descent）**、**Momentum（動量法）**、**RMSprop（均方根傳播, Root Mean Square Propagation）**、**Adam（自適應矩陣估計, Adaptive Moment Estimation）**、**AdaGrad（自適應梯度演算法, Adaptive Gradient Algorithm）**
+  * **BN（批次正規化 / 標準化, Batch Normalization）**、**Mini-batch（小批次）**
+  * **ResNet（殘差網路, Residual Network，引入跳接結構 Skip Connection）**、**Weight Initialization（權重初始化）**
+  * **Normalization（正規化）** vs **Regularization（正則化 / L1 與 L2 正規化）**、**Dropout（隨機丟棄）**、**Data Augmentation（資料增強）**、**Early Stopping（早停法）**
+
+* **1. 模型最佳化會遇到的「4 大重要問題」與對應解法總覽表**：
+  | 四大問題 | 白話症狀與成因 | 🎯 對應解決方法（一眼秒懂配對） |
+  | :--- | :--- | :--- |
+  | **① <span style="color: #e06c75">梯度消失</span> (Vanishing Gradient)** | 網路太多層，更新訊號往回傳時越變越小、<span style="color: #e06c75">傳不回最前面</span>（坡太緩學不動） | **5 大訓練穩定技巧**：<span style="color: #7aa2f7">啟動函數</span>、<span style="color: #7aa2f7">最佳化器</span>、<span style="color: #7aa2f7">批次正規化</span>、<span style="color: #7aa2f7">殘差網路 (ResNet)</span>、<span style="color: #7aa2f7">權重初始化</span> |
+  | **② <span style="color: #e06c75">梯度爆炸</span> (Exploding Gradient)** | 更新訊號往回傳時數值暴衝失控（坡太陡滑過頭、參數飆太誇張） | <span style="color: #7aa2f7">最佳化器</span>、<span style="color: #7aa2f7">批次正規化</span>、<span style="color: #7aa2f7">權重初始化</span> ＋ <span style="color: #7aa2f7">L1/L2 正規化（正則化）</span>、<span style="color: #7aa2f7">Dropout</span> |
+  | **③ <span style="color: #e06c75">過擬合</span> (Overfitting)** | 「<span style="color: #e06c75">太會背、學得太像</span>」：把訓練資料當考古題死背，遇到新資料就完蛋 | <span style="color: #7aa2f7">L1/L2 正規化（正則化）</span>、<span style="color: #7aa2f7">Dropout</span>（以及<span style="color: #7aa2f7">資料增強</span>、<span style="color: #7aa2f7">早停法</span>） |
+  | **④ <span style="color: #e06c75">欠擬合</span> (Underfitting)** | 「<span style="color: #e06c75">模型太笨、學不來</span>」：模型太簡單或訓練不夠久，連基本規律都學不會 | <span style="color: #7aa2f7">增加模型的複雜度</span>（加層數、加參數、加非線性單元）＋ <span style="color: #7aa2f7">增加訓練時間</span> |
+
+* **2. 解決「梯度消失」＝ AI 模型訓練的「5 大穩定技巧」**：
+  | 五大穩定技巧 | 核心工具與代表名稱 | 一句話白話秒懂（考試必記重點！） |
+  | :--- | :--- | :--- |
+  | **(a) 啟動函數 (Activation Function)** | **Sigmoid ➔ <span style="color: #7aa2f7">ReLU</span>** | ⚠️ **它<span style="color: #e06c75">不是參數</span>，是一個「<span style="color: #7aa2f7">非線性的轉換函數</span>」**！改用 ReLU 可讓訊號順暢通過防消失 |
+  | **(b) 最佳化器 (Optimizer)** | <span style="color: #7aa2f7">SGD、Momentum、RMSprop、Adam、AdaGrad</span> | 專門用來「<span style="color: #7aa2f7">更新參數</span>」的領航員（其中 **Adam** 結合 Momentum + RMSprop 為最常用預設值） |
+  | **(c) 批次正規化 (Batch Normalization)** | <span style="color: #7aa2f7">BN（有人稱為標準化）</span> | **對資料使用**，每次處理一小批資料叫做 <span style="color: #7aa2f7">mini-batch（小批次）</span>，把數值拉回穩定範圍 |
+  | **(d) 殘差網路 (ResNet)** | <span style="color: #7aa2f7">ResNet（跳接結構 Skip Connection）</span> | 當**神經網路很多層、梯度沒辦法有效傳回最前面**時，搭一條跨層捷徑讓梯度直接傳回去 |
+  | **(e) 權重初始化 (Weight Initialization)** | <span style="color: #7aa2f7">適當的權重初始化</span> | 起跑前先把初始權重設得剛剛好（不大不小），避免一開始梯度就消失或暴衝 |
+
+* **3. 同時對付「梯度爆炸」與「過擬合」的 2 大煞車神器**：
+  * **(a) L1 與 L2 正規化／正則化 (Regularization)**：在「<span style="color: #7aa2f7">損失函數 (Loss Function) 裡面加上一點懲罰項</span>」，限制參數大小——既能**讓參數不會飆得太誇張（防梯度爆炸）**，又能**阻止模型把單一考題背得太死（防過擬合）**！
+  * **(b) Dropout（隨機丟棄）**：在訓練時「<span style="color: #7aa2f7">隨機關掉一部分神經元，讓那條路徑先休息一下</span>」——避免單一路徑權重過度集中暴衝，也逼所有神經元學會通則、不靠少數死背王！
+  * *(💡 補充：防止過擬合還可搭配 **資料增強 Data Augmentation**［圖片旋轉翻面變出更多花樣］與 **早停法 Early Stopping**［看到開始死背就提早喊卡］。)*
+
+* **4. 一字之差翻譯提醒：Normalization vs Regularization**：
+  * 中文教材常把兩者都翻成「正規化」，考試時看上下文或英文最準：
+    1. **對「資料 / mini-batch」做調整** ➔ **批次正規化 / 標準化 (Batch Normalization)**（把輸入數值範圍拉齊）。
+    2. **在「損失函數加懲罰項」壓制參數** ➔ **L1 / L2 正規化 / 正則化 (Regularization)**（防參數飆太誇張、防過擬合）。
+
+<details>
+<summary><b>💡 點擊展開白話案例：5 大穩定技巧、優化器領航員 ＆ 背考古題 vs 模型太笨（原著範例）</b></summary>
+
+> 🛠️ **1. 為什麼「梯度消失」與「梯度爆炸」要靠這幾招？**：
+> * **梯度消失（訊號傳不回最前面）**：當神經網路蓋得像 100 層大樓（深層網路），一樓算出的修正訊號傳到頂樓早就沒力了。這時靠 **5 大穩定技巧**：換個非線性轉換開關（**啟動函數 ReLU**）、請聰明領航員更新參數（**最佳化器**）、每一小批 **mini-batch** 資料先整隊（**批次正規化 BN**）、蓋一座跨樓層直達電梯讓梯度直接傳回最前面（**殘差網路 ResNet**），以及一開始給合理的起跑值（**權重初始化**）。
+> * **梯度爆炸（參數飆太誇張）**：除了靠**最佳化器、批次正規化、權重初始化**穩住陣腳，還可以在損失函數裡加「超速罰單（**L1/L2 懲罰項**）」壓住參數別亂飆，並用 **Dropout** 隨機關掉一部分神經元讓那條路徑休息一下！
+>
+> 🧭 **2. 五大最佳化器 (Optimizer) 一句話快速印象（不用背複雜公式）**：
+> * **SGD**：拿手電筒摸黑找路（每次看單筆，慢但有隨機性）。
+> * **Momentum**：踩滑板加慣性（保留歷史方向，衝過小凹陷）。
+> * **AdaGrad / RMSprop**：看地形自動調整步伐大小（變動大走慢點、變動小走快點）。
+> * **Adam**：滑板上還帶著導航（結合 Momentum + RMSprop，最常用的萬用預設值）。
+>
+> 📚 **3. 過擬合（太會背，學得太像）vs 欠擬合（模型太笨，學不來）**：
+> * **過擬合 (Overfitting)**：把訓練資料當考古題死背，大考遇到新資料就完蛋 ➔ 用 **L1/L2 加懲罰項** 與 **Dropout 關神經元休息** 來治它。
+> * **欠擬合 (Underfitting)**：模型太笨太簡單，連基本題都學不會 ➔ 直接**增加模型複雜度**（加層數、加參數）！
+</details>
+
+* **1.10 考點精華標記**：
+  * **🔥 考試常考**：
+    1. **AI 模型訓練的 5 大穩定技巧（主治梯度消失）**：<span style="color: #7aa2f7">啟動函數</span>、<span style="color: #7aa2f7">最佳化器</span>、<span style="color: #7aa2f7">批次正規化 (Batch Normalization)</span>、<span style="color: #7aa2f7">殘差網路 (ResNet)</span>、<span style="color: #7aa2f7">權重初始化</span>。
+    2. **各技巧關鍵定義**：**啟動函數**是「<span style="color: #7aa2f7">非線性的轉換函數</span>」（<span style="color: #e06c75">不是參數</span>）；**最佳化器**用來「<span style="color: #7aa2f7">更新參數</span>」（含 **SGD、Momentum、RMSprop、Adam、AdaGrad**）；**批次正規化**對一小批資料（<span style="color: #7aa2f7">mini-batch</span>）使用；**殘差網路 (ResNet)** 解決「<span style="color: #7aa2f7">神經網路太多層、梯度無法有效傳回最前面</span>」。
+    3. **L1/L2 與 Dropout 的雙重功效**：同時能解決「<span style="color: #7aa2f7">梯度爆炸</span>」與「<span style="color: #7aa2f7">過擬合</span>」——**L1/L2 正規化（正則化）**是在<span style="color: #7aa2f7">損失函數加上懲罰項</span>，讓參數不會飆太誇張；**Dropout** 是在訓練時<span style="color: #7aa2f7">隨機關掉一部分神經元讓路徑休息</span>。
+    4. **過擬合 vs 欠擬合**：「**太會背、學得太像**」是<span style="color: #e06c75">過擬合</span>（做正規化與 Dropout）；「**模型太笨、學不來**」是<span style="color: #e06c75">欠擬合</span>（<span style="color: #7aa2f7">增加模型複雜度</span>）。
+  * **⚠️ 易錯陷阱**：
+    1. **啟動函數陷阱**：啟動函數（如 ReLU、Sigmoid）<span style="color: #e06c75">絕對不是模型參數</span>，而是固定的「<span style="color: #7aa2f7">非線性轉換函數</span>」！
+    2. **最佳化器陷阱**：問何者「不是 AI 最佳化器」，必選 <span style="color: #e06c75">LDA (線性判別分析)</span>（**SGD、Momentum、RMSprop、Adam、AdaGrad** 才是最佳化器）！
+
+<div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
+
+---
+
+### 1.11 模型的運作 (推理) AI 怎麼看懂輸入與生出結果
+* **🔗 上下游串聯**：承接 **1.9 模型預訓練（Step 6 正式上線）** 與 **1.10 模型最佳化**——當 AI 學徒完成訓練並解決卡關問題正式畢業後，面對使用者提問時，如何在同一個「**5 大內部結構單元**」舞台上執行 5 步推理並生出答案。
 * **核心名詞全稱**：
   * **Inference（推理：模型執行與生成的運作流程總稱）**
   * **Latent Vector Space（潛在向量空間 / 潛在空間表示 Latent Space Representation）**
   * **Token（標記：模型思考語言的最小拼圖單位）**、**Tokenization（標記化：將句子拆解成 Token 的動作）**
   * **Contextual Embedding（帶有語境資訊的語意向量 / 語境嵌入向量）**
 
-* **1. 與 1.9 預訓練的前後呼應：同一個「5 大單元舞台」，從「上學練功」到「上場工作」**：
+* **1. 與 1.9 預訓練的前後呼應：同一個「5 大單元舞台」，為什麼預訓練 6 步、運作變 5 步？**：
   * **什麼是「推理 (Inference)」？**：當 AI 完成預訓練（1.9 節）正式畢業上線後，當你要求它「幫我寫一首詩」或「明天的天氣？」，AI 從**看懂輸入、腦中思考到生出結果**的所有執行與生成運作，總稱為「<span style="color: #7aa2f7">推理 (Inference)</span>」。
-  * **為什麼說它像「翻譯工作」？**：整個推理流程其實就像**翻譯官**——先把輸入的「<span style="color: #7aa2f7">人類世界的資料</span>」翻譯成「<span style="color: #7aa2f7">模型能懂的高維度向量</span>」，在**潛在向量空間（AI 的思考中心）**裡處理並得出結果，再**翻譯回人類可讀的文字、圖像或聲音**端上桌！（💡 *註：這套流程除生成式 AI 外，也同樣適用於有使用「潛在向量空間」的**鑑別式 AI 模型**！*）
-  * **推理運作 5 大步驟必背順序（對應 5 大內部結構單元）**：
-    `① 接收輸入` ➔ `② 資料編碼` ➔ `③ 語意理解` ➔ `④ 生成解碼` ➔ `⑤ 輸出回應`
+  * **為什麼說它像「翻譯工作」？**：整個推理流程就像**翻譯官**——先把輸入的「<span style="color: #7aa2f7">人類世界的資料</span>」翻譯成「<span style="color: #7aa2f7">模型能懂的高維度向量</span>」，在**潛在向量空間（AI 的思考中心）**裡處理並得出結果，再**翻譯回人類可讀的文字、圖像或聲音**端上桌！（💡 *註：這套流程除生成式 AI 外，也同樣適用於有使用「潛在向量空間」的**鑑別式 AI 模型**！*）
+  * 💡 **秒記錨點（1.9 預訓練 6 步 vs 1.11 運作 5 步）**：
+    * **預訓練（上學練功，6 步）**：在 `③ 潛在空間表示` 要算誤差並調參數（`Step 3 決定損失函數 + Step 4 參數最佳化`）。
+    * **推理運作（畢業工作，5 步）**：模型已經畢業<span style="color: #7aa2f7">不用再算損失與改參數了</span>，所以在 `③ 潛在空間表示` 只做 **<span style="color: #7aa2f7">Step 3 語意理解</span>** 1 件事，剛好 **5 個單元 1 對 1 對齊 5 個步驟**！
+  * **推理運作 5 大步驟必背順序（1 對 1 對應 5 大內部結構單元）**：
+    `① 接收輸入 (Input Reception)` ➔ `② 資料編碼 (Encoder)` ➔ `③ 語意理解 (Latent Space Representation)` ➔ `④ 生成解碼 (Decoder)` ➔ `⑤ 輸出回應 (Output)`
 
-* **2. 模型推理運作「5 大步驟」與內部結構單元總覽表**：
-  | 步驟順序 | 推理運作步驟名稱 | 所在內部結構單元 | 原著白話外號 | 一句話看懂這一步在做什麼？ |
-  | :---: | :--- | :---: | :--- | :--- |
-  | **Step 1** | **接收輸入** | `① 接收輸入` | 👀 **AI 的感官啟動** | 打開眼睛耳朵接收原始訊號（文字的 <span style="color: #7aa2f7">Token 標記</span>、圖片的<span style="color: #7aa2f7">像素</span>、聲音的<span style="color: #7aa2f7">波形</span>）；此時模型<span style="color: #e06c75">還無法直接理解意思</span> |
-  | **Step 2** | **資料編碼** | `② 編碼器` | 🌐 **翻譯成模型能懂的向量** | 用編碼器（**RNN / LSTM / GRU / Transformer**）抓住重點與脈絡，把輸入轉成潛在空間裡的<span style="color: #7aa2f7">高維度多維向量 (Vector)</span> |
-  | **Step 3** | **語意理解** | `③ 潛在空間表示` | 🧠 **AI 的內心世界（思考中心）** | 在高維度潛在空間中先不急著產出結果，而是進行<span style="color: #7aa2f7">理解、推理與概念運算</span>（如比較貓狗、開心難過、畫風差異），建立內部語意 |
-  | **Step 4** | **生成解碼** | `④ 解碼器` | ✍️ **從腦海拉出一句完整的話** | 解碼器根據預訓練知識與潛在語義開始產出：ChatGPT <span style="color: #7aa2f7">一個字一個字生出回應</span>、圖像模型<span style="color: #7aa2f7">一步步畫出像素</span>、語音模型<span style="color: #7aa2f7">生成音訊波形</span> |
-  | **Step 5** | **輸出回應** | `⑤ 輸出` | 🍽️ **AI 把「答案」端上桌** | 綜合考慮<span style="color: #7aa2f7">語意一致性、上下文邏輯與使用者期待</span>，把解碼器的生成結果轉換成有用又有感的文字、圖片或語音呈現給使用者 |
+* **2. 模型推理運作「5 大步驟 × 5 大單元 ×『明天的天氣？』圖例」三合一總覽表（對應圖 6-3）**：
+  | 步驟與名稱 | 所在內部結構單元 | 原理角色與工作（在做什麼？） | 🌤️ 問 AI「明天的天氣？」實際發生了什麼事？（圖 6-3 完整拆解） |
+  | :---: | :---: | :--- | :--- |
+  | **Step 1 接收輸入** | `① 接收輸入` (Input Reception) | 👀 **感官啟動**：接收原始訊號（文字 <span style="color: #7aa2f7">Token</span>、圖片像素、聲音波形）；此時<span style="color: #e06c75">還無法直接理解意思</span> | 把「明天的天氣？」切成 <span style="color: #7aa2f7">token（標記）</span>：**`「明」「天」「的」「天氣」「？」`**；轉成向量編碼送入模型 |
+  | **Step 2 資料編碼** | `② 編碼器` (Encoder) | 🌐 **翻譯成向量**：用編碼器（**RNN / LSTM / GRU / Transformer**）抓脈絡，轉成帶有語境的向量 (<span style="color: #7aa2f7">Contextual Embedding</span>) | 模型知道「明天」是時間，「天氣」是主題，「？」是問句，整體語意是「<span style="color: #7aa2f7">想知道明天的天氣</span>」 |
+  | **Step 3 語意理解** | `③ 潛在空間表示` (Latent Space Representation) | 🧠 **思考中心**：在高維度潛在空間中進行<span style="color: #7aa2f7">理解、推理與概念運算</span>，建立內部語意地圖 | 模型內部用<span style="color: #7aa2f7">高維向量</span>表示「<span style="color: #7aa2f7">詢問明天天氣如何</span>」，這個向量會被送去生成回答 |
+  | **Step 4 生成解碼** | `④ 解碼器` (Decoder) | ✍️ **產出內容**：根據預訓練知識與潛在語意開始產出（文字接龍、畫出像素、生成波形） | <span style="color: #7aa2f7">文字接龍</span>開始（依機率分佈逐字生成）：產生 **`「明」➔「天」➔「可」➔「能」➔「會」➔「下」➔…`** |
+  | **Step 5 輸出回應** | `⑤ 輸出` (Output) | 🍽️ **答案端上桌**：綜合考慮語意一致性與上下文邏輯，轉成人類可讀結果呈現 | 把產出的 token 拼成「**<span style="color: #7aa2f7">明天可能會下雨</span>**」，並顯示給使用者（<span style="color: #e06c75">一步步計算推理，絕非背好答案直接吐出</span>！） |
 
-* **3. 實際例子 5 步驟拆解：當你問 AI「明天的天氣？」➔ 回答「明天可能會下雨」**：
-  | 推理步驟 | 🌤️ 問 AI「明天的天氣？」實際發生了什麼事？（白話拆解） | 必考核心技術名詞 |
-  | :---: | :--- | :--- |
-  | **(1) 接收輸入** | 先把「明天的天氣？」拆解成較小的語言拼圖零件：`「明天」、「的」、「天氣」、「？」`（或更細的單字），送進模型 | <span style="color: #7aa2f7">Token（標記：思考語言基本單位）</span>、<span style="color: #7aa2f7">Tokenization（標記化）</span> |
-  | **(2) 資料編碼** | Token 通過 Transformer 自注意力編碼層，判斷「明天」是時間、「天氣」是主題、「？」代表問句，轉成**帶有語境資訊的向量** | <span style="color: #7aa2f7">Contextual Embedding（語境嵌入向量）</span> |
-  | **(3) 語意理解** | 整句話轉成一組高維度潛在向量，放進 AI 的內部語意地圖，確立這句話的意圖是「**詢問明天天氣如何**」 | <span style="color: #7aa2f7">Latent Space（潛在空間語意地圖）</span> |
-  | **(4) 生成解碼** | 解碼器像玩**文字接龍**，一次生成一個 Token：先產出 `「明」` ➔ 強語意連結產出 `「天」` ➔ 常見句型產出 `「可」` ➔ 依序接出 `「能」「會」「下」「雨」` | <span style="color: #7aa2f7">機率分佈計算</span> ＋ <span style="color: #7aa2f7">逐字文字接龍</span>（依賴前面已產生的字） |
-  | **(5) 輸出回應** | 把產出的 Token 拼成完整句子「**明天可能會下雨**」送出——這是**一步步逐字推理計算**出來的，<span style="color: #e06c75">絕非事先背好答案直接吐出</span>！ | <span style="color: #7aa2f7">逐字計算推理生成</span> |
-
-* **4. 🔥 必考觀念澄清：AI 回答「明天可能會下雨」，是真的去查氣象局資料嗎？**：
+* **3. 🔥 必考觀念澄清：AI 回答「明天可能會下雨」，是真的去查氣象局資料嗎？**：
   * **這要看你問的是「哪一種 AI 模型」**：
     1. **不連網的純語言模型（如一開始推出的純 ChatGPT）**：<span style="color: #e06c75">不會去查氣象局資料！</span>它的回答只是「<span style="color: #7aa2f7">根據預訓練資料中的統計語言知識</span>」，用機率預測出一個看起來最合理、最通順的句子（因為訓練語料裡問天氣常接「可能會下雨」）。
     2. **有網路連線能力的 AI 系統（如 ChatGPT-4o 結合連網搜尋）**：才會真正去搜尋外部網站，查詢「你所在地明天的真實天氣」來回答你。
@@ -690,15 +767,15 @@
 <summary><b>💡 點擊展開白話案例：翻譯官的大腦思考中心 ＆「明天的天氣？」文字接龍實況（原著範例）</b></summary>
 
 > 🌐 **1. 把 AI 推理當成「跨界翻譯官」**：
-> AI 其實看不懂中文字或照片，所以它工作時分三階段：① **Step 1~2（聽見並翻譯成腦波）**：把你說的「明天的天氣？」切成小拼圖 (**Token**)，用編碼器翻譯成帶有前後文語境的高維度密碼 (**Contextual Embedding**)；② **Step 3（思考中心運轉）**：在「**潛在空間**」這個內心世界裡搞懂你想問明天天氣；③ **Step 4~5（文字接龍說出答案）**：解碼器根據前一個字算下一個字的機率，像接龍一樣一個字一個字吐出 `「明」➔「天」➔「可」➔「能」➔「會」➔「下」➔「雨」`！
+> AI 其實看不懂中文字或照片，所以它工作時分三階段：① **Step 1~2（聽見並翻譯成腦波）**：把你說的「明天的天氣？」切成小拼圖 (**Token**：`「明」「天」「的」「天氣」「？」`)，用編碼器翻譯成帶有前後文語境的高維度密碼 (**Contextual Embedding**)，搞懂整體語意是「想知道明天的天氣」；② **Step 3（思考中心運轉）**：在「**潛在空間**」這個內心世界裡用高維向量表示「詢問明天天氣如何」並送去生成回答；③ **Step 4~5（文字接龍說出答案）**：解碼器根據前一個字算下一個字的機率，像接龍一樣一個字一個字吐出 `「明」➔「天」➔「可」➔「能」➔「會」➔「下」➔…`，最後拼成「明天可能會下雨」顯示給使用者！
 >
 > ☔ **2. 為什麼沒連網的 AI 敢回答你「明天可能會下雨」？**：
 > 因為純語言模型是個「**統計接話王**」，不是氣象預報員！如果不連網，它根本不知道明天有沒有鋒面，只是因為以前讀過幾億篇文章裡，「明天…」後面很高機率接著「可能會下雨」，所以它就順著統計機率接出來了！
 </details>
 
-* **1.10 考點精華標記**：
+* **1.11 考點精華標記**：
   * **🔥 考試常考**：
-    1. **模型推理 (Inference) 5 大步驟必背順序**：`① 接收輸入 (Input Reception) ➔ ② 資料編碼 (Encoder) ➔ ③ 語意理解 (Latent Space) ➔ ④ 生成解碼 (Decoder) ➔ ⑤ 輸出回應 (Output)`。
+    1. **模型推理 (Inference) 5 大步驟與 5 大單元（1 對 1 配對）**：`① 接收輸入 (Input Reception：切 Token 轉向量) ➔ ② 資料編碼 (Encoder：Contextual Embedding 抓整體語意) ➔ ③ 語意理解 (Latent Space：高維向量表示意圖並送去生成) ➔ ④ 生成解碼 (Decoder：文字接龍逐字產出) ➔ ⑤ 輸出回應 (Output：拼成完整句子顯示)`。
     2. **Token 與 Contextual Embedding**：模型思考語言的最小拼圖單位叫 <span style="color: #7aa2f7">Token（標記）</span>，拆解動作叫 <span style="color: #7aa2f7">Tokenization（標記化）</span>；經過編碼層轉換成帶有語境資訊的向量叫 <span style="color: #7aa2f7">Contextual Embedding</span>。
     3. **編碼器四大常見結構**：<span style="color: #7aa2f7">RNN</span>（記住前一詞順序）、<span style="color: #7aa2f7">LSTM</span>（強化記憶防忘太快）、<span style="color: #7aa2f7">GRU</span>（簡化輕巧版 LSTM）、<span style="color: #7aa2f7">Transformer</span>（自注意力抓全域重點脈絡）。
   * **⚠️ 易錯陷阱**：
@@ -709,173 +786,83 @@
 
 ---
 
-### 1.11 模型最佳化 訓練技巧與過擬合
-* **🔗 上下游串聯**：直接對應 1.9 節預訓練的「**Step 4 參數最佳化**」與 1.1 節「**梯度下降**」——專門解決模型在訓練時卡關的 4 大問題（梯度消失/爆炸、過擬合/欠擬合）。
+### 1.12 資料基本概念 收集清理與前處理
+* **🔗 上下游串聯**：直接對應 **1.9 節預訓練的「Step 1 資料收集與處理」** 與 **4.3 資料治理**——無論是鑑別式 AI 或生成式 AI，都必須先為模型準備乾淨安全的資料：從「**認識資料型態與結構 ➔ 收集、儲存與清理 (ETL) ➔ 送入模型前的資料前處理**」一站式完成。
 * **核心名詞全稱**：
-  * **Vanishing Gradient（梯度消失）**、**Exploding Gradient（梯度爆炸）**
-  * **Overfitting（過擬合）**、**Underfitting（欠擬合）**、**Generalization Ability（概括能力 / 泛化能力）**
-  * **Activation Function（啟動函數，如 Sigmoid、ReLU [線性整流函數, Rectified Linear Unit]）**
-  * **Optimizer（最佳化器 / 優化器）**：**SGD（隨機梯度下降, Stochastic Gradient Descent）**、**Momentum（動量法）**、**RMSProp（均方根傳播, Root Mean Square Propagation）**、**Adam（自適應矩陣估計, Adaptive Moment Estimation）**
-  * **BN（批量正規化, Batch Normalization）**、**ResNet（殘差網路, Residual Network，引入跳接結構 Skip Connection）**、**Weight Initialization（權重初始化）**
-  * **Normalization（正規化）** vs **Regularization（正則化：L1 / L2 正則化）**、**Dropout（隨機丟棄）**、**Data Augmentation（資料增強）**、**Early Stopping（早停法）**
+  * **Data Warehouse（資料倉儲）** vs **Data Lake（資料湖）**、**ETL（提取、轉換、載入, Extract, Transform, Load）**
+  * **Box Plot（盒鬚圖）**、**Z-score（Z 分數標準化）**、**PCA（主成分分析, Principal Component Analysis）**
+  * **Normalization（正規化）** vs **Standardization（標準化）** vs **Regularization（正則化，詳見 1.10 節）**
+  * **NLP 語言前處理 5 步驟**：**Tokenization（斷詞 / 標記化）**、**Lowercasing（轉小寫）**、**Stop Words Removal（停用詞移除）**、**Stemming（詞幹提取）**、**Lemmatization（詞形還原）**
+* **資料分析 4 大通用流程**：`① 收集資料 / 資料擷取（第一步）` ➔ `② 數據清理與前處理` ➔ `③ 模型建構 / 分析` ➔ `④ 視覺呈現與報告撰寫（最後一步）`
 
-* **1. AI 預訓練常見的「4 大卡關問題」**：
-  1. <span style="color: #e06c75">梯度消失</span> **(Vanishing Gradient)**：**坡太緩、走得慢**——更新訊號往回傳時越變越小，模型學不動。
-  2. <span style="color: #e06c75">梯度爆炸</span> **(Exploding Gradient)**：**坡太陡、滑過頭**——更新訊號往回傳時暴衝失控。
-  3. <span style="color: #e06c75">過擬合</span> **(Overfitting)**：「<span style="color: #e06c75">太會背，學得太像</span>」——把訓練資料當成考古題死背，一遇到新資料就完蛋。
-  4. <span style="color: #e06c75">欠擬合</span> **(Underfitting)**：「<span style="color: #e06c75">模型太笨，學不來</span>」——模型太簡單或訓練不夠久，連基本模式都學不起來。
-
-* **2. 解決問題的「5 大核心訓練技巧」（簡單知道做什麼即可，不考深奧原理！）**：
-  | 五大訓練技巧 | 常見代表名稱 | 一句話白話秒懂（它幫模型解決什麼事？） |
+* **1. 資料的型態與結構（認識 AI 的食材）**：
+  | 分類維度 | 子類別 | 包含項目與白話舉例（一眼秒懂） |
   | :--- | :--- | :--- |
-  | **① 選擇合適的啟動函數** | **Sigmoid ➔ ReLU** | 神經元的「**訊號開關**」：早期用 **Sigmoid** 訊號易減弱；改用 <span style="color: #7aa2f7">ReLU</span> 讓訊號順暢通過、<span style="color: #7aa2f7">防梯度消失</span> |
-  | **② 挑選適當優化器** | <span style="color: #7aa2f7">SGD、Momentum、RMSProp、Adam</span> | 模型訓練的「<span style="color: #7aa2f7">總指揮 / 聰明領航員</span>」，順著梯度方向<span style="color: #7aa2f7">更新權重參數</span> |
-  | **③ 使用批量正規化** | <span style="color: #7aa2f7">BN (Batch Normalization)</span> | 網路層與層之間的「**數值穩定器**」，把跑偏的數字拉回相近範圍，讓訓練又快又穩 |
-  | **④ 引入跳接結構** | <span style="color: #7aa2f7">跳接結構 (如 ResNet 殘差網路)</span> | 幫訊號蓋一條「**跨層直達捷徑**」，直接跳過中間層傳遞，<span style="color: #7aa2f7">改善深層模型訓練</span> |
-  | **⑤ 正確初始化權重** | <span style="color: #7aa2f7">權重初始化 (Weight Initialization)</span> | 起跑前先把初始參數設得「**剛剛好（不大不小）**」，避免一開始就卡死或暴衝 |
+  | **(a) 資料型態** | **內容的形式** | **<span style="color: #7aa2f7">數值</span>**（100、3.14）、**<span style="color: #7aa2f7">文字</span>**（文章、姓名）、**<span style="color: #7aa2f7">圖像</span>**（照片像素）、**<span style="color: #7aa2f7">布林值</span> (Boolean)**（True / False 是非值） |
+  | **(a) 資料型態** | **統計型態** | **<span style="color: #7aa2f7">數值</span>**（身高、體重）、**<span style="color: #7aa2f7">類別</span>**（性別、職業、血型）、**<span style="color: #7aa2f7">時間序列</span>**（按時間先後排列，如每日股價、每小時氣溫） |
+  | **(b) 資料結構** | **<span style="color: #7aa2f7">結構化資料</span>** | 有固定欄位與整齊表格格式，電腦最容易直接查（如 **Excel 表格、SQL 關聯式資料庫**） |
+  | **(b) 資料結構** | **<span style="color: #7aa2f7">半結構化資料</span>** | 沒有固定死板的表格，但有「標籤或階層符號」包起來（如 **JSON、XML** 網頁資料交換格式） |
+  | **(b) 資料結構** | **<span style="color: #7aa2f7">非結構化資料</span>** | **無明確格式**、佔現實世界最多，也是生成式 AI 最常處理的對象（如 **社群網站留言、影片、照片、錄音**） |
+  | **(b) 資料結構** | **程式結構** | 寫程式處理資料時的容器：**`list`（串列）**、**`vector`（一維向量）**、**`矩陣`（二維陣列）**、**`DataFrame`（程式裡的 Excel 表格）** |
 
-* **3. 換個更聰明的領航員——4 大常見優化器 (Optimizer) 白話對照表**：
-  | 優化器名稱 | 圖片原著比喻（秒懂畫面！） | 它是怎麼帶路的？（白話運作方式） | 考試必記特色 |
+* **2. 資料收集、儲存與清理（採買、入庫與洗菜）**：
+  * **(a) 資料收集 ＆ AI 數據分析應用**：包含**內部資料**（企業交易紀錄）與**外部資料**（公開數據），常用方法有 **<span style="color: #7aa2f7">線上問卷、感測器資料 (IoT)、網路爬蟲</span>**。數據分析最常見的 AI 應用為「**<span style="color: #7aa2f7">自動化資料清洗</span>**」；生成式 AI 改善傳統分析的方式為「**<span style="color: #7aa2f7">提供預測與模式探索</span>**」（常搭配 **ETL [提取 ➔ 轉換 ➔ 載入]** 與 **Hadoop / Spark** 大量平行運算）。
+  * **(b) 儲存形式雙雄（資料倉儲 vs 資料湖）**：**<span style="color: #7aa2f7">資料倉儲 (Data Warehouse)</span>** 像 **Excel 一樣整齊分格**，只存整理好的結構化資料（查報表快，但<span style="color: #e06c75">靈活性低</span>）；**<span style="color: #7aa2f7">資料湖 (Data Lake)</span>** 像大型倉庫**全部先原封不動堆著、要用時再分類**（可存文字影音等非結構化資料，<span style="color: #7aa2f7">靈活性極高</span>）。
+
+* **2-(c) 資料清理 3 大核心技術速查表**：
+  | 清理項目 | 處理方法與工具 | 考試必記重點與陷阱排除 |
+  | :--- | :--- | :--- |
+  | **① 缺失值處理** | **刪除法** vs **填補法（平均數 / 中位數 / 眾數）** | 只有極少數漏填才能刪（<span style="color: #e06c75">漏填達 1/3 絕不可直接刪</span>）；填補口訣：一般數值用**<span style="color: #7aa2f7">平均數</span>**、有極端值用**<span style="color: #7aa2f7">中位數</span>**、文字類別型用**<span style="color: #7aa2f7">眾數</span>**（<span style="color: #e06c75">類別資料算不出平均數！</span>） |
+  | **② 異常值處理** | **<span style="color: #7aa2f7">盒鬚圖 (Box plot)</span>**、**<span style="color: #7aa2f7">Z 分數標準化 (Z-score)</span>** | 抓出偏離常態太遠的怪咖數據；當 Z 分數偏離平均**<span style="color: #7aa2f7">超過 3 個標準差</span>** ($|Z| > 3$)，即判定為異常值 |
+  | **③ 標註一致性** | **<span style="color: #7aa2f7">統一標註標準</span>** ＋ 交叉驗證 | AI 學會分類要靠標註好的數據，若不同人標註標準不一，模型就會<span style="color: #e06c75">越學越混亂</span> |
+
+* **3. 資料前處理——(a) 通用資料轉換 ＆ (b) 正規化 vs 標準化**：
+  | 前處理類別 | 方法名稱 | 一句話白話定義與舉例（在做什麼？） | 適用場景與考試提醒 |
   | :--- | :--- | :--- | :--- |
-  | **SGD (隨機梯度下降)** | 🔦 **拿手電筒摸黑找路** | 每次更新**只看一筆資料**，往誤差變小的方向慢慢前進 | <span style="color: #e06c75">走得慢、易迷路</span>；但具<span style="color: #7aa2f7">隨機性，有機會跳出局部低谷</span> |
-  | **Momentum (動量法)** | 🛹 **在滑板上滑行（加慣性）** | 不只看現在的梯度，還<span style="color: #7aa2f7">保留之前的方向，像加了「慣性」</span> | 下坡越滑越快，能衝過小障礙，<span style="color: #7aa2f7">避免卡在小凹陷裡</span> |
-  | **RMSProp (均方根傳播)** | ⛰️ **看地形陡緩自動調步伐** | 依梯度變化調整學習率：<span style="color: #7aa2f7">變動大就慢慢來，變動小就加快腳步</span> | 適合應付<span style="color: #7aa2f7">地形不平均</span>的情況，避免單邊訓練太激烈 |
-  | **Adam (自適應矩陣估計)** | 🛹🧭 **滑板上還帶著導航** | **結合 <span style="color: #7aa2f7">Momentum ＋ RMSProp</span> 優點**：保留歷史方向＋自動調速 | 萬用型選手，是<span style="color: #7aa2f7">大多數模型的預設值</span>（⚠️ <span style="color: #e06c75">LDA 絕非優化器</span>） |
+  | **(a) 通用資料轉換** | **格式轉換 / 型態轉換** | 換檔案格式（如 `CSV 轉 JSON 或 Excel`）；換資料型態（如 `文字轉數值`） | 讓不同來源的資料能統一餵給電腦讀取 |
+  | **(a) 通用資料轉換** | **<span style="color: #7aa2f7">資料離散化</span> (Discretization)** | 把**連續數值變成區間**（如將具體年齡 `33 歲` 變成 `30~39 歲` 區間） | 簡化細碎數字，方便做分群或統計分析 |
+  | **(a) 通用資料轉換** | **<span style="color: #7aa2f7">資料縮減</span> (Data Reduction)** | 把上百個繁雜欄位濃縮成幾個最核心的特徵指標（代表：**主成分分析 <span style="color: #7aa2f7">PCA</span>**） | 降低資料維度與運算負擔，保留最多原始資訊 |
+  | **(b) 常見數值縮放** | **<span style="color: #7aa2f7">正規化</span> (Normalization)** | **把所有數據按比例壓縮到同一個範圍內（<span style="color: #7aa2f7">$0 \sim 1$</span>）** | 適合**非常態分佈**與**<span style="color: #7aa2f7">神經網路</span>**（⚠️ 切勿與加懲罰項防過擬合的「正則化 Regularization」搞混！） |
+  | **(b) 常見數值縮放** | **<span style="color: #7aa2f7">標準化</span> (Standardization)** | **調整資料讓它呈現平均分佈（<span style="color: #7aa2f7">平均值 $= 0$、標準差 $= 1$</span>）** | 適合**常態分佈**與 **<span style="color: #7aa2f7">K-NN / SVM</span>**（看每筆資料偏離平均幾個標準差） |
 
-* **4. 過擬合（太會背）vs 欠擬合（太笨學不來）診斷與解法對照表**：
-  | 狀態與白話外號 | 訓練資料表現 | 新資料表現 | 原著白話症狀與成因 | 🎯 對症下藥解法 |
-  | :--- | :---: | :---: | :--- | :--- |
-  | **過擬合 (Overfitting)**：「<span style="color: #e06c75">太會背，學得太像</span>」 | <span style="color: #7aa2f7">很亮眼</span> | <span style="color: #e06c75">直接完蛋</span> | **把訓練資料當考古題死背**，<span style="color: #e06c75">失去推論能力</span>（生圖只會複製貼上） | 用 <span style="color: #7aa2f7">L1/L2 正則化、Dropout、資料增強、早停法</span>，提升<span style="color: #7aa2f7">概括能力</span> |
-  | **欠擬合 (Underfitting)**：「<span style="color: #e06c75">模型太笨，學不來</span>」 | <span style="color: #e06c75">準確率不高</span> | <span style="color: #e06c75">很差</span> | <span style="color: #e06c75">模型太簡單、訓練不夠久</span>，連基本模式都學不起來（生圖模糊破碎） | <span style="color: #7aa2f7">增加模型複雜度</span>（<span style="color: #7aa2f7">加層數、加參數、加非線性單元</span>）＋ <span style="color: #7aa2f7">增加訓練時間</span> |
-
-* **5. 防止「過擬合（太會背）」的 4 個實用工具**：
-  1. **L1 / L2 正則化 (Regularization)**：控制模型學習時的參數，**不讓它把單一考題背得太死**。
-  2. **Dropout（隨機丟棄）**：訓練時**隨機讓一部分神經元輪流休息**，逼大家都要學會通則、不能只靠少數死背王。
-  3. **資料增強 (Data Augmentation)**：把圖片旋轉、翻面、裁切**變出更多花樣**，題目變多元就沒辦法死背。
-  4. **早停法 (Early Stopping)**：看到模型開始死背時就**提早喊卡停止訓練**。
-
-* **6. 一字之差超易混淆：正規化 (Normalization) vs 正則化 (Regularization)**（⚠️ **最好中英文一起記！**）：
-  | 名稱（中英文） | 它在管什麼？ | 一句話白話區分 |
+* **3-(c) 語言資料處理（LLM / NLP 自然語言前處理 5 步驟）**——不論鑑別式或生成式 AI 皆以 **LLM** 為語言核心，送入模型前須先透過 **NLP** 基礎技術將自然語言轉成電腦讀得懂的 **<span style="color: #7aa2f7">Token</span>**：
+  | 處理步驟 | 中文名稱 | 一句話看懂它怎麼處理文字？（以英文句子為例） |
   | :--- | :--- | :--- |
-  | **正規化 (Normalization)** | 處理「<span style="color: #7aa2f7">輸入資料的尺度</span>」 | 讓不同特徵（如身高、體重）落在**相近範圍**（例如縮到 $0 \sim 1$，詳見 1.13 節） |
-  | **正則化 (Regularization)** | 處理「<span style="color: #7aa2f7">模型學習時的參數控制</span>」 | 像給模型戴緊箍咒控制參數，專門用來「<span style="color: #7aa2f7">防止過擬合（避免記太多）</span>」 |
+  | **① Tokenization** | **<span style="color: #7aa2f7">斷詞 / 標記化</span>** | 把整句話切開成最小詞彙拼圖（如 `"The dogs are running"` ➔ `["The", "dogs", "are", "running"]`） |
+  | **② Lowercasing** | **<span style="color: #7aa2f7">轉小寫</span>** | 把英文字母統一轉成小寫（`"The"` ➔ `"the"`），避免大小寫被電腦當成兩個不同字 |
+  | **③ Stop Words Removal** | **<span style="color: #7aa2f7">停用詞移除</span>** | 刪掉高頻率但沒實質重點意義的虛詞贅字（如英文的 `the, is, are`、中文的 `的、了、嗎`） |
+  | **④ Stemming** | **<span style="color: #7aa2f7">詞幹提取</span>** | 🪓 **直接切字尾（快但粗糙）**：硬把字尾 `ing / ed / s` 砍掉（如 `running` ➔ `run`，`studies` 切成 `studi`） |
+  | **⑤ Lemmatization** | **<span style="color: #7aa2f7">詞形還原</span>** | 📖 **查字典還原原型（準確有文法）**：依詞性還原成真正的字典原形字（如 `studies` ➔ `study`、`went` ➔ `go`） |
 
 <details>
-<summary><b>💡 點擊展開白話案例：手電筒與導航滑板 (優化器) ＆ 背考古題 vs 模型太笨 (過擬合/欠擬合)（原著範例）</b></summary>
+<summary><b>💡 點擊展開白話案例：備料三部曲——從「買菜入庫」到「切塊調味與英文單字瘦身」</b></summary>
 
-> 🧭 **1. 為什麼需要優化器？換個更聰明的領航員（原著比喻）**：
-> 模型靠「反向傳播」算出誤差後，調整權重的方式就叫「**梯度下降**」。選對**優化器（模型訓練的總指揮）**就像換個更聰明的領航員：
-> * **SGD**：像**自己拿著手電筒摸黑找路**，每次只看一筆資料，走得慢、很容易迷路，但因有隨機性有機會跳出局部低谷。
-> * **Momentum（動量法）**：像**在滑板上滑行（加了慣性）**，保留之前的方向，下坡越滑越快，穿過小障礙與小凹陷毫不費力。
-> * **RMSProp**：像**看地形調步伐**，變動大的地方慢慢來，變動小的地方加快腳步，適合應付地形不平均。
-> * **Adam**：像**滑板上還帶著導航**（結合 Momentum 慣性 ＋ RMSProp 自動調速），不但有地圖還會依地形調速，是萬用型選手與大多數模型的預設值！
+> 🛒 **1. 資料結構與入庫（倉儲 vs 資料湖）**：
+> **結構化資料**像整齊的 Excel 帳本，直接放進分好格子的「**資料倉儲**」；而社群留言、照片、錄音是沒有固定格式的「**非結構化資料**」，適合先全部丟進「**資料湖**」大倉庫堆著，要用時再撈出來分類。
 >
-> 📚 **2. 過擬合（太會背，學得太像）vs 欠擬合（模型太笨，學不來）**：
-> * **過擬合 (Overfitting)**：模型太會記，記到**把訓練資料當成考古題**，反而失去了推論能力——平時練考古題很亮眼，大考一收到新資料就完蛋，準確率直接跌落神壇！靠 **L1/L2 正則化**與 **Dropout** 阻止它死背。
-> * **欠擬合 (Underfitting)**：模型太笨、太簡單或訓練不夠久，連基本模式都學不起來——直接幫它**加層數、加參數、加非線性單元（增加模型複雜度）**並**增加訓練時間**就能解決！
-> * *(💡 補充：上述訓練技巧主要針對深度神經網路如 **MLP、CNN、RNN、GRU**，特別是在鑑別式 AI 中；而傳統 AI 如 **SVM 支援向量機、決策樹** 在特定任務依然有效，與深度學習**並存互補**。)*
-</details>
-
-* **1.11 考點精華標記**：
-  * **🔥 考試常考**：
-    1. **預訓練 4 大問題與 5 大技巧**：4 大問題為<span style="color: #e06c75">梯度消失、梯度爆炸、過擬合、欠擬合</span>；5 大技巧為<span style="color: #7aa2f7">選擇合適啟動函數、挑選適當優化器、批量正規化 (Batch Normalization)、引入跳接結構 (如 ResNet)、正確初始化權重</span>。
-    2. **四大優化器（模型訓練總指揮）**：**SGD**（<span style="color: #7aa2f7">看單筆資料、手電筒摸黑找路</span>）、**Momentum**（<span style="color: #7aa2f7">加慣性、滑板衝過小凹陷</span>）、**RMSProp**（<span style="color: #7aa2f7">變動大慢慢來、變動小加快腳步</span>，應付不平均地形）、**Adam**（<span style="color: #7aa2f7">結合 Momentum + RMSProp 的導航滑板</span>，大多數模型預設值）。
-    3. **過擬合 vs 欠擬合**：**過擬合（太會背）**＝訓練資料表現亮眼、新資料表現很差，用 <span style="color: #7aa2f7">L1/L2 正則化、Dropout、資料增強、早停法</span>解決；**欠擬合（太笨學不來）**＝訓練資料準確率就不高，用<span style="color: #7aa2f7">增加模型複雜度（加層數/加參數/加非線性單元）與訓練時間</span>解決。
-  * **⚠️ 易錯陷阱**：
-    1. **正規化 vs 正則化陷阱**：處理「輸入資料尺度」是<span style="color: #7aa2f7">正規化 (Normalization)</span>；處理「模型參數控制、防止過擬合」是<span style="color: #7aa2f7">正則化 (Regularization)</span>，兩者<span style="color: #e06c75">切勿混淆</span>！
-    2. **優化器陷阱**：問何者「不是 AI 優化器」，必選 <span style="color: #e06c75">LDA (線性判別分析)</span>！
-
-<div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
-
----
-
-### 1.12 資料清理與 ETL
-* **🔗 上下游串聯**：直接對應 1.9 節預訓練的「**Step 1 資料收集與處理**」——餵給 AI 教材前，必須先經過 ETL 清洗、填補缺失值與剔除異常值。
-* **核心名詞全稱**：
-  * **ETL（提取、轉換、載入, Extract, Transform, Load）**
-  * **Data Warehouse（資料倉儲）** vs **Data Lake（資料湖）**
-  * **BI（商業智慧, Business Intelligence）**、**IQR（四分位距, Interquartile Range）**
-* **資料分析 4 大通用流程**：`① 收集資料 / 資料擷取 (Data Acquisition，第一步)` ➔ `② 數據清理 (Data Cleaning)` ➔ `③ 模型建構 / 分析 (Modeling)` ➔ `④ 視覺呈現與報告撰寫 (Visualization & Reporting，最後一步)`
-* **ETL 資料處理 3 步曲**：`Extract（提取原始資料）` ➔ `Transform（清洗/轉換/整合）` ➔ `Load（載入目標倉儲）`（常搭配 **Hadoop / Spark** 大量平行運算）
-
-* **數據分析 AI 應用與儲存架構速查表**：
-  | 考點維度 | 核心項目 | 一句話白話秒懂（它到底是什麼？） | 考試易錯排除 |
-  | :--- | :--- | :--- | :--- |
-  | **數據分析常見 AI 應用** | <span style="color: #7aa2f7">自動化資料清洗</span> (Automated Data Cleaning) | AI 自動幫你抓異常、補漏填、刪重複，省下 70% 整理表格時間 | ❌ <span style="color: #e06c75">非網頁爬蟲設計、硬碟分割、語音壓縮</span> |
-  | **GenAI (Generative AI, 生成式 AI) 改善傳統分析** | <span style="color: #7aa2f7">提供預測與模式探索</span> (Prediction & Pattern Discovery) | 不只看過去發生什麼，更能從海量資料挖出隱藏規律、預測未來趨勢 | ❌ <span style="color: #e06c75">非提升網速、減少輸入錯誤、優化排班</span> |
-  | **資料倉儲 (Data Warehouse)** | <span style="color: #7aa2f7">高度結構化</span> | 像先畫好固定格子的 Excel 表格，商業智慧 (BI, Business Intelligence) 查報表速度極快 | 適合結構化報表，<span style="color: #e06c75">靈活性較低</span> |
-  | **資料湖 (Data Lake)** | <span style="color: #7aa2f7">非結構化 / 原始數據</span> | 像大型倉庫，把文字、影音、紀錄檔原封不動先丟進去，要用時再整理 | <span style="color: #7aa2f7">靈活性極高</span>，適合大模型與多模態訓練 |
-
-* **資料清理 (Data Cleaning) 核心選型表**：
-  | 清理任務 | 細項情境 | 最佳處理方法 | 一句話白話判準與禁忌 |
-  | :--- | :--- | :--- | :--- |
-  | **缺失值填補 (Imputation)** | **連續數值型**（常態無極端值） | <span style="color: #7aa2f7">平均數</span> (Mean) | 只有極少數幾筆漏填時才能直接刪掉；若<span style="color: #e06c75">漏填達 1/3 直接刪會嚴重失真</span> |
-  | **缺失值填補** | **數值有極端值 / 偏態分佈** | <span style="color: #7aa2f7">中位數</span> (Median) | 排正中間的數字，<span style="color: #7aa2f7">不怕被極端大或極端小的怪數字拉偏</span>（如郭台銘拉高平均薪資） |
-  | **缺失值填補** | **類別型資料 (Categorical)**（如性別、職業） | <span style="color: #7aa2f7">眾數</span> (Mode) | 挑出現次數最多的那一類來補；⚠️ 文字類別<span style="color: #e06c75">絕對算不出平均數或中位數</span>！ |
-  | **異常值檢測 (Outliers)** | 四分位距 (IQR, Interquartile Range) / 標準差 | <span style="color: #7aa2f7">盒鬚圖</span> (Box plot) / <span style="color: #7aa2f7">Z 分數</span> (Z-score) | Z 分數偏離平均<span style="color: #7aa2f7">超過 3 個標準差</span> ($|Z| > 3$)，就判定是異常怪咖 |
-  | **標註一致性** | 多人標註標準不一 | <span style="color: #7aa2f7">統一標準 ＋ 交叉驗證</span> ＋ 自動比對 | 避免不同人貼的標籤標準不一，害模型<span style="color: #e06c75">越學越混亂</span> |
-
-<details>
-<summary><b>💡 點擊展開白話案例：廚房洗切料理 (ETL) 與找空白年齡 (原著範例)</b></summary>
-
-> 🍳 **1. 食材洗切與 ETL 流水線**：
-> 資料就像食材，要先採買提取（Extract）、洗切調味轉換（Transform），最後盛盤載入上桌（Load），並靠 Hadoop / Spark 這座大型中央廚房平行加速。
+> 🧹 **2. 洗菜與切塊（缺失值、正規化 vs 標準化）**：
+> 問卷漏填年齡用「**平均數**」補，若有 150 歲亂填的極端值改用「**中位數**」，漏填性別則用出現最多的「**眾數**」。把 `33 歲` 歸類成 `30~39 歲` 叫「**資料離散化**」；把身高體重全部壓進 $0 \sim 1$ 同一個範圍叫「**正規化**」，調整成平均為 0 的常態分佈叫「**標準化**」。
 >
-> 🗄️ **2. 資料倉儲 vs 資料湖**：
-> **資料倉儲**像貼好標籤的整齊調味料架；**資料湖**像大型保鮮庫，生鮮蔬果先原封不動堆進去，要煮時再分類。
->
-> 📝 **3. 缺失值補法與異常值怪咖**：
-> 顧客年齡漏填用「平均數」；若有人亂填 150 歲極端值改用「中位數」；漏填性別（類別）則用出現最多的「眾數」。若平時日營收 3000 元某天暴衝到 50000 元（$|Z|>3$），就是必須檢查的異常值！
+> 🔤 **3. LLM 讀英文前的「單字瘦身 5 步驟」**：
+> 給 AI 讀 `"The Dogs are running!"`：① 先切開成單字 (**Tokenization**) ➔ ② 全部變小寫 (**Lowercasing**) ➔ ③ 刪掉沒重點的 `the, are` (**Stop Words Removal**) ➔ ④ 把動詞打回原形：如果直接拿菜刀砍掉字尾變字根叫「**詞幹提取 (Stemming)**」；如果翻字典把 `went` 還原成正確原形 `go` 則叫「**詞形還原 (Lemmatization)**」！
 </details>
 
 * **1.12 考點精華標記**：
   * **🔥 考試常考**：
-    1. **流程首尾**：第一步是<span style="color: #7aa2f7">收集資料 / 資料擷取</span>；最後一步是<span style="color: #7aa2f7">視覺呈現與報告撰寫</span>。
-    2. **數據分析常見 AI 應用**：<span style="color: #7aa2f7">自動化資料清洗</span>；**生成式 AI 改善分析**：<span style="color: #7aa2f7">提供預測與模式探索</span>。
-    3. **缺失值填補口訣**：一般數值用<span style="color: #7aa2f7">平均數</span>、有極端值用<span style="color: #7aa2f7">中位數</span>、類別型用<span style="color: #7aa2f7">眾數</span>。
-    4. **異常值判準**：<span style="color: #7aa2f7">盒鬚圖</span> 或 $|Z| > 3$（<span style="color: #7aa2f7">超過 3 個標準差</span>）。
-  * **⚠️ 易錯陷阱**：<span style="color: #e06c75">缺失達 1/3 時切勿直接刪除</span>；<span style="color: #e06c75">類別型資料切勿用平均數填補</span>！
+    1. **資料結構三分類**：**結構化**（<span style="color: #7aa2f7">Excel、資料庫</span>）、**半結構化**（<span style="color: #7aa2f7">JSON、XML</span>）、**非結構化**（<span style="color: #7aa2f7">社群留言、影片、照片、錄音</span>）。
+    2. **資料儲存與清理**：整齊像 Excel 的是<span style="color: #7aa2f7">資料倉儲</span>，全部堆著要用再分的是<span style="color: #7aa2f7">資料湖</span>；異常值用<span style="color: #7aa2f7">盒鬚圖 (Box plot)</span> 或 <span style="color: #7aa2f7">Z-score ($|Z|>3$)</span>；分類數據需確保<span style="color: #7aa2f7">標註一致性</span>。
+    3. **資料前處理轉換**：連續年齡 33 歲變 30~39 歲叫「<span style="color: #7aa2f7">資料離散化</span>」；用 **PCA** 濃縮欄位叫「<span style="color: #7aa2f7">資料縮減</span>」；壓縮到同一範圍 ($0 \sim 1$) 叫「<span style="color: #7aa2f7">正規化</span>」，讓資料平均分佈 ($\mu=0, \sigma=1$) 叫「<span style="color: #7aa2f7">標準化</span>」。
+    4. **LLM 語言前處理 5 步**：<span style="color: #7aa2f7">Tokenization（斷詞）</span>、<span style="color: #7aa2f7">Lowercasing（轉小寫）</span>、<span style="color: #7aa2f7">Stop words removal（去停用詞）</span>、<span style="color: #7aa2f7">Stemming（詞幹提取：切字尾）</span>、<span style="color: #7aa2f7">Lemmatization（詞形還原：還原字典原型）</span>。
+  * **⚠️ 易錯陷阱**：
+    1. **缺失值與類別陷阱**：<span style="color: #e06c75">缺失達 1/3 切勿直接刪除</span>；性別/職業等類別型資料只能用<span style="color: #7aa2f7">眾數</span>補，<span style="color: #e06c75">切勿選平均數</span>！
+    2. **正規化 vs 正則化**：「把所有數據壓縮到同一範圍 ($0 \sim 1$)」是資料前處理的<span style="color: #7aa2f7">正規化 (Normalization)</span>；「在損失函數加懲罰項防過擬合」則是 1.10 節的<span style="color: #7aa2f7">正則化 / L1, L2 正規化 (Regularization)</span>！
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
 ---
 
-### 1.13 正規化 vs 標準化
-* **🔗 上下游串聯**：承接 1.12 節資料清理——把缺失與異常值洗乾淨後，進模型前最後一步就是將不同單位的數值「縮放到相近尺度（正規化 / 標準化）」，避免大數字霸佔權重。
-* **核心名詞全稱**：
-  * **Normalization（正規化 / Min-Max Scaling 最小最大值縮放）**
-  * **Standardization（標準化 / Z-score Normalization Z 分數標準化）**
-  * **Regularization（正則化，詳見 1.11 節）**
-* **一字之差秒殺口訣**：`正規化 Normalization（管輸入資料尺度：把數字按比例壓縮到 0~1）` vs `正則化 Regularization（管模型參數控制：加懲罰機制防止死背過擬合）`
-
-* **正規化 (Min-Max) vs 標準化 (Z-score) 核心對照表**：
-  | 比較維度 | 正規化 (Normalization / Min-Max) | 標準化 (Standardization / Z-score) |
-  | :--- | :--- | :--- |
-  | **核心口訣** | 「<span style="color: #7aa2f7">數值壓縮</span>」（按比例縮到 $0 \sim 1$） | 「<span style="color: #7aa2f7">分佈調整</span>」（看偏離平均幾個標準差） |
-  | **轉換後範圍** | <span style="color: #7aa2f7">全部壓縮到 $0 \sim 1$ 之間</span>（如把身高、體重都換成 $0 \sim 1$ 分） | <span style="color: #7aa2f7">平均值變 $\mu=0$、標準差變 $\sigma=1$</span>（有正有負，<span style="color: #e06c75">沒有固定上下限</span>） |
-  | **計算公式** | $\frac{X - \min}{\max - \min}$ | $\frac{X - \mu}{\sigma}$ |
-  | **適用資料分佈** | <span style="color: #7aa2f7">非常態分佈</span>、最大與最小值差距極大時 | <span style="color: #7aa2f7">接近常態分佈</span>（中間多、兩端少） |
-  | **常用演算法** | <span style="color: #7aa2f7">深度學習、神經網路</span>（喜歡 $0 \sim 1$ 的穩定輸入） | <span style="color: #7aa2f7">K-NN (K-Nearest Neighbors)、SVM (Support Vector Machine)、邏輯迴歸</span>（需要算座標距離或梯度） |
-
-<details>
-<summary><b>💡 點擊展開白話案例：公平起跑線與溫度轉攝氏（原著範例）</b></summary>
-
-> 🏃 **特徵縮放的公平起跑線**：
-> 若把身高（180 公分）和體重（70 公斤）直接丟進模型，大數值會霸佔權重。**正規化**像把所有消費金額按比例壓縮到 $0 \sim 1$ 的尺規上；**標準化**則像算學校考試的「Z 分數」，看出該筆資料偏離全班平均幾個標準差。
-</details>
-
-* **1.13 考點精華標記**：
-  * **🔥 考試常考**：
-    1. **正規化**：壓縮至 <span style="color: #7aa2f7">$0 \sim 1$</span>，適合<span style="color: #7aa2f7">非常態分佈</span>與<span style="color: #7aa2f7">神經網路</span>。
-    2. **標準化**：轉為<span style="color: #7aa2f7">平均 0、標準差 1</span>，適合<span style="color: #7aa2f7">常態分佈</span>與 <span style="color: #7aa2f7">K-NN / SVM</span>。
-  * **⚠️ 易錯陷阱**：考題問「在損失函數加懲罰項防止過擬合」，答案是<span style="color: #7aa2f7">正則化</span> (Regularization)，<span style="color: #e06c75">絕非正規化</span> (Normalization)！
-
-<div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
-
----
-
-### 1.14 五大學習範式與經典演算法
-* **🔗 上下游串聯**：承接 **1.13 資料正規化與標準化**完成特徵縮放後，便依資料「有無標籤」進入**五大學習範式**與經典演算法訓練（其中**自監督學習**即為 **1.9 / 2.1 LLM 預訓練**的核心，**神經網路優化器**則對應 **1.11 梯度下降領航員**）。
+### 1.13 五大學習範式與經典演算法
+* **🔗 上下游串聯**：承接 **1.12 資料收集清理與前處理**完成特徵轉換與縮放後，便依資料「有無標籤」進入**五大學習範式**與經典演算法訓練（其中**自監督學習**即為 **1.9 / 2.1 LLM 預訓練**的核心，**神經網路優化器**則對應 **1.10 梯度下降領航員**）。
 * **標籤光譜速記**：`監督式（全有標籤）` ➔ `半監督（少標籤＋多無標籤）` ➔ `自監督（無人工標籤，資料自產標籤）` ➔ `非監督（全無標籤）` ｜ `強化學習（靠環境獎懲回饋）`
 
 * **機器學習五大學習範式速查表（含英文全稱）**：
@@ -898,7 +885,7 @@
   | **非監督式（分群）** | **K-均值分群 (K-Means Clustering)** | 沒給標籤，自動把距離相近的資料分成 $K$ 小隊（如把客群自動分 3 類，<span style="color: #7aa2f7">無標籤！</span>） |
   | **非監督式（降維）** | **主成分分析 (PCA, Principal Component Analysis)** | 把好幾百個複雜特徵<span style="color: #7aa2f7">濃縮成幾個最重要的核心指標</span>（線性降維），保留最多原始資訊 |
   | **非監督式（視覺化）** | **t-SNE (t-Distributed Stochastic Neighbor Embedding)** | 把高維度複雜資料壓平畫在 <span style="color: #7aa2f7">2D / 3D 平面圖上</span>，方便人類肉眼觀察分群 |
-  | **神經網路優化器** | **SGD (隨機梯度下降, Stochastic Gradient Descent)**、**Momentum (動量法)**、**RMSProp (Root Mean Square Propagation)**、**Adam (Adaptive Moment Estimation)** | 模型訓練的「<span style="color: #7aa2f7">總指揮 / 領航員</span>」，負責順著梯度方向更新權重（<span style="color: #7aa2f7">Adam 結合 Momentum+RMSProp 為萬用預設值</span>，詳見 1.11 節） |
+  | **神經網路優化器** | **SGD (隨機梯度下降, Stochastic Gradient Descent)**、**Momentum (動量法)**、**RMSProp (Root Mean Square Propagation)**、**Adam (Adaptive Moment Estimation)**、**AdaGrad (Adaptive Gradient Algorithm)** | 模型訓練的「<span style="color: #7aa2f7">總指揮 / 領航員</span>」，負責順著梯度方向更新權重（<span style="color: #7aa2f7">Adam 結合 Momentum+RMSProp 為萬用預設值</span>，詳見 1.10 節） |
 
 <details>
 <summary><b>💡 點擊展開白話案例：垃圾信過濾、下棋試錯與接話高手（原著範例精煉）</b></summary>
@@ -908,9 +895,9 @@
 > 💬 **自監督（GPT vs BERT）**：不用人工標註，把文章最後一字遮住練接龍（GPT），或挖空中間字練克漏字（BERT），自己生出答案來練功！
 </details>
 
-* **1.14 考點精華標記**：
+* **1.13 考點精華標記**：
   * **🔥 考試常考**：
-    1. **常見 AI 優化器**：<span style="color: #7aa2f7">SGD、Momentum、RMSProp、Adam</span>（詳見 1.11 節）。
+    1. **常見 AI 優化器**：<span style="color: #7aa2f7">SGD、Momentum、RMSProp、Adam、AdaGrad</span>（詳見 1.10 節）。
     2. **自監督學習代表**：**GPT** 與 **BERT** 的海量預訓練；**非監督降維視覺化**：<span style="color: #7aa2f7">PCA、t-SNE</span>。
   * **⚠️ 易錯陷阱**：
     1. **優化器陷阱**：問何者「不是 AI 優化器」，必選 <span style="color: #e06c75">LDA</span>（LDA 是降維/分類演算法）！
@@ -920,8 +907,8 @@
 
 ---
 
-### 1.15 模型評估指標 F1-score R-squared 與 BLEU
-* **🔗 上下游串聯**：承接 **1.14 監督式與自監督學習**訓練出的各類模型，最後一步必須針對「**分類、迴歸、文本生成**」三大任務選對專屬考官指標進行成效驗收（考題最愛跨任務亂配對誘答！）。
+### 1.14 模型評估指標 F1-score R-squared 與 BLEU
+* **🔗 上下游串聯**：承接 **1.13 監督式與自監督學習**訓練出的各類模型，最後一步必須針對「**分類、迴歸、文本生成**」三大任務選對專屬考官指標進行成效驗收（考題最愛跨任務亂配對誘答！）。
 * **核心名詞全稱**：
   * **F1-score（F1 分數）**：**Precision（精確率 / 查準率）** 與 **Recall（召回率 / 查全率）** 之 **Harmonic Mean（調和平均數）**
   * **R-square ($R^2$, Coefficient of Determination 決定係數)**、**Accuracy（準確率）**、**Class Imbalance（資料不平衡）**
@@ -949,7 +936,7 @@
 > **BLEU** 像英文老師拿標準答案逐行比對你的翻譯作文，數有幾個單字、片語吻合（N-gram 匹配）；若你投機只寫一個字交卷，老師就啟動「簡短懲罰」扣分。
 </details>
 
-* **1.15 考點精華標記**：
+* **1.14 考點精華標記**：
   * **🔥 考試常考**：
     1. **資料不平衡最佳分類指標**：<span style="color: #7aa2f7">F1-score</span>（精確率與召回率的<span style="color: #7aa2f7">調和平均數</span>）。
     2. **迴歸數值預測首選指標**：<span style="color: #7aa2f7">R-square ($R^2$)</span>。
@@ -962,7 +949,7 @@
 
 ---
 
-### 1.16 AIGC 核心概念
+### 1.15 AIGC 核心概念
 * **核心名詞全稱**：
   * **PGC（專業生產內容, Professional Generated Content）**
   * **UGC（用戶生產內容, User Generated Content）**
@@ -992,7 +979,7 @@
 > **PGC** 是專業報社寫書；**UGC** 是全民拿手機發 IG 限動；**AIGC** 是給 AI 一句話，幾秒內自動寫小說、畫名畫、拍短片！而 CNN / OCR 就像「驗鈔機」，只負責辨識真假，不會無中生有印出新鈔票。
 </details>
 
-* **1.16 考點精華標記**：
+* **1.15 考點精華標記**：
   * **🔥 考試常考**：
     1. **AIGC 定義**：利用<span style="color: #7aa2f7">深度學習技術生成各種形式內容和資料</span>的應用（支援模型：<span style="color: #7aa2f7">GAN、VAE、Diffusion、Transformer</span>）。
   * **⚠️ 易錯陷阱**：<span style="color: #e06c75">CNN</span> 與 <span style="color: #e06c75">OCR</span> 皆屬於「鑑別/識別技術」，<span style="color: #e06c75">絕非 AIGC 生成式模型或應用</span>！
@@ -1019,9 +1006,12 @@
   | **1. 預訓練 (Pre-training)** | 屬「<span style="color: #7aa2f7">自監督學習</span> (Self-Supervised Learning)」，讀上千萬篇文章自學；先用<span style="color: #7aa2f7">梯度下降</span>找最佳解、再靠<span style="color: #7aa2f7">反向傳播</span>修正權重 | 產出「<span style="color: #7aa2f7">基礎模型 (Base Model)</span>」——博學但只會接話的「**通才**」（<span style="color: #e06c75">尚不懂扮演專業角色或遵守安全規範</span>） |
   | **2. 微調 (Fine-tuning)** | 在基礎模型上進行專業特訓，涵蓋「<span style="color: #7aa2f7">角色扮演、任務訓練、行為對齊</span>」三大目標 | 將通才調教成客服助理、數學老師或法律顧問等「<span style="color: #7aa2f7">專才</span>」（如 **ChatGPT**） |
 
-* **二、 微調 (Fine-tuning) 的 3 大核心目標**：
+* **二、 微調 (Fine-tuning) 的 3 大核心目標與翻譯微調挑戰**：
   * **(a) <span style="color: #7aa2f7">角色扮演（角色訓練）</span>**：讓模型學會扮演特定身分與語氣（如客服助理、醫療諮詢專員、法律助理）。
-  * **(b) <span style="color: #7aa2f7">任務訓練</span>**：強化特定工作技能，讓模型在特定任務更熟練（如寫報告、寫程式、數學推理）。
+  * **(b) <span style="color: #7aa2f7">任務訓練</span>**：強化特定工作技能，讓模型在特定任務更熟練（如寫報告、寫程式、數學推理、語言翻譯）。
+    * 💡 **延伸必考：AI「文字生成工具」進行語言翻譯微調時的挑戰**：
+      * ✅ **三大真實挑戰**：① <span style="color: #7aa2f7">在相似語言中適應語言差異</span>（如繁簡用語、英美慣用語）、② <span style="color: #7aa2f7">在沒有人工介入下達到完美的翻譯準確性</span>、③ <span style="color: #7aa2f7">優化跨語言配對及專業領域（如法律/醫療）的表現</span>。
+      * ❌ **非屬其挑戰（必選排除項）**：「<span style="color: #e06c75">在翻譯過程中整合非文字資料（如圖片）</span>」——因為題目限定是「**文字生成工具**」，只管文字轉文字，不管圖片！
   * **(c) <span style="color: #7aa2f7">行為對齊 (Alignment)</span>**：讓模型回答貼近人類價值與安全期待，避免胡言亂語、<span style="color: #e06c75">歧視或洩密</span>（例如 **ChatGPT** 先用 GPT-3.5 加上 **<span style="color: #7aa2f7">人類回饋強化學習 (RLHF)</span>**，讓回答更有邏輯、更禮貌且不會脫序失控）。
 
 * **三、 LLM 三大應用模式（縮減、轉換、擴展）速查表**：
@@ -1055,82 +1045,159 @@
     1. **預訓練 vs 微調**：預訓練屬<span style="color: #7aa2f7">自監督學習</span>，產出通才型的「<span style="color: #7aa2f7">基礎模型 (Base Model)</span>」；微調包含<span style="color: #7aa2f7">角色扮演、任務訓練、行為對齊 (Alignment)</span> 三大目標。
     2. **ChatGPT 行為對齊關鍵**：以 GPT-3.5 結合 **<span style="color: #7aa2f7">人類回饋強化學習 (RLHF)</span>**，確保回答合乎人類價值觀與安全。
     3. **LLM 三大應用模式**：<span style="color: #7aa2f7">縮減 (Reduction，摘要提煉)、轉換 (Transform，翻譯改寫)、擴展 (Expansion，文案擴寫)</span>。
-  * **⚠️ 易錯陷阱**：剛完成預訓練的 Base Model 只是<span style="color: #7aa2f7">通才</span>，<span style="color: #e06c75">尚未具備專業角色扮演與安全對齊能力</span>，必須經過「<span style="color: #7aa2f7">微調 (Fine-tuning)</span>」與「<span style="color: #7aa2f7">RLHF</span>」才能成為專業可靠的對話助手！
+    4. **AI 文字生成工具做「語言翻譯微調」的挑戰**：包含<span style="color: #7aa2f7">適應相似語言差異、無人工介入下達完美準確性、優化跨語言配對與領域表現</span>；**不包含**「<span style="color: #e06c75">整合非文字資料（如圖片）</span>」。
+  * **⚠️ 易錯陷阱**：
+    1. 剛完成預訓練的 Base Model 只是<span style="color: #7aa2f7">通才</span>，<span style="color: #e06c75">尚未具備專業角色扮演與安全對齊能力</span>，必須經過「<span style="color: #7aa2f7">微調 (Fine-tuning)</span>」與「<span style="color: #7aa2f7">RLHF</span>」才能成為專業可靠的對話助手！
+    2. 看到「**AI 文字生成工具**在語言翻譯微調面臨的挑戰**不包含**何者」，立刻抓題幹關鍵字「**文字生成**」，直接選「<span style="color: #e06c75">整合非文字資料 (如圖片)</span>」！
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
 ---
 
-### 2.2 提示工程 In-Context Learning 與思維樹 (ToT)
-* **🔗 上下游串聯**：承接 **2.1 微調完成的 LLM**，若不想花大錢重新訓練改權重，只需在推論階段運用本節的「**提示工程 (Prompt Engineering)**」與「**上下文學習 (In-Context Learning)**」即時引導模型；面對高難度邏輯問題時，更可從單步直覺 (Zero-shot) 升級為「**思維鏈 (CoT) ➔ 思維樹 (ToT)**」多路徑探索。
+### 2.2 提示工程 原則 咒語 框架提示與三大思維推理
+* **🔗 上下游串聯**：承接 **2.1 歷經「預訓練＋微調」的 LLM**，若不想花大錢重新訓練改權重，只需在推論階段運用本節的「**提示工程 (Prompt Engineering)**」：從**一般提示 6 原則**與**特殊咒語 (Directive Prompt)** 起步，進階到把複雜任務拆解為流程的**框架提示 (`3W` ＋ `COSEED`)** 與**樣本提示 (`Zero / One / Few-Shot` ＋ `ICL`)**，最終升級為**三大思維推理框架（思維鏈 `CoT`、思維樹 `ToT`、思維骨架 `SoT`）**解決高難度推理與長文總結問題。
 * **核心名詞全稱**：
-  * **Prompt Engineering（提示工程）**、**ICL（上下文學習, In-Context Learning）**
-  * **Zero-shot Prompting（零樣本提示）**、**Few-shot Prompting（少樣本提示）**
-  * **CoT（思維鏈, Chain-of-Thought）**、**ToT（思維樹, Tree-of-Thought）**、**Backtracking（回溯搜尋）**
-* **Prompt 引導與推理升級一行流**：`基礎設計（明確任務需求＋熟悉詞彙，忌冗長與抽象）` ➔ `上下文學習 ICL（給 Few-shot 範例，免改權重即時調整回答）` ➔ `推理升級：Zero-shot（一步給答案） ➔ 思維鏈 CoT（單線逐步推理） ➔ 思維樹 ToT（樹狀多路徑探索＋回溯搜尋）`
+  * **Prompt Engineering（提示工程）**、**Directive Prompt（指示性提示 / 特殊咒語）**、**Separator / Delimiters（分隔符號，如 `{}`、`""`）**
+  * **3W（`Who` 角色、`Where` 情境、`What` 任務）**、**COSEED（`Constraint`、`Output format`、`Separator`、`Example`、`EQ`、`Directive prompt`）**
+  * **Zero-Shot / One-Shot / Few-Shot Prompt（零 / 單 / 少樣本提示）**、**ICL（上下文學習, In-Context Learning）**
+  * **三大思維框架**：**CoT（思維鏈, Chain-of-Thought）**、**Self-Consistency（思維鏈自我一致性）**、**ToT（思維樹, Tree of Thoughts）**、**SoT（思維骨架, Skeleton-of-Thought）**
+* **提示工程進階全景一行流**：`① 一般提示 6 原則（精準/簡潔/對題/目的明確/加背景/善用標示 {}）` ➔ `② 特殊咒語 Directive Prompt（深呼吸一步一步來，正確率 34% 飆至 80%）` ➔ `③ 框架提示（任務 3 原則 ＋ 3W ＋ COSEED）` ➔ `④ 樣本提示（Zero/One/Few-Shot 與 ICL）` ➔ `⑤ 三大思維推理（CoT 單線/自我一致性 ➔ ToT 樹狀多路徑回溯 ➔ SoT 思維骨架濃縮長文）`
 
-* **一、 提示工程 (Prompt Engineering) 正反向原則與上下文學習 (ICL) 速查表**：
-  | 考點類別 | ✅ 正確做法 / 核心優勢（必背正解） | ❌ 錯誤迷思 / 非協助技巧（必選陷阱） |
+* **一、 一般提示 6 大原則與考題正反向陷阱速查表**：
+  | 類別 | 核心重點與必背關鍵字 | 考題應用與防坑說明 |
   | :--- | :--- | :--- |
-  | **Prompt 設計必要考量** | ① <span style="color: #7aa2f7">適當表達任務需求</span>、② <span style="color: #7aa2f7">使用模型熟悉的單詞</span>、③ <span style="color: #7aa2f7">嘗試不同的 Prompt 方式</span> | ❌ <span style="color: #e06c75">確保 Prompt 長度足夠長</span>（過長會浪費 Token、稀釋注意力並引發幻覺） |
-  | **Prompt 優化協助技巧** | ① <span style="color: #7aa2f7">測試不同的 Prompt 組合和格式</span>、② <span style="color: #7aa2f7">累積正確的回答和訂正錯誤</span>、③ <span style="color: #7aa2f7">監控和調整提問</span> | ❌ <span style="color: #e06c75">開放式的抽象描述</span>（缺乏具體目標與格式約束，導致輸出發散離題） |
-  | **上下文學習 (ICL, In-Context Learning)** | <span style="color: #7aa2f7">無需重新訓練或改模型權重</span>，僅在 Prompt 提供指令或<span style="color: #7aa2f7">少數範例 (Few-shot)</span>，最大優勢為「**<span style="color: #7aa2f7">能根據上下文即時調整回答</span>**」 | ❌ <span style="color: #e06c75">並非不需要訓練資料、並非不需要語言模型、並非只適用圖像</span> |
+  | **一般提示 6 大原則** | ① **<span style="color: #7aa2f7">精準 (Precise)</span>**、② **<span style="color: #7aa2f7">簡潔 (Concise)</span>**、③ **<span style="color: #7aa2f7">對題 (Relevant)</span>**、④ **<span style="color: #7aa2f7">目的明確 (Clear purpose)</span>**、⑤ **<span style="color: #7aa2f7">加上背景 (Contextual)</span>**、⑥ **<span style="color: #7aa2f7">善用標示 (Quotation & Symbols)</span>** | 提問中用符號 **`{}`** 或 **`""`**（如 `觀看一部{小說}並評論`），用意是「**<span style="color: #7aa2f7">區隔關鍵資訊</span>**」（❌ 切勿誤選「可替換的資訊」） |
+  | **Prompt 必要考量 vs 錯誤迷思** | ✅ 必要考量：<span style="color: #7aa2f7">適當表達任務需求</span>、<span style="color: #7aa2f7">使用模型熟悉的單詞</span>、<span style="color: #7aa2f7">嘗試不同的 Prompt 方式</span> | ❌ **非必要考量**：「<span style="color: #e06c75">確保 Prompt 長度足夠長</span>」（違反**簡潔 Concise** 原則，浪費 Token 又易生幻覺） |
+  | **Prompt 優化技巧 vs 錯誤迷思** | ✅ 協助技巧：<span style="color: #7aa2f7">測試不同組合與格式</span>、<span style="color: #7aa2f7">累積正確回答並訂正錯誤</span>、<span style="color: #7aa2f7">監控與調整提問</span> | ❌ **非協助技巧**：「<span style="color: #e06c75">開放式的抽象描述</span>」（違反**精準 Precise 與目的明確**原則，導致回答發散離題） |
 
-* **二、 進階推理框架：思維樹 (ToT, Tree-of-Thought) 四大核心特點速查表**：
-  | 核心特點 | 一句話白話秒懂（它怎麼思考？） |
-  | :--- | :--- |
-  | **1. 分解複雜問題** | 把大難題拆成好幾個<span style="color: #7aa2f7">中間小步驟</span>（思維節點），一步一步慢慢想（❌ <span style="color: #e06c75">絕非僅依賴單一步驟解答！</span>） |
-  | **2. 促進逐步思考** | 每走一步就同時想出<span style="color: #7aa2f7">好幾個候選方案</span>來比較，不急著一步下結論 |
-  | **3. 多路徑探索與回溯** | 像走迷宮展開<span style="color: #7aa2f7">樹狀多條路線</span>，發現走進死胡同還能自動「<span style="color: #7aa2f7">退回上一步</span> (回溯 Backtracking)」換路走 |
-  | **4. 提高解決問題準確性** | 先比較各條路線好壞再做決定（<span style="color: #7aa2f7">全局評估搜索</span>），大幅提高複雜邏輯與規劃準確率 |
+* **二、 特殊咒語原則（Directive Prompt / 指示性提示）**：
+  * **(a) 經典實證（Google DeepMind, 2023）**：在提示詞中加入一句 **<span style="color: #7aa2f7">`"Take a deep breath and work on this problem step by step."`</span>（深呼吸，一步一步解決這個問題）**，AI 的解題正確率直接從 **<span style="color: #e06c75">34%</span> 大幅飆升至 <span style="color: #7aa2f7">80%</span>**！
+  * **(b) 為什麼這些「咒語」會有效？（歸功於 LLM 養成的 2 大重要階段，呼應 2.1 節）**：
+    1. **<span style="color: #7aa2f7">預訓練 (Pre-training)</span>**：讓模型學會**語言、規則以及文句的邏輯**（知道人類說「深呼吸、一步一步來」後面通常接著嚴謹清晰的推論過程）。
+    2. **<span style="color: #7aa2f7">微調 (Fine-tuning)</span>**：讓模型學會**如何扮演一個幫助使用者的助手**（願意聽從指令，順著你的要求調整思考深度與回答方式）。
+  * **(c) 常見 7 大實用咒語（Directive Prompts）**：
+    * ① `<span style="color: #7aa2f7">請一步一步推理 (think step by step)</span>`、② `<span style="color: #7aa2f7">請解釋詳細一點</span>`、③ `<span style="color: #7aa2f7">請確認事實再回答</span>`、④ `<span style="color: #7aa2f7">請避免使用太多術語</span>`、⑤ `<span style="color: #7aa2f7">請提供引用來源</span>`、⑥ `<span style="color: #7aa2f7">請從不同角度分析</span>`、⑦ `<span style="color: #7aa2f7">請扮演唱反調的角色</span>`。
+
+* **三、 框架提示（Framework Prompting）：把複雜任務拆解成解決問題的流程**：
+  * **核心目的**：掌握基本原則後，進一步把複雜任務拆解成一套標準流程，讓 ChatGPT **不只是被動「回答問題」，而是具備主動「<span style="color: #7aa2f7">解決問題</span>」的能力**。
+  * **提示工程任務執行的 3 大原則**：
+    1. **<span style="color: #7aa2f7">分解任務</span>**：把大型的任務拆解成小步驟。
+    2. **<span style="color: #7aa2f7">審核評估</span>**：先判斷 AI 的回答有沒有切中目標。
+    3. **<span style="color: #7aa2f7">反覆運算提問</span>**：根據評估結果修正問題，再試一次（迭代優化）。
+
+* **四、 結構化提問公式：基本要素 `3W` ＋ 輔助強化 6 要素 `COSEED` 速查表**：
+  | 框架分類 | 縮寫代碼 | 要素名稱 | 一句話白話秒懂與實務舉例 |
+  | :--- | :--- | :--- | :--- |
+  | **基本要素 (`3W`)** | **`Who`** | **<span style="color: #7aa2f7">角色</span>** | 幫 AI **定義身分**（如老師、工程師、營養師），有助於 AI **調整回答的深度與使用的語言** |
+  | **基本要素 (`3W`)** | **`Where`** | **<span style="color: #7aa2f7">情境</span>** | **提供背景資訊**（如問怎麼減肥時，提供自己的年齡、健康狀況、生活習慣，回答會更具體、更有參考價值） |
+  | **基本要素 (`3W`)** | **`What`** | **<span style="color: #7aa2f7">任務</span>** | **明確說明希望 AI 做什麼**（如擬定一週減脂菜單、撰寫產品文案） |
+  | **輔助強化 (`COSEED`)** | **`C`** | **<span style="color: #7aa2f7">Constraint（限制條件）</span>** | 設定邊界與不可踩的紅線（如：字數限 300 字內、不可使用生僻專業術語） |
+  | **輔助強化 (`COSEED`)** | **`O`** | **<span style="color: #7aa2f7">Output format（輸出格式）</span>** | 指定呈現樣式（如：請以 Markdown 表格、JSON 或 5 點條列式輸出） |
+  | **輔助強化 (`COSEED`)** | **`S`** | **<span style="color: #7aa2f7">Separator（分隔符號）</span>** | 使用 `{}`、`""`、`###` 等標示符號，把「背景資料」與「指令」清楚隔開 |
+  | **輔助強化 (`COSEED`)** | **`E`** | **<span style="color: #7aa2f7">Example（範例）</span>** | 提供標準回答樣本，讓 AI 照著模仿格式與邏輯（即 Few-Shot 概念） |
+  | **輔助強化 (`COSEED`)** | **`E`** | **<span style="color: #7aa2f7">EQ（情感語句）</span>** | 定義回答的**語氣、風格還有態度**（如：溫暖鼓勵、幽默風趣、客觀嚴謹） |
+  | **輔助強化 (`COSEED`)** | **`D`** | **<span style="color: #7aa2f7">Directive prompt（提示性語句）</span>** | 加入特殊引導指令（如：「請一步一步來 (`step by step`)」） |
+  | **其他常見框架** | **`TAG` / `CARE` / `TRACE` / `RTF` / `ICIO`** | **<span style="color: #7aa2f7">經典結構化提示模板</span>** | 與 `3W + COSEED` 同屬把「角色、背景、任務、格式」組合起來的**基本框架提示縮寫**（展開下方折疊盒可看各字母對照） |
+
+* **五、 樣本提示（Zero / One / Few-Shot）與上下文學習（ICL）速查表**：
+  | 技術名稱 | 給予範例數量 | 一句話白話秒懂與考試必考題眼 |
+  | :--- | :--- | :--- |
+  | **零樣本提示 (`Zero-Shot Prompt`)** | **0 個範例**（直接問） | 不給任何範例直接下指令（如「請把這句話翻成英文」），全靠模型預訓練與微調的內力 |
+  | **單樣本提示 (`One-Shot Prompt`)** | **1 個範例** | 給 **1 個**標準示範，讓 AI 看懂你要的格式後照樣造句 |
+  | **少樣本提示 (`Few-Shot Prompt`)** | **2 ~ 數個範例** | 給**少數幾個**範例，引導 AI 掌握特定規則或分類標準 |
+  | **上下文學習 (`ICL, In-Context Learning`)** | 在 Prompt 放入指令與樣本 | **無需重新訓練或改模型權重**，最大優勢為「**<span style="color: #7aa2f7">能根據上下文即時調整回答</span>**」（❌ 非不需要語言模型、非只適用圖像） |
+
+* **六、 進階提示：三大思維推理框架（思維鏈 `CoT`、思維樹 `ToT`、思維骨架 `SoT`）與摘要對照表**：
+  | 進階思維框架 / 摘要法 | 子分類與核心機制 | 一句話白話秒懂（它怎麼思考？適用什麼場景？） |
+  | :--- | :--- | :--- |
+  | **1. 思維鏈 (`CoT, Chain-of-Thought`)** | **(a) 結合樣本提示（`Zero-Shot CoT` / `Few-Shot CoT`）** | 引導 AI「**一步一步列出中間推論過程**」再給答案；可不給範例只加一句「一步一步想」(`Zero-Shot CoT`)，或給幾個含推理步驟的範例 (`Few-Shot CoT`) |
+  | **1. 思維鏈 (`CoT, Chain-of-Thought`)** | **(b) 思維鏈自我一致性 (`Self-Consistency`)** | 要求 AI **不只生成一條思維鏈，而是同時生成多條推理路線**，再自己比較這些路線，**挑出一條最一致、最可信的答案**（多數決共識） |
+  | **2. 思維樹 (`ToT, Tree of Thoughts`)** | **樹狀多路徑探索 ＋ 回溯 (`Backtracking`)** | 每步同時想出多個候選方案展開樹狀路線，走死胡同能**退回上一步換路走**；四大特點：**① <span style="color: #7aa2f7">分解複雜問題</span>、② <span style="color: #7aa2f7">促進逐步思考</span>、③ <span style="color: #7aa2f7">多路徑探索與回溯</span>、④ <span style="color: #7aa2f7">提高解決問題準確性</span>**（❌ 絕非「<span style="color: #e06c75">僅依賴單一步驟解答</span>」！） |
+  | **3. 思維骨架 (`SoT`) 與長文摘要比較** | **(a) 抽取式摘要 (`Extractive`)** | 讓 AI 讀完文章後，直接從原文**挑選、提煉重點句子**（像拿螢光筆畫重點剪貼，不改原句） |
+  | **3. 思維骨架 (`SoT`) 與長文摘要比較** | **(b) 生成式摘要 (`Abstractive`)** | AI 讀完整篇文章並理解後，**用自然語言重新生成一段精簡內容**（像讀完書用自己的話重寫大意） |
+  | **3. 思維骨架 (`SoT`) 與長文摘要比較** | **(c) 思維骨架 (`SoT, Skeleton-of-Thought`)** | 既能涵蓋重點又能維持品質的「**<span style="color: #7aa2f7">濃縮摘要</span>**」法——**從內容拆解到重構**（先列出骨架大綱再展開重構），特別**<span style="color: #7aa2f7">適用於總結冗長的文本</span>**！ |
 
 <details>
-<summary><b>💡 點擊展開白話案例：點餐講重點、看便利貼即時調頭的秘書 (ICL) 與西洋棋大師 (ToT)</b></summary>
+<summary><b>💡 點擊展開補充：其他 5 大常見框架縮寫（TAG / CARE / TRACE / RTF / ICIO）＆ 三大思維框架白話比喻</b></summary>
 
-> 🗣️ **1. 點餐講重點（忌冗長與抽象）**：
-> 點餐說「大麥克不要酸黃瓜」店員秒懂；若廢話講 10 分鐘（追求長度足夠長）或說「給我一份有靈魂的餐點」（開放式抽象描述），店員只會一頭霧水！
+> 🧩 **1. 其他 5 大常見基本框架提示縮寫（考場認出「它們都是提示工程結構化框架」即可，免死背單字！）**：
+> * **`TAG`**：**T**ask（任務）、**A**ction（行動）、**G**oal（目標）
+> * **`CARE`**：**C**ontext（背景情境）、**A**ction（行動任務）、**R**esult（預期結果）、**E**xample（範例）
+> * **`TRACE`**：**T**ask（任務）、**R**equest（具體請求）、**A**ction（行動）、**C**ontext（背景）、**E**xample（範例）
+> * **`RTF`**：**R**ole（角色）、**T**ask（任務）、**F**ormat（輸出格式）
+> * **`ICIO`**：**I**nstruction（指令任務）、**C**ontext（背景情境）、**I**nput data（輸入資料）、**O**utput indicator（輸出格式指標）
 >
-> 🔄 **2. In-Context Learning（看便利貼即時調頭的秘書）**：
-> 不用把秘書送去進修三個月（重新訓練微調），只要開會時遞給他一張便利貼（Prompt 上下文範例），他就能**當場即時調整回答語氣與格式**！
+> 🗣️ **2. 為什麼用 `{}` 框住 `{小說}`？＋ ICL 看便利貼的秘書**：
+> 在提問「你需要觀看一部 `{小說}` 並評論」時，加上 `{}` 就像在考卷題幹上**用螢光筆把關鍵詞框起來**（即 `COSEED` 中的 **`S` Separator 分隔符號**），用意是「**區隔關鍵資訊**」，讓 AI 一眼抓到核心對象！而 **ICL (上下文學習)** 就像不用把秘書送去進修三個月（免重訓練改權重），只要遞給他一張寫了幾個範例 (`Few-Shot`) 的便利貼，他就能**根據上下文即時調整回答**！
 >
-> ♟️ **3. ToT 西洋棋大師比喻**：
-> **單步解答 (Zero-shot)** 像新手看一眼就亂下一子；**CoT (思維鏈)** 像只算一條路線走到黑；**ToT (思維樹)** 則像西洋棋大師，腦中同時展開 A、B、C 三條分支路線，發現走 A 第三步會死棋，立刻「**回溯**」改走 B 路線！
+> ♟️ **3. 三大思維框架（`CoT` vs `ToT` vs `SoT`）一眼秒懂比喻**：
+> * **`CoT`（思維鏈）**：像算數學寫出「第 1 步、第 2 步、第 3 步」計算過程；若加上 **自我一致性 (`Self-Consistency`)**，就像請 5 位同學各自寫出推理過程，再看哪個答案最多人算出來（挑出最一致、最可信的答案）！
+> * **`ToT`（思維樹）**：像西洋棋大師，腦中同時展開 A、B、C 三條分支路線，發現走 A 第三步會死棋，立刻「**回溯**」改走 B 路線！
+> * **`SoT`（思維骨架）**：面對萬字長文時，不光只是畫螢光筆挑句子（**抽取式摘要**）或憑印象重寫一段話（**生成式摘要**），而是先把整篇長文的「**骨架大綱拆解出來，再重構成高濃度摘要**」，既不漏重點又維持高品質！
 </details>
 
 * **2.2 考點精華標記**：
   * **🔥 考試常考**：
-    1. **In-Context Learning 最大優勢**：<span style="color: #7aa2f7">能根據上下文即時調整回答</span>。
-    2. **Prompt 非必要考量**：<span style="color: #e06c75">確保 Prompt 長度足夠長</span>；**非協助技巧**：<span style="color: #e06c75">開放式的抽象描述</span>。
-    3. **思維樹 (ToT) 特點**：<span style="color: #7aa2f7">分解複雜問題、促進逐步思考、提高解決問題的準確性</span>。
+    1. **一般提示 6 原則**：<span style="color: #7aa2f7">精準 (Precise)、簡潔 (Concise)、對題 (Relevant)、目的明確 (Clear purpose)、加上背景 (Contextual)、善用標示 (Quotation & Symbols)</span>。
+    2. **特殊咒語 (Directive Prompt)**：Google DeepMind (2023) 證實加入 `"Take a deep breath and work on this problem step by step."` 可讓正確率從 <span style="color: #7aa2f7">34% 提升至 80%</span>；有效原因在於模型經歷了 **① <span style="color: #7aa2f7">預訓練 (Pre-training，學會語言規則與邏輯)</span>** 與 **② <span style="color: #7aa2f7">微調 (Fine-tuning，學會扮演幫助使用者的助手)</span>**。
+    3. **框架提示**：任務執行 3 原則為「<span style="color: #7aa2f7">分解任務 ➔ 審核評估 ➔ 反覆運算提問</span>」；基本要素 **3W** 為 `<span style="color: #7aa2f7">Who (角色)、Where (情境)、What (任務)</span>`；強化 6 要素 **COSEED** 為 `<span style="color: #7aa2f7">Constraint (限制)、Output format (格式)、Separator (分隔符)、Example (範例)、EQ (情感語氣風格)、Directive prompt (提示性語句)</span>`；常見框架還有 `TAG、CARE、TRACE、RTF、ICIO`。
+    4. **樣本提示與 ICL**：分為 `Zero-Shot (零樣本)、One-Shot (單樣本)、Few-Shot (少樣本)`；**In-Context Learning 最大優勢**為「<span style="color: #7aa2f7">能根據上下文即時調整回答</span>」。
+    5. **三大思維推理框架**：
+       * **思維鏈 (`CoT`)**：可結合 `Zero-Shot / Few-Shot`；進階版 **自我一致性 (`Self-Consistency`)** 會生成**多條思維鏈並互相比較，挑出最一致、最可信的答案**。
+       * **思維樹 (`ToT`)**：特點為<span style="color: #7aa2f7">分解複雜問題、促進逐步思考、多路徑探索與回溯、提高解決問題的準確性</span>。
+       * **思維骨架 (`SoT, Skeleton-of-Thought`)**：對比**抽取式摘要**（提煉重點）與**生成式摘要**（自然語言重新生成），SoT 屬於「**<span style="color: #7aa2f7">濃縮摘要</span>**」（從內容拆解到重構，既涵蓋重點又維持品質，**適用於總結冗長文本**）。
   * **⚠️ 易錯陷阱**：
-    1. Prompt 講求<span style="color: #7aa2f7">精簡、具體與結構化</span>，切勿被「<span style="color: #e06c75">長度足夠長</span>」或「<span style="color: #e06c75">開放式抽象描述</span>」誤導！
-    2. 問何者「**不是**」ToT 特點，必選「<span style="color: #e06c75">僅依賴單一步驟解答</span>」！
+    1. **符號 `{}` 陷阱（高頻誘答！）**：題目問「你需要觀看一部 `{小說}` 並評論…」中 `{}` 的用意，標準答案必選「<span style="color: #7aa2f7">區隔關鍵資訊</span>」（對應 `Separator`），<span style="color: #e06c75">切勿以寫程式習慣誤選「可替換的資訊」</span>！
+    2. **Prompt 非必要考量**必選「<span style="color: #e06c75">確保 Prompt 長度足夠長</span>」；**非協助技巧**必選「<span style="color: #e06c75">開放式的抽象描述</span>」；**非 ToT 特點**必選「<span style="color: #e06c75">僅依賴單一步驟解答</span>」！
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
 ---
 
-### 2.3 程式邏輯理解 語法分析器
+### 2.3 生成式 AI 進階強化 RAG RLHF LoRA 與語法分析器
+* **🔗 上下游串聯**：當 **2.2 提示工程（純靠對話引導）** 遇到「模型沒讀過最新內部資料」、「說話語氣不夠好」或「需要低成本客製專屬個性/畫風」的極限時，就必須升級至本節的「**生成式 AI 三大進階強化（知識型 `RAG`、風格 `RLHF`、個性 `LoRA`）**」以及針對程式碼邏輯強化的「**語法分析器 (`Parser`)**」。
 * **核心名詞全稱**：
-  * **Parser（語法分析器）**、**AST（抽象語法樹, Abstract Syntax Tree）**、**GNN（圖神經網路, Graph Neural Network）**
-* **程式碼解析強化流**：`原始程式碼文本` ➔ `語法分析器 (Parser)` ➔ `抽象語法樹 (AST, Abstract Syntax Tree)` ➔ `強化 AI 理解程式碼上下文邏輯`
+  * **RAG（檢索增強生成, Retrieval-Augmented Generation）**：**知識型強化**
+  * **RLHF（人類回饋強化學習, Reinforcement Learning from Human Feedback）**：**風格強化**
+  * **LoRA（低秩適應, Low-Rank Adaptation）**：**個性強化（輕量化微調）**
+  * **Parser（語法分析器）**、**AST（抽象語法樹, Abstract Syntax Tree）**：**程式邏輯強化**
+* **生成式 AI 進階強化一行流**：`知識型強化 ➔ 用 RAG（外接知識庫查資料防幻覺）` ｜ `風格強化 ➔ 用 RLHF（讓人類打分數，讓 AI 不只會說話還「說得更好」)` ｜ `個性強化 ➔ 用 LoRA（像在大樓關鍵樓層裝「活動式隔間」，免翻新整棟樓就能客製化）` ｜ `程式邏輯強化 ➔ 用語法分析器 Parser（轉成抽象語法樹 AST）`
 
-* **程式理解技術對照表**：
+* **一、 生成式 AI 三大進階強化（知識、風格、個性）必背配對表**：
+  | 強化維度 | 對應核心技術 | 一句話白話秒懂與原著經典比喻（考試必記配對！） |
+  | :--- | :--- | :--- |
+  | **1. <span style="color: #7aa2f7">知識型強化</span>** | **`RAG`（檢索增強生成, Retrieval-Augmented Generation）** | 幫 AI **外接最新知識庫（開書考）**——回答前先去檢索可靠文件再生成答案，補齊專業/最新知識並大幅降低幻覺 |
+  | **2. <span style="color: #7aa2f7">風格強化</span>** | **`RLHF`（人類回饋強化學習, Reinforcement Learning from Human Feedback）** | 透過人類專家對回答品質打分數回饋，主要讓 AI **<span style="color: #7aa2f7">不只是學會說話，而是「說得更好」</span>**（更合乎人類語氣偏好、禮貌與價值觀） |
+  | **3. <span style="color: #7aa2f7">個性強化</span>** | **`LoRA`（低秩適應, Low-Rank Adaptation）** | 模擬**個性化**的高效微調法——就像**「<span style="color: #7aa2f7">不用翻新整棟大樓（免重訓整個大模型），只是在某些關鍵樓層安裝活動式隔間（只訓練極少量外掛參數）</span>」**，低成本快速換個性或專屬畫風！ |
+
+* **二、 程式邏輯理解強化：語法分析器（Parser）對照表**：
   | 技術名稱 | 一句話白話秒懂（它到底在做什麼？） | 考試選型判斷 |
   | :--- | :--- | :--- |
-  | **語法分析器 (Parser)** | 像文法老師把程式碼畫成「<span style="color: #7aa2f7">樹狀家譜圖 (抽象語法樹 AST, Abstract Syntax Tree)</span>」，幫 AI 看懂誰呼叫誰、前後邏輯與管轄範圍 | ✅ 「<span style="color: #7aa2f7">強化 AI 理解程式上下文邏輯</span>」唯一正解 |
-  | **圖神經網路 (GNN, Graph Neural Network) / 語意轉換器 / 語音模型** | 處理人際網路圖 / 一般白話文轉換 / 語音訊號處理 | ❌ <span style="color: #e06c75">非拆解程式碼語法結構</span>之核心技術 |
+  | **語法分析器 (`Parser`)** | 像文法老師把原始程式碼畫成「<span style="color: #7aa2f7">樹狀家譜圖 (抽象語法樹 AST, Abstract Syntax Tree)</span>」，幫 AI 看懂誰呼叫誰、前後邏輯與管轄範圍 | ✅ 「<span style="color: #7aa2f7">強化 AI 理解程式上下文邏輯</span>」唯一正解 |
+  | **圖神經網路 (`GNN`) / 語意轉換器 / 語音模型** | 處理人際網路圖 / 一般白話文轉換 / 語音訊號處理 | ❌ <span style="color: #e06c75">非拆解程式碼語法結構</span>之核心技術 |
 
 <details>
-<summary><b>💡 點擊展開白話案例：文法分析老師與樹狀架構圖</b></summary>
+<summary><b>💡 點擊展開白話案例：開書考題庫 (RAG)、說話藝術教練 (RLHF)、大樓活動式隔間 (LoRA) 與程式碼家譜樹 (Parser)</b></summary>
 
-> 🌲 **語法分析器 (Parser) 的家譜樹**：
-> 語法分析器就像嚴謹的文法老師，把一萬行程式碼畫成一張「樹狀家譜圖 (AST)」，標明誰是父函數、誰是子變數，讓 AI 瞬間看懂深層程式邏輯！
+> 🏢 **1. 三大進階強化（RAG vs RLHF vs LoRA）超直覺記憶法**：
+> * **知識型強化 (`RAG`)**：不想讓 AI 憑舊記憶亂掰，就直接塞給它一本「最新公司規章（外部知識庫）」讓它邊翻書邊回答！
+> * **風格強化 (`RLHF`)**：AI 預訓練完已經「學會說話」，但講話可能冷冰冰或太囉嗦；透過 **RLHF** 人類教練打分數調教，讓它進階到「**說得更好**」（溫暖、有條理、懂察言觀色）！
+> * **個性強化 (`LoRA`)**：如果每次想讓 AI 模仿不同動漫畫風或特定角色個性，都要把幾千億參數的模型整棟敲掉重蓋，根本燒不起錢！**LoRA** 的聰明之處在於「**不用翻新整棟大樓，只要在某些關鍵樓層裝上活動式隔間**」，需要哪種個性就把哪組輕量隔間掛上去，省時又省錢！
+>
+> 🌲 **2. 語法分析器 (`Parser`) 的程式碼家譜樹**：
+> 語法分析器就像嚴謹的文法老師，把一萬行程式碼畫成一張「樹狀家譜圖 (`AST`)」，標明誰是父函數、誰是子變數，讓 AI 瞬間看懂深層程式邏輯！
 </details>
 
 * **2.3 考點精華標記**：
-  * **🔥 考試常考**：可強化 AI 理解程式上下文邏輯的技術為「<span style="color: #7aa2f7">語法分析器</span> (Parser)」。
-  * **⚠️ 易錯陷阱**：切勿誤選<span style="color: #e06c75">圖神經網路、語意轉換器或語音模型</span>！
+  * **🔥 考試常考**：
+    1. **生成式 AI 三大進階強化配對（必背！）**：
+       * **知識型強化** ➔ **<span style="color: #7aa2f7">RAG（檢索增強生成）</span>**。
+       * **風格強化** ➔ **<span style="color: #7aa2f7">RLHF（人類回饋強化學習）</span>**（讓 AI 不只是學會說話，而是「**說得更好**」）。
+       * **個性強化** ➔ **<span style="color: #7aa2f7">LoRA（低秩適應）</span>**（模擬個性化，比喻為「**不用翻新整棟大樓，只在關鍵樓層安裝活動式隔間**」）。
+    2. **程式邏輯理解強化**：可強化 AI 理解程式上下文邏輯的技術為「<span style="color: #7aa2f7">語法分析器 (Parser)</span>」。
+  * **⚠️ 易錯陷阱**：
+    1. 考題問「知識型強化 / 風格強化 / 個性強化」分別對應哪種技術時，記住口訣：**「<span style="color: #7aa2f7">知識查 RAG、風格說更好用 RLHF、個性裝活動隔間用 LoRA</span>」**，切勿把 RLHF 與 LoRA 顛倒！
+    2. 強化程式上下文邏輯切勿誤選<span style="color: #e06c75">圖神經網路 (GNN)、語意轉換器或語音模型</span>！
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
@@ -1138,155 +1205,159 @@
 
 ## 第三部分 生成式AI應用技能
 
-### 3.1 影片生成工具與模型
+### 3.1 文字與商業文案生成應用
 * **核心名詞全稱**：
-  * **Text-to-Video（文字生成影片）**、**Image-to-Video（圖片生成影片）**
-  * **Space-Time U-Net（時空 U-Net 架構，Google Lumiere 核心技術）**
-* **主流 AI 影片生成陣營**：`Runway (Gen-1 ~ Gen-4)` ＋ `Sora (OpenAI)` ＋ `Pika (Pika Labs)` ＋ `Google Lumiere / Veo` ＋ `FlexClip (PearlMountain)`（⚠️ **DALL·E 是文字生成圖像 Text-to-Image，絕非影片工具！**）
+  * **NLG（自然語言生成, Natural Language Generation）**、**Mandala Chart（曼陀羅思考法 / 九宮格思考法）**
+* **文字生成應用全景流**：`5 大應用領域（教育 / 新聞媒體 / 醫療 / 商業行銷 / 創意寫作）` ＋ `靈感發想（用「曼陀羅思考法」打造 AI 靈感）` ＋ `6 大主力工具（ChatGPT-4o / Notion AI / Grammarly / Copy.ai / QuillBot / Jasper AI）`
 
-* **影片生成工具速查表**：
-  | 開發商 | 代表工具 / 模型 | 技術基礎 | 核心受眾、應用與關鍵考點 |
-  | :--- | :--- | :--- | :--- |
-  | **Runway ML** | **Runway (Gen-1 ~ Gen-4)** | <span style="color: #7aa2f7">改良版 Diffusion</span> | 創作者影片草圖、剪輯特效；操作簡易生成快，專門協助「<span style="color: #7aa2f7">非專業創作者</span>」 |
-  | **OpenAI** | **Sora** | <span style="color: #7aa2f7">Diffusion + Transformer</span> | 文生成影片（語意驅動敘事）；<span style="color: #7aa2f7">畫質佳、敘事強、世界理解力高</span>（60 秒高連貫） |
-  | **Pika Labs** | **Pika** | <span style="color: #7aa2f7">動畫導向 Diffusion + 多模態控制</span> | 原創角色動畫、社群短片；<span style="color: #7aa2f7">風格自由、互動性高、創作流程友善</span> |
-  | **Google / DeepMind** | **Google Lumiere / Veo** | <span style="color: #7aa2f7">Space-Time U-Net</span> (Lumiere) | 高畫質敘事影片；<span style="color: #7aa2f7">畫面穩定、邏輯一致、細節表現極佳</span> |
-  | **PearlMountain** | **FlexClip** | 雲端 SaaS 平台 | 線上輕量化 <span style="color: #7aa2f7">AI 影片生成與剪輯</span>平台（支援文字轉影片、自動字幕） |
+* **一、 文字生成 6 大代表工具與商業考點速查表**：
+  | 類別 | 工具或應用場景 | 核心定位與考試必記重點 |
+  | :--- | :--- | :--- |
+  | **主力文字工具** | **`ChatGPT-4o`**、**`Notion AI`** | **ChatGPT-4o** 全能對話、擴寫與翻譯；**Notion AI** 專攻筆記整理、會議摘要與知識庫協作 |
+  | **英文潤飾改寫** | **`Grammarly`**、**`QuillBot`** | **Grammarly** 專攻英文文法檢查與語氣校對；**QuillBot** 專攻句子改寫 (Paraphrasing) 與換句話說 |
+  | **商業行銷文案** | **`Copy.ai`**、**`Jasper AI`** | 專為電商、社群貼文、廣告與企業品牌打造的 AI 行銷文案生成工具 |
+  | **靈感發想方法** | **<span style="color: #7aa2f7">曼陀羅思考法</span>** | 以核心主題為中心向九宮格四周發散，常用來**打造 AI 創作靈感與結構化擴展提示詞** |
+  | **商業與法律考題** | **個人化行銷 / 產品描述 / 法律文書** | ① 個人化市場營銷靠 **<span style="color: #7aa2f7">自然語言生成 (NLG)</span>**；② AI 寫產品描述優勢為「**<span style="color: #7aa2f7">撰寫引人注目的產品特點</span>**」；③ 對法律領域影響為「**<span style="color: #7aa2f7">提供法律文書和合約的自動生成</span>**」 |
 
 * **3.1 考點精華標記**：
-  * **🔥 考試常考**：
-    1. **Runway ML 核心受眾**：協助「<span style="color: #7aa2f7">非專業創作者</span>」（<span style="color: #e06c75">非專業程式設計師、非硬體工程師</span>）；代表模型為 <span style="color: #7aa2f7">Gen-2 / Gen-4</span>。
-  * **⚠️ 易錯陷阱**：考題問何者「**不是**」影片生成工具，必選 <span style="color: #e06c75">DALL·E</span>（DALL·E 為<span style="color: #e06c75">靜態圖像生成工具</span>）！
+  * **🔥 考試常考**：文字五大應用為<span style="color: #7aa2f7">教育、新聞媒體、醫療、商業行銷、創意寫作</span>；可用「<span style="color: #7aa2f7">曼陀羅思考法</span>」打造 AI 靈感；個人化行銷靠 <span style="color: #7aa2f7">NLG</span>；產品描述優勢為<span style="color: #7aa2f7">撰寫引人注目的產品特點</span>；法律影響為<span style="color: #7aa2f7">法律文書和合約自動生成</span>。
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
 ---
 
-### 3.2 資料視覺化設計原則
-* **核心名詞全稱**：
-  * **Data Visualization（資料視覺化）**、**Style Consistency（風格一致性）**、**Information Overload（資訊過載 / 資訊過多）**
-* **視覺化黃金準則**：`統一顏色與標籤格式（保持風格一致）` ＋ `簡單配色突出重點` ＋ `嚴禁資訊過多（避免資訊過載）`
-
-* **資料視覺化正反向考點對照表**：
-  | 審題方向 | 考題提問方式 | 必選標準答案 | 干擾項排除 |
-  | :--- | :--- | :--- | :--- |
-  | **正面原則** | 保持視覺化**風格一致性**應使用何種元素？ | <span style="color: #7aa2f7">統一的顏色和標籤格式</span> | ❌ <span style="color: #e06c75">多種顏色、不同字體、隨機資料源</span> |
-  | **負面防範** | 進行資料視覺化時**應注意避免的問題**？ | <span style="color: #e06c75">資訊過多（資訊過載）</span> | ✅ 使用簡單顏色、突出關鍵資訊、數據穩定（此三項為正面做法） |
-
-<details>
-<summary><b>💡 點擊展開白話案例：品牌制服的一致性美感 vs 萬聖節百家布拼貼（補充範例）</b></summary>
-
-> 👔 **品牌制服 vs 百家布**：
-> 整套報表用「統一的顏色和標籤格式」就像穿整齊制服，一眼看懂重點；若每頁五顏六色、字體亂跳，或塞滿密密麻麻的字（資訊過多），就會像萬聖節百家布一樣讓人眼花撩亂。
-</details>
+### 3.2 圖片生成工具與應用
+* **圖片生成 8 大代表工具定位速查表**：
+  | 工具名稱 | 核心特色與最佳應用場景（一眼秒懂） |
+  | :--- | :--- |
+  | **`Midjourney`** | 藝術美感、光影質感與商業插畫品質公認頂尖（早年透過 Discord 指令操作，現亦有網頁版） |
+  | **`DALL·E` (OpenAI)** | 結合 ChatGPT 自然語言理解，對話式修改細節最直覺（⚠️ 必考：**屬靜態圖片生成，<span style="color: #e06c75">非影片工具</span>**） |
+  | **`Stable Diffusion`** | **開源 (Open-source)** 文生圖標竿，支援本地端部署與外掛 (如 LoRA / ControlNet) 精準控圖 |
+  | **`Leonardo.Ai`** | 擅長**遊戲美術資產、角色設計**與風格模型微調，控制介面友善 |
+  | **`Ideogram AI`** | 最大強項為「**<span style="color: #7aa2f7">在圖片中精準生成排版文字 (Typography)</span>**」，適合海報、Logo 與T恤設計 |
+  | **`Copilot + Designer`** | 微軟整合 DALL·E 3 的免費生圖與社群海報設計工具 |
+  | **`Canva AI`** | 將 AI 生圖、去背、擴圖直接嵌入平面設計模板，非設計背景也能快速排版 |
+  | **`DeepDream` (Google)** | Google 早期推出的卷積神經網路 (CNN) 視覺化工具，以**迷幻、超現實藝術風格轉換**聞名 |
 
 * **3.2 考點精華標記**：
-  * **🔥 考試常考**：保持風格一致性選「<span style="color: #7aa2f7">統一的顏色和標籤格式</span>」；應避免的問題選「<span style="color: #e06c75">資訊過多</span>」。
-  * **⚠️ 易錯陷阱**：注意題幹問「<span style="color: #7aa2f7">應使用（正面）</span>」還是「<span style="color: #e06c75">應避免（負面）</span>」，<span style="color: #e06c75">切勿看錯正反向</span>！
+  * **🔥 考試常考**：認明 8 大圖片工具（`Midjourney`、`Leonardo.Ai`、`Copilot + Designer`、`Stable Diffusion`、`DALL·E`、`DeepDream`、`Ideogram AI`、`Canva AI`）；考題問何者「**不是**」影片生成工具時，必選圖片工具 **<span style="color: #e06c75">DALL·E</span>**！
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
 ---
 
-### 3.3 商業文案與簡報生成
+### 3.3 聲音 (TTS) 與音樂生成應用
 * **核心名詞全稱**：
-  * **NLG（自然語言生成, Natural Language Generation）**
-  * **Automated Proofreading Tools（自動校對工具）**
-* **商業生成 5 大場景秒配表**：
-  | 商業應用場景 | 核心技術 / 最佳實務解答 | 易錯干擾項排除 |
+  * **TTS（文字轉語音, Text-to-Speech）**：包含 **① 文字分析 (`Text Analysis`)**、**② 語音規劃 (`Prosody Prediction`)**、**③ 語音合成 (`Waveform Generation`)** 三大步驟
+  * **Suno（AI 人聲與編曲一體生成工具）**、**AIVA（人工智慧虛擬藝術家, Artificial Intelligence Virtual Artist）**
+* **TTS 技術底層 3 步驟**：`① 文字分析 (Text Analysis)` ➔ `② 語音規劃 (Prosody Prediction)` ➔ `③ 語音合成 (Waveform Generation)`
+* **從一句話變語音的 4 步驟實作流**（如：讓 AI 說得像一位「親切的助教」）：`① 輸入要說的內容` ➔ `② 選擇語者的角色` ➔ `③ 控制語氣跟說話的細節` ➔ `④ 預覽與匯出`
+
+* **一、 聲音生成 (TTS) 5 大應用場景與代表工具配對表**：
+  | 應用場景 | 首選代表工具 | 場景需求與選型關鍵 |
   | :--- | :--- | :--- |
-  | **1. 個人化市場營銷內容** | <span style="color: #7aa2f7">自然語言生成 (NLG, Natural Language Generation)</span>（動態生成客製文案與推廣信） | ❌ <span style="color: #e06c75">非傳統固定模板群發</span> |
-  | **2. AI 簡報避免內容重複** | <span style="color: #7aa2f7">定期更新數據源</span> (Regularly Update Data Sources) | ❌ <span style="color: #e06c75">非固定提示詞、非減少頁數</span> |
-  | **3. 運用 AI 確保簡報準確性** | <span style="color: #7aa2f7">使用自動校對工具</span> (Automated Proofreading Tools) | ❌ 切勿選「<span style="color: #e06c75">手動檢查</span>」或「<span style="color: #e06c75">請他人幫忙</span>」（非運用 AI） |
-  | **4. AI 撰寫產品描述優勢** | <span style="color: #7aa2f7">撰寫引人注目的產品特點</span> (Catchy Product Highlights) | ❌ <span style="color: #e06c75">技術規格需工程師核對、法律合規需法務把關</span> |
-  | **5. 生成式 AI 對法律領域影響** | <span style="color: #7aa2f7">提供法律文書和合約的自動生成</span>（起草初稿） | ❌ <span style="color: #e06c75">非增加律師負擔、非減少法律教育、非提高審判速度</span> |
+  | **1. 教學影片配音** | **`ElevenLabs`**、**`LOVO AI`** | 咬字自然、擬真度極高，能像「親切的助教」一樣講解課程 |
+  | **2. 行銷影音旁白** | **`Play.ht`**、**`LOVO AI`** | 語氣富有感染力、多國語系與商業廣告聲線豐富 |
+  | **3. 語音客服與機器人** | **`Google TTS`**、**`Azure Speech`** | 講求「**<span style="color: #7aa2f7">高穩定度、低延遲、企業系統整合</span>**」 |
+  | **4. Podcast 與 TTS 閱讀** | **`ElevenLabs`**、**`Play.ht`** 等 | 將長篇文章或電子書自動轉為自然雙人對談或有聲書 |
+  | **5. 角色配音與故事創作** | **`Replica Studios`** | 專攻遊戲、動畫與故事角色的「**<span style="color: #7aa2f7">情緒化戲劇配音</span>**」 |
 
-<details>
-<summary><b>💡 點擊展開白話案例：行銷金筆、簡報活水與 AI 法律助理（補充範例）</b></summary>
-
-> ✍️ **行銷金筆 (NLG)** 幫不同客戶量身寫文案；📊 **簡報活水**靠「定期更新數據源」防重複、靠「AI 自動校對工具」抓錯字；⚖️ **AI 法律助理**負責一鍵起草合約與訴狀初稿，減輕重複文書勞動。
-</details>
+* **二、 音樂生成控制要素與代表工具（`Suno` 與 `AIVA`）**：
+  * **音樂生成 4 大控制要素**：包含 **① <span style="color: #7aa2f7">語者的選擇</span>**、**② <span style="color: #7aa2f7">語速與語調</span>**、**③ <span style="color: #7aa2f7">情緒的控制</span>**，以及 **④ <span style="color: #7aa2f7">自然語法的提示</span>**。
+  * **兩大必記音樂工具**：
+    1. **`Suno`（2024 年底大爆發）**：只要輸入文字提示或歌詞，即可一鍵生成包含「**逼真人聲演唱 ＋ 完整伴奏編曲**」的流行歌曲。
+    2. **`AIVA`（考試高頻配對！）**：專精古典與影視配樂自動作曲；認證考題常考「常與 **<span style="color: #7aa2f7">GPT</span>**（負責寫歌詞）結合使用來**<span style="color: #7aa2f7">創作歌曲</span>**的 AI 音樂工具」必選 **`AIVA`**（❌ 切勿選 Hugging Face、Figma 或 Canva）。
 
 * **3.3 考點精華標記**：
-  * **🔥 考試常考**：個人化行銷靠 <span style="color: #7aa2f7">NLG</span>；簡報防重複靠<span style="color: #7aa2f7">定期更新數據源</span>；AI 確保簡報準確靠<span style="color: #7aa2f7">使用自動校對工具</span>；產品描述靠<span style="color: #7aa2f7">撰寫引人注目的產品特點</span>；法律影響為<span style="color: #7aa2f7">提供法律文書和合約的自動生成</span>。
-  * **⚠️ 易錯陷阱**：問「如何運用 AI 確保準確性」，千萬別選「<span style="color: #e06c75">人工手動檢查</span>」！
+  * **🔥 考試常考**：
+    1. **TTS 技術三大步驟**：`① 文字分析 (Text Analysis) ➔ ② 語音規劃 (Prosody Prediction) ➔ ③ 語音合成 (Waveform Generation)`。
+    2. **聲音生成 4 步驟流程**：`① 輸入要說的內容 ➔ ② 選擇語者的角色 ➔ ③ 控制語氣跟說話細節 ➔ ④ 預覽與匯出`。
+    3. **5 大場景工具配對**：教學配音用 `ElevenLabs / LOVO AI`、行銷旁白用 `Play.ht / LOVO AI`、**語音客服求穩定**用 `<span style="color: #7aa2f7">Google TTS / Azure Speech</span>`、**角色故事配音**用 `<span style="color: #7aa2f7">Replica Studios</span>`。
+    4. **音樂生成**：2024 年底代表工具為 **`Suno`**；與 **`GPT` 結合創作歌曲**必選 **`AIVA`**。
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
 ---
 
-### 3.4 AI 學習平台 Kaggle
-* **Kaggle 核心定位與實踐途徑表**：
-  | 維度 | 核心內容與考點結論 |
-  | :--- | :--- |
-  | **平台定位** | Google 旗下全球最大免費資料科學與 AI 競賽實作社群（<span style="color: #7aa2f7">最適合學習 AI 工具實作與應用之平台</span>） |
-  | **3 大實踐途徑** | ① <span style="color: #7aa2f7">參加公開競賽</span> (Competitions)、② <span style="color: #7aa2f7">學習開源優秀解決方案</span> (Code / Notebooks)、③ <span style="color: #7aa2f7">論壇交流切磋</span> (Discussions) |
-  | **干擾項排除** | ❌ <span style="color: #e06c75">YouTube Shorts / IG Reels / LINE 群組</span>（碎片娛樂通訊，無法寫 code 實作）；❌ <span style="color: #e06c75">免費訂閱優惠會員</span>（Kaggle 本身免費開放，此為虛構干擾項！） |
+### 3.4 影片生成流程與應用場景
+* **從句子到生成影片的 5 大步驟流**：
+  `① 輸入提示詞` ➔ `② 選擇影片風格（動畫、水墨、油畫風、像素、電影感）` ➔ `③ 設定片長跟比例（4~5 秒，比例 16:9 橫式或 9:16 直式）` ➔ `④ 加入字幕與語音` ➔ `⑤ 預覽與輸出影片`
+
+* **一、 影片生成 5 大應用場景與代表工具配對表**：
+  | 影片應用場景 | 對應代表工具 | 場景定位與核心特色 |
+  | :--- | :--- | :--- |
+  | **1. 簡報與教學影片** | **`Lumen5`**、**`Synthesia`** | 將文章、講義或簡報快速轉為教學解說影片 |
+  | **2. 社群短影音與廣告素材** | **`Runway`**、**`Pika`**、**`CapCut`** | 快速產出吸睛特效片段、上字幕與社群 Reels/Shorts 剪輯 |
+  | **3. 虛擬角色說話（數位人）** | **`HeyGen`**、**`Synthesia`** | 輸入講稿即可讓逼真 AI 虛擬主播對嘴播報（支援多語翻譯對嘴） |
+  | **4. 動畫式故事與流程影片** | **`Canva Video`**、**`Animoto`**、**`Kaiber`** | 製作音樂視覺化動畫 (`Kaiber`) 或圖文故事流程短片 |
+  | **5. 創意草圖跟概念模擬** | **`Runway (Gen-1~4)`**、**`Sora`** | 導演分鏡預覽、高擬真概念片（補充：`Google Lumiere` 採 `Space-Time U-Net`、`FlexClip` 為雲端輕量剪輯） |
 
 * **3.4 考點精華標記**：
-  * **🔥 考試常考**：最適合學習 AI 工具實作與應用的平台為 <span style="color: #7aa2f7">Kaggle</span>。
-  * **⚠️ 易錯陷阱**：問何者「**不是**」Kaggle 提升技能方式，必選「<span style="color: #e06c75">免費訂閱優惠會員</span>」！
+  * **🔥 考試常考**：
+    1. **文生影片 5 步驟**：`輸入提示詞 ➔ 選擇風格 ➔ 設定片長(4~5秒)與比例(16:9或9:16) ➔ 加入字幕與語音 ➔ 預覽與輸出`。
+    2. **5 大場景配對**：簡報教學用 `Lumen5 / Synthesia`；社群短影音用 `Runway / Pika / CapCut`；**虛擬角色說話**用 `<span style="color: #7aa2f7">HeyGen / Synthesia</span>`；動畫故事用 `Canva Video / Animoto / Kaiber`；**創意草圖與概念模擬**用 `<span style="color: #7aa2f7">Runway / Sora</span>`。
+    3. **Runway ML 必考題眼**：專門協助「<span style="color: #7aa2f7">非專業創作者</span>」；考題問核心技術原理選「<span style="color: #7aa2f7">GAN ＋ 自動編碼器 (Autoencoder)</span>」（教材亦列為改良版 Diffusion）。
+  * **⚠️ 易錯陷阱**：問何者「**不是**」影片生成工具，必選圖片工具 **<span style="color: #e06c75">DALL·E</span>**！
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
 ---
 
-### 3.5 自動化工具 Zapier
-* **核心名詞全稱**：
-  * **No-Code Automation（無程式碼自動化）**、**Trigger（觸發條件）**、**Action（執行動作）**
-  * **API（應用程式介面, Application Programming Interface）**、**SaaS（軟體即服務, Software as a Service）**
-* **Zapier 運作與邊界流**：`觸發條件 (Trigger) ➔ 跨平台執行動作 (Action：傳通知/存檔案/同步表格)` ｜ ⚠️ **致命限制：`無法完整理解語意`**
+### 3.5 簡報生成流程與工具組合
+* **簡報 AI 的核心邏輯**：關鍵在於「**<span style="color: #7aa2f7">語意的理解</span> ＋ <span style="color: #7aa2f7">範本的生成</span>**」——AI **不是把你的原話照搬上去**，而是經過 **「`<span style="color: #7aa2f7">先理解 ➔ 再轉換 ➔ 再排版</span>`」** 三階段處理！
+* **製作簡報草稿 3 步驟**：`① 輸入提示說明` ➔ `② 產生簡報草稿` ➔ `③ 審查與修改內容`
+* **最強實務三段式工作流**：`內容構想用 ChatGPT` ➔ `結構編排用 Gamma` ➔ `設計與視覺美感用 Canva`
 
-* **Zapier 能與不能對照表**：
-  | 能力分類 | 具體任務項目 | 原因解析 |
+* **簡報生成主流工具定位與考題實務速查表**：
+  | 工具或考點項目 | 核心強項與分工定位 | 考試必記關鍵字 |
   | :--- | :--- | :--- |
-  | **✅ 擅長任務** | <span style="color: #7aa2f7">傳送通知</span> (Slack/Email)、<span style="color: #7aa2f7">儲存檔案</span> (Drive/Dropbox)、<span style="color: #7aa2f7">同步表格</span> (Sheets) | 基於固定規則與 API (Application Programming Interface) 管線自動觸發執行 |
-  | **❌ 無法完成** | <span style="color: #e06c75">完整理解語意</span>（必考答案！） | 僅為規則串接管線，本身<span style="color: #e06c75">不具備 LLM (Large Language Model) 的自然語言理解</span> (NLU, Natural Language Understanding) 能力 |
-
-<details>
-<summary><b>💡 點擊展開白話案例：辦公室的自動齒輪傳送帶 vs 讀懂文意的秘書</b></summary>
-
-> ⚙️ **Zapier（不識字的自動傳送帶）**：
-> 只要信箱收到附件（Trigger），傳送帶就自動把檔案存進雲端並發通知（Action）。但傳送帶本身是機械規則，根本「不識字」——**無法完整理解合約裡寫了什麼語意**！
-</details>
+  | **`Gamma`（目前最主流）** | 專責「**<span style="color: #7aa2f7">內容構想與卡片式自動編排</span>**」 | 輸入主題即可一鍵生成大綱與整份簡報草稿 |
+  | **`Canva`** | 專責「**<span style="color: #7aa2f7">設計與視覺美感</span>**」 | 與 **`Gamma`** 搭配性最佳（Gamma 管內容編排、Canva 管視覺美化） |
+  | **`Tome` vs `Beautiful.ai`** | 延伸簡報工具雙雄 | **`Tome`** 強調「**<span style="color: #7aa2f7">敘事的連貫</span>**」；**`Beautiful.ai`** 強調「**<span style="color: #7aa2f7">圖表的排版</span>**」 |
+  | **簡報考題兩大實務** | 避免內容重複 vs 確保準確性 | ① 避免重複靠「**<span style="color: #7aa2f7">定期更新數據源</span>**」；② 運用 AI 確保準確性靠「**<span style="color: #7aa2f7">使用自動校對工具</span>**」（❌ 切勿選人工手動檢查） |
 
 * **3.5 考點精華標記**：
-  * **🔥 考試常考**：Zapier 擅長<span style="color: #7aa2f7">傳送通知、儲存檔案、同步表格</span>；無法完成「<span style="color: #e06c75">完整理解語意</span>」。
-  * **⚠️ 易錯陷阱**：問 Zapier 無法完成哪項任務，必選「<span style="color: #e06c75">完整理解語意</span>」！
+  * **🔥 考試常考**：簡報核心邏輯為「<span style="color: #7aa2f7">語意理解＋範本生成（先理解、再轉換、再排版）</span>」；草稿 3 步驟為「<span style="color: #7aa2f7">輸入提示說明 ➔ 產生簡報草稿 ➔ 審查與修改內容</span>」；**`Gamma`** 重內容構想編排、**`Canva`** 重設計視覺美感、**`Tome`** 重敘事連貫、**`Beautiful.ai`** 重圖表排版。
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
 ---
 
-### 3.6 音樂創作 AIVA
-* **核心名詞全稱**：
-  * **AIVA（人工智慧虛擬藝術家, Artificial Intelligence Virtual Artist）**
-* **AI 歌曲創作黃金組合**：`GPT（寫歌詞 / 韻腳 / 結構）` ＋ `AIVA（自動作曲 / 編曲 / 配樂）` ➔ `完整原創歌曲`
+### 3.6 程式生成應用與開發工具
+* **核心定位**：AI 程式生成工具**「不只會幫你寫，還能教你寫！」**
+* **程式生成 4 大核心功能**：
+  1. **<span style="color: #7aa2f7">產出註解</span>**：自動為複雜程式碼補上清楚的功能說明註解。
+  2. **<span style="color: #7aa2f7">解釋與翻譯</span>**：將艱澀程式碼**轉成「人話」白話解釋**，或**翻譯成其他程式語言**（如 Python 轉 Java）。
+  3. **<span style="color: #7aa2f7">改善跟重構</span>**：抓出潛在 Bug、優化演算法效能並讓程式碼結構更乾淨。
+  4. **<span style="color: #7aa2f7">測試及補全</span>**：根據上下文即時自動補全程式碼（如生成 HTML/CSS 結構），並自動撰寫單元測試。
+
+* **程式生成 4 大代表工具速查表**：
+  | 工具名稱 | 開發商 / 背景 | 核心定位與必考題眼 |
+  | :--- | :--- | :--- |
+  | **`GitHub Copilot`** | GitHub / Microsoft / OpenAI | 嵌入 VS Code 等 IDE 的結對編程助手；考題問網頁開發常用來**生成 <span style="color: #7aa2f7">HTML 與 CSS 結構</span>**必選 **`Copilot`**！ |
+  | **`ChatGPT`** | OpenAI | 適合對話式除錯、把程式碼「轉成人話解釋」與跨語言翻譯教學 |
+  | **`AlphaCode`** | Google DeepMind | 專為解決高難度「**程式設計競賽 (Competitive Programming)**」問題打造的 AI 系統 |
+  | **`Devin`** | Cognition Labs | 號稱全球首款「**自主 AI 軟體工程師 (Autonomous AI Software Engineer)**」，能獨立規劃、寫碼、除錯與部署 |
 
 * **3.6 考點精華標記**：
-  * **🔥 考試常考**：常與 <span style="color: #7aa2f7">GPT</span> 結合使用來<span style="color: #7aa2f7">創作歌曲</span>的 AI 音樂工具為 <span style="color: #7aa2f7">AIVA</span>。
-  * **⚠️ 易錯陷阱**：切勿選 <span style="color: #e06c75">Hugging Face</span>（開源模型庫）、<span style="color: #e06c75">Figma</span>（UI/UX 介面設計, User Interface / User Experience）或 <span style="color: #e06c75">Canva</span>（平面排版）！
-
-<details>
-<summary><b>💡 點擊展開白話案例：作詞家 GPT 與 作曲大師 AIVA 的錄音室合作</b></summary>
-
-> 🎵 **作詞家 GPT ＋ 作曲家 AIVA**：GPT 負責寫出押韻感人的歌詞，交給坐在鋼琴前的 AIVA 自動譜出旋律與交響伴奏，兩者合璧即成完整歌曲！
-</details>
+  * **🔥 考試常考**：程式生成 4 大功能為「<span style="color: #7aa2f7">產出註解、解釋與翻譯（轉成人話/跨語言）、改善跟重構、測試及補全</span>」；代表工具有 `ChatGPT`、`GitHub Copilot`（網頁生成 HTML/CSS 必選）、`AlphaCode`、`Devin`。
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
 ---
 
-### 3.7 程式生成 Copilot
-* **核心名詞全稱**：
-  * **GitHub Copilot（AI 結對編程助手, AI Pair Programmer）**
-  * **IDE（整合開發環境, Integrated Development Environment）**
-  * **HTML（超文本標記語言, HyperText Markup Language）**、**CSS（階層式樣式表, Cascading Style Sheets）**
-* **網頁前端生成流**：`自然語言註解 / 描述` ➔ `GitHub Copilot (嵌入 VS Code 等 IDE)` ➔ `自動生成 HTML 結構與 CSS 樣式代碼`
+### 3.7 數據分析 視覺化與自動化工具
+* **🔗 上下游串聯**：承接 **1.12 資料收集清理與前處理**（數據分析最常見 AI 應用為「**自動化資料清洗**」、生成式 AI 改善傳統分析方式為「**提供預測與模式探索**」），將分析結果透過本節的**資料視覺化原則**呈現，並搭配 **`Kaggle`** 實作學習與 **`Zapier`** 跨平台自動化。
+
+* **資料視覺化原則、Kaggle 與 Zapier 必考速查表**：
+  | 主題類別 | 考題核心提問 | ✅ 必選正解 / 擅長能力 | ❌ 易錯陷阱排除（必選排除項） |
+  | :--- | :--- | :--- | :--- |
+  | **資料視覺化原則** | 如何保持**風格一致性**？應避免什麼問題？ | 風格一致選「**<span style="color: #7aa2f7">統一的顏色和標籤格式</span>**」（以及使用簡單顏色、突出關鍵資訊） | 應避免的問題必選「**<span style="color: #e06c75">資訊過多（資訊過載）</span>**」（勿選多種顏色或不同字體） |
+  | **AI 學習平台 `Kaggle`** | 哪個平台最適合學習 AI 實作與數據分析？ | **`Kaggle`**（透過①參加公開競賽、②學習開源解決方案、③論壇交流提升技能） | ❌ 問何者「**不是**」Kaggle 提升技能方式，必選「**<span style="color: #e06c75">免費訂閱優惠會員</span>**」（虛構選項！） |
+  | **自動化工具 `Zapier`** | 無程式碼串接能做什麼？**無法完成**什麼？ | 擅長基於規則觸發：**① <span style="color: #7aa2f7">傳送通知</span>、② <span style="color: #7aa2f7">儲存檔案</span>、③ <span style="color: #7aa2f7">同步表格</span>** | ❌ **無法完成**必選「**<span style="color: #e06c75">完整理解語意</span>**」（僅為機械規則管線，不具 LLM 語意理解力） |
 
 * **3.7 考點精華標記**：
-  * **🔥 考試常考**：在網頁開發中，常用來生成 <span style="color: #7aa2f7">HTML 與 CSS 結構</span>的 AI 工具為 <span style="color: #7aa2f7">Copilot</span>（GitHub / Microsoft）。
-  * **⚠️ 易錯陷阱**：切勿選 <span style="color: #e06c75">Bard (Gemini)</span>、<span style="color: #e06c75">Claude</span>（通用對話模型）或 <span style="color: #e06c75">Notion</span>（筆記軟體）！
+  * **🔥 考試常考**：視覺化風格一致靠「<span style="color: #7aa2f7">統一的顏色和標籤格式</span>」、應避免「<span style="color: #e06c75">資訊過多</span>」；學 AI 實作首選 `<span style="color: #7aa2f7">Kaggle</span>`（排除免費訂閱優惠會員）；`Zapier` 無法完成「<span style="color: #e06c75">完整理解語意</span>」。
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
@@ -1294,136 +1365,182 @@
 
 ## 第四部分 生成式AI倫理法律
 
-### 4.1 深度偽造 (Deepfake)
+### 4.1 AI 治理核心原則 歐盟 AI 法案與治理制度
+* **🔗 上下游串聯**：作為第四部分「倫理法律與治理」的總綱，先確立 **AI 可信任 4 大核心原則**，再透過全球首部具強制力的 **《歐盟 AI 法案 (EU AI Act)》四級風險分級** 與 **6 大治理工具制度（ISO 42001 / NIST AI RMF）** 落地執行。
 * **核心名詞全稱**：
-  * **Deepfake（深度偽造，結合 Deep Learning 與 Fake）**
-  * **GAN（生成對抗網路, Generative Adversarial Network）**
-* **技術根源與風險流**：`基於 GAN 等生成技術（換臉/擬聲）` ➔ `三大社會風險：① 身分盜用詐騙 (Identity Theft)、② 造假影片與假新聞 (Fake News)、③ 操弄政治與破壞選舉公平`
+  * **Trustworthy AI（可信任 AI）**、**EU AI Act（歐盟人工智慧法案, European Union Artificial Intelligence Act）**
+  * **ISO 42001（國際人工智慧管理系統標準）**、**NIST AI RMF（美國國家標準暨技術研究院 AI 風險管理框架, Artificial Intelligence Risk Management Framework）**
+  * **Safety Assessment（安全性評估）**、**Rollback（版本還原）**、**Kill Switch（緊急停機開關 / 人工介入）**
+* **AI 可信任 4 大核心原則**：`① 公平性 (Fairness)` ＋ `② 透明性 (Transparency)` ＋ `③ 安全性 (Safety)` ＋ `④ 可解釋性 (Explainability)`
+* **歐盟風險 4 級金字塔**：`第一級：不可接受的風險（完全禁止）` ➔ `第二級：高風險（強制嚴格規範）` ➔ `第三級：有限風險（基本資訊揭露）` ➔ `第四級：最低風險（免受規範）`
+* **AI 全生命週期治理流**：`設計 ➔ 部署 ➔ 使用 ➔ 維護`（⚠️ **全週期持續管控，絕非部署完就結束！**）
+
+* **1. 歐盟《AI 法案 (EU AI Act)》四級風險治理必背配對表**：
+  | 風險等級 | 管制強度 | 核心規範要求 | 必背代表應用場景（考題直接配對！） |
+  | :--- | :--- | :--- | :--- |
+  | **第一級：不可接受的風險** | <span style="color: #e06c75">完全禁止</span> (Prohibited) | 威脅人類安全、生存權與基本尊嚴，一律禁用 | <span style="color: #e06c75">社會信用評分系統</span> (Social Scoring)、認知行為操縱 |
+  | **第二級：高風險** | <span style="color: #7aa2f7">強制嚴格規範</span> | 攸關性命、健康、升學就業重大權益，需嚴格審查與稽核 | <span style="color: #7aa2f7">醫療診斷 AI</span>、<span style="color: #7aa2f7">招聘與求職篩選系統</span> (Recruitment)、司法執法 |
+  | **第三級：有限風險** | <span style="color: #7aa2f7">基本資訊揭露</span> | 履行透明度義務，<span style="color: #7aa2f7">主動告知使用者正在與 AI 互動</span> | <span style="color: #7aa2f7">聊天機器人</span> (Chatbot)、Deepfake 標註 |
+  | **第四級：最低風險** | <span style="color: #7aa2f7">免受規範</span> | 日常應用無重大侵害疑慮，採自願性自律 | <span style="color: #7aa2f7">影片推薦系統</span>、<span style="color: #7aa2f7">電玩遊戲角色自動回應</span> (NPC)、垃圾信過濾 |
+
+* **2. 最常見的 6 大 AI 治理工具與制度總覽表**：
+  | 治理做法 | 代表工具 / 核心內容 | 一句話白話秒懂與必考重點 |
+  | :--- | :--- | :--- |
+  | **① 法律法規規範** | **<span style="color: #7aa2f7">EU AI Act</span>**、**金融業自律指引**、**公部門 AI 準則** | 由政府或主管機關制定硬性法規與產業自律紅線（臺灣秉持「<span style="color: #7aa2f7">審慎、自律、資訊揭露</span>」） |
+  | **② 標準框架** | **<span style="color: #7aa2f7">ISO 42001</span>**、**<span style="color: #7aa2f7">NIST AI RMF</span>** (Risk Management Framework) | 國際通用的 AI 治理技術標準與風險管理框架，幫企業建立標準化管理體系 |
+  | **③ 使用契約與說明檔** | 服務條款 (ToS)、模型卡 (Model Cards)、系統說明書 | 白紙黑字寫清楚 AI 的能力邊界、適用範圍、資料授權與免責界線 |
+  | **④ 審查與稽核制度** | **<span style="color: #7aa2f7">安全性評估</span> (Safety Assessment)**、政府監管機制 | 上線前後定期體檢，測試有無偏見、漏洞或違規（體現「<span style="color: #7aa2f7">問責制</span>」） |
+  | **⑤ 異常處理與糾正機制** | ① <span style="color: #7aa2f7">即時監控</span>、② <span style="color: #7aa2f7">錯誤回報</span>、③ <span style="color: #7aa2f7">版本還原 (Rollback)</span>、④ <span style="color: #7aa2f7">人工介入 (Kill Switch)</span> | AI 出錯失控時能立刻踩煞車停機、退回舊版並修正錯誤 |
+  | **⑥ 人員訓練與分工** | **<span style="color: #7aa2f7">跨部門全員參與</span>**（IT、法務、業務、決策層） | 治理需全公司協作與員工培訓，⚠️ **<span style="color: #e06c75">絕非僅由 IT 資訊部門單獨負責</span>**！ |
+
+<details>
+<summary><b>💡 點擊展開白話案例：歐盟四級紅綠燈 ＆ 飛機緊急停機鈕 (Kill Switch)</b></summary>
+
+> 🚦 **1. 歐盟四級紅綠燈**：
+> * **第一級（紅燈／不可接受）**：像違禁品全面禁止（**社會信用評分**）。
+> * **第二級（黃燈／高風險）**：攸關人命與飯碗，必須嚴格安檢（**醫療診斷、AI 招聘篩選**）。
+> * **第三級（藍燈／有限風險）**：像食品標示成分，必須誠實告知「我是 AI」（**聊天機器人**）。
+> * **第四級（綠燈／最低風險）**：日常娛樂無害，免受規範（**影片推薦系統、電玩 NPC**）。
+>
+> 🛑 **2. 飛機緊急停機鈕 (Kill Switch)**：
+> 治理不是要求自動駕駛「100% 永不出錯」，而是遇到亂流失靈時，機長能按下緊急停機鈕 (**Kill Switch**) 手動接管、退回穩定版本 (**Rollback**)！
+</details>
+
+* **4.1 考點精華標記**：
+  * **🔥 考試常考**：
+    1. **可信任 AI 4 大核心原則**：<span style="color: #7aa2f7">公平性、透明性、安全性、可解釋性</span>（當 AI 偏誤導致**特定族群受害**時，屬於「<span style="color: #7aa2f7">公平性</span>」面向）。
+    2. **歐盟 AI 法案 4 級風險配對**：不可接受＝<span style="color: #e06c75">社會信用評分</span>；高風險＝<span style="color: #7aa2f7">醫療診斷 / 招聘系統</span>；有限風險＝<span style="color: #7aa2f7">聊天機器人</span>；最低風險＝<span style="color: #7aa2f7">影片推薦 / 遊戲 NPC</span>。
+    3. **6 大治理工具與國際標準框架**：法律規範（EU AI Act / 金融自律 / 公部門準則）、標準框架（**<span style="color: #7aa2f7">ISO 42001</span>** 與 **<span style="color: #7aa2f7">NIST AI RMF</span>**）、使用契約說明檔、審查稽核、異常處理糾正、人員訓練分工。
+  * **⚠️ 易錯陷阱**：聊天機器人是<span style="color: #7aa2f7">有限風險</span>（<span style="color: #e06c75">非高風險</span>）；影片推薦是<span style="color: #7aa2f7">最低風險</span>（<span style="color: #e06c75">非有限風險</span>）；AI 治理<span style="color: #e06c75">絕非部署完就結束</span>，且<span style="color: #e06c75">絕非僅由 IT 部門負責</span>！
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
 ---
 
-### 4.2 歐盟 AI 法案 AI 治理與臺灣 TAIDE 計畫
+### 4.2 AI 倫理五大原則 各國架構與臺灣 TAIDE 計畫
+* **🔗 上下游串聯**：承接 **4.1 AI 治理制度**，進一步探討「道德面」的 **AI 倫理五大原則**，以及**歐盟、美國、加拿大、日本、英國與臺灣**如何根據自身國情設計不同的倫理監管路線。
 * **核心名詞全稱**：
-  * **EU AI Act（歐盟人工智慧法案, European Union Artificial Intelligence Act）**
-  * **Trustworthy AI（可信賴人工智慧）**、**Accountability（問責制）**、**Safety Assessment（安全性評估）**
-  * **TAIDE（可信任生成式 AI 對話引擎, Trustworthy AI Dialog Engine）**、**NSTC（國家科學及技術委員會 / 國科會, National Science and Technology Council）**、**ML（機器學習, Machine Learning）**
-  * **Rollback（版本還原）**、**Kill Switch（緊急停機開關 / 人工介入）**
-  * **NPC（非玩家角色, Non-Player Character）**、**IT（資訊科技, Information Technology）**
-* **歐盟風險 4 級金字塔**：`① 不可接受風險 (Unacceptable Risk：完全禁止)` ➔ `② 高風險 (High Risk：強制嚴格規範)` ➔ `③ 有限風險 (Limited Risk：基本資訊揭露)` ➔ `④ 最低風險 (Minimal Risk：免受規範)`
-* **AI 全生命週期治理流**：`設計 ➔ 部署 ➔ 使用 ➔ 維護`（⚠️ **全週期持續管控，絕非部署完就結束！**）
+  * **Accountability（問責制）**、**NIST（美國國家標準與技術研究院, National Institute of Standards and Technology）**
+  * **TAIDE（可信任生成式 AI 對話引擎, Trustworthy AI Dialog Engine）**、**NSTC（臺灣國科會, National Science and Technology Council）**
+* **AI 倫理 5 大原則**：`① 以人為本` ＋ `② 可信任` ＋ `③ 透明性` ＋ `④ 問責制 (Accountability)` ＋ `⑤ 避免歧視`
+  * *(💡 **秒記對照**：4.1「可信任 4 原則」偏重技術屬性［公平/透明/安全/可解釋］；4.2「倫理 5 原則」則多了「**以人為本**」與「**問責制**（出事誰負責、政府設立監管機制）」。)*
 
-* **歐盟《AI 法案 (EU AI Act)》四級風險必背配對表**：
-  | 風險等級 | 管制強度 | 核心規範要求 | 必背代表應用場景（考題直接配對！） |
-  | :--- | :--- | :--- | :--- |
-  | **1. 不可接受風險** | <span style="color: #e06c75">完全禁止</span> (Prohibited) | 威脅人類安全、生存權與基本尊嚴 | <span style="color: #e06c75">社會信用評分系統</span> (Social Scoring)、認知行為操縱 |
-  | **2. 高風險** | <span style="color: #7aa2f7">強制嚴格規範</span> | 攸關性命、健康、升學就業重大權益，需嚴格審查 | <span style="color: #7aa2f7">醫療診斷 AI</span>、<span style="color: #7aa2f7">招聘與求職篩選系統</span> (Recruitment)、司法執法 |
-  | **3. 有限風險** | <span style="color: #7aa2f7">基本資訊揭露</span> | 履行透明度義務，<span style="color: #7aa2f7">主動告知使用者正在與 AI 互動</span> | <span style="color: #7aa2f7">聊天機器人</span> (Chatbot)、Deepfake 標註 |
-  | **4. 最低風險** | <span style="color: #7aa2f7">免受規範</span> | 日常應用無重大侵害疑慮，自願性自律 | <span style="color: #7aa2f7">影片推薦系統</span>、<span style="color: #7aa2f7">電玩遊戲角色自動回應</span> (NPC, Non-Player Character)、垃圾信過濾 |
-
-* **可信賴 AI 四大原則、治理機制與臺灣 TAIDE 計畫速查表**：
-  | 治理維度 | 核心原則 / 機制（含英文） | 關鍵考點結論與常見誘答排除 |
+* **全球各國 AI 倫理架構與臺灣 TAIDE 計畫速查表**：
+  | 國家 / 地區 | 核心倫理架構與監管主張 | 考試必記一句話招牌特色 |
   | :--- | :--- | :--- |
-  | **可信賴 AI 4 原則** | <span style="color: #7aa2f7">公平性 (Fairness)、透明性 (Transparency)、安全性 (Safety)、可解釋性 (Explainability)</span> | 當 <span style="color: #e06c75">AI 模型偏誤導致特定族群受害</span>時，屬於「<span style="color: #7aa2f7">公平性 (Fairness)</span>」面向！ |
-  | **倫理準則問責與評估** | <span style="color: #7aa2f7">問責制</span> (Accountability) ＆ <span style="color: #7aa2f7">安全性評估</span> (Safety Assessment) | 問責制體現為「<span style="color: #7aa2f7">政府機構設立生成式 AI 監管機制</span>」；建議進行「<span style="color: #7aa2f7">安全性評估</span>」 |
-  | **AI 風險 3 大來源** | <span style="color: #7aa2f7">資料面向、模型面向、使用面向</span> | <span style="color: #e06c75">資料偏差</span> (Data Bias) ➔ <span style="color: #e06c75">模型黑箱/幻覺</span> (Hallucination) ➔ <span style="color: #e06c75">濫用/Deepfake/侵權</span> |
-  | **組織權責分工** | <span style="color: #7aa2f7">跨部門全員參與</span> | 涵蓋資訊 (IT, Information Technology)、法務、業務與決策者，<span style="color: #e06c75">絕非僅由 IT 部門單獨負責</span>！ |
-  | **異常應對 4 機制** | 目標：出錯時能有效控管與修正 | ① <span style="color: #7aa2f7">即時監控</span>、② <span style="color: #7aa2f7">錯誤回報</span>、③ <span style="color: #7aa2f7">版本還原</span> (Rollback)、④ <span style="color: #7aa2f7">人工介入</span> (Kill Switch 緊急停機) |
-  | **臺灣治理精神** | AI 自律規範（金融/公部門） | 秉持「<span style="color: #7aa2f7">審慎、自律、資訊揭露</span>」三大原則 |
-  | **臺灣 TAIDE 計畫** | **可信任生成式 AI 對話引擎** (Trustworthy AI Dialog Engine) | 由 <span style="color: #7aa2f7">國科會 (NSTC)</span> 主導，基於開源模型融入臺灣繁體中文、文化與法規，核心技術本質為<span style="color: #7aa2f7">機器學習 (ML, Machine Learning)</span>；❌ 切勿誤選<span style="color: #e06c75">虛擬實境 (VR, Virtual Reality)、區塊鏈或量子計算</span> |
+  | **歐盟 (EU)** | 全球最早提出「**<span style="color: #7aa2f7">可信賴的 AI 指南</span>**」＋《EU AI Act》 | 全球 AI 倫理與硬性法規領頭羊；問責制體現為「<span style="color: #7aa2f7">政府機構設立生成式 AI 監管機制</span>」 |
+  | **美國 (US)** | 由 **<span style="color: #7aa2f7">國家標準與技術研究院 (NIST)</span>** 推出「**<span style="color: #7aa2f7">AI 風險管理框架 1.0 (AI RMF 1.0)</span>**」 | 主打業界技術標準與風險自主管理框架，兼顧科技巨頭創新動能 |
+  | **加拿大 (Canada)** | 特別關注「**<span style="color: #7aa2f7">AI 高風險</span>**」系統（提出 AIDA 法案） | 針對高影響力 AI 系統，強制要求加強「**<span style="color: #7aa2f7">稽核與可追溯機制</span>**」 |
+  | **日本 ＆ 英國** | 皆主張採用「**<span style="color: #7aa2f7">指導原則代替法律</span>**」（軟性治理） | 不急著立嚴刑峻法，而是以**彈性指導原則**引導產業自律、鼓勵技術發展 |
+  | **臺灣 (TAIDE)** | **<span style="color: #7aa2f7">國科會 (NSTC)</span>** 主導「**可信任生成式 AI 對話引擎 (TAIDE)**」 | 基於開源模型融入臺灣繁中文化與法規，技術本質為「**<span style="color: #7aa2f7">機器學習 (ML)</span>**」（❌ <span style="color: #e06c75">切勿誤選 VR、區塊鏈或量子計算</span>） |
 
 <details>
-<summary><b>💡 點擊展開白話案例：歐盟四級紅綠燈、飛機緊急停機鈕與臺灣在地大腦 TAIDE（原著範例精煉）</b></summary>
+<summary><b>💡 點擊展開白話案例：各國管 AI 的「家教風格」對比 ＆ 臺灣本土大腦 TAIDE</b></summary>
 
-> 🚦 **1. 歐盟四級紅綠燈**：
-> * **紅燈（不可接受/禁止）**：像違禁品全面禁止（**社會信用評分**）。
-> * **黃燈（高風險/嚴管）**：攸關人命與飯碗，必須嚴格安檢（**醫療診斷、AI 招聘篩選**）。
-> * **藍燈（有限風險/揭露）**：像食品標示成分，必須誠實說「我是 AI」（**聊天機器人**）。
-> * **綠燈（最低風險/免管）**：日常娛樂無害（**影片推薦系統、電玩 NPC**）。
->
-> 🛑 **2. 飛機緊急停機鈕 (Kill Switch)**：
-> 治理不是要求自動駕駛「100% 永不出錯」，而是遇到亂流失靈時，機長能按下緊急停機鈕 (Kill Switch) 手動接管、退回穩定版本！
->
-> 🇹🇼 **3. 臺灣可信賴 AI 代表實踐——TAIDE 核心價值比喻**：
-> 國外模型常把臺灣的「計程車」說成「出租車」。國科會主導的 **TAIDE（可信任生成式 AI 對話引擎）** 就像在臺灣本土長大的語言學家，利用「**機器學習 (ML)**」技術大量吸收繁體中文與臺灣文化法規，打造值得信賴的本土對話引擎。
+> 🌍 **各國管 AI 的家教風格**：
+> * **歐盟（嚴格校規派）**：最早寫出「可信賴 AI 指南」，還直接立校規分四級開罰。
+> * **美國（專業量表派）**：由國家標準局 (**NIST**) 發給企業一套「**AI 風險管理框架 1.0**」體檢表。
+> * **加拿大（高風險盯人派）**：專門緊盯會影響人權的「**高風險 AI**」，要求每一步都要留紀錄可追溯、可稽核。
+> * **日本與英國（溫和勸導派）**：怕法律訂太死會扼殺創新，主張用「**指導原則代替硬性法律**」。
+> * **臺灣（在地可信任派）**：國科會用「**機器學習 (ML)**」訓練出懂臺灣繁體中文與法規的 **TAIDE** 模型！
 </details>
 
 * **4.2 考點精華標記**：
   * **🔥 考試常考**：
-    1. **歐盟四級風險配對**：禁止＝<span style="color: #e06c75">社會信用評分</span>；高風險＝<span style="color: #7aa2f7">醫療診斷 / 招聘系統</span>；有限風險＝<span style="color: #7aa2f7">聊天機器人</span>；最低風險＝<span style="color: #7aa2f7">影片推薦 / 遊戲自動回應</span>。
-    2. **特定族群因偏誤受害**：屬於「<span style="color: #7aa2f7">公平性 (Fairness)</span>」面向。
-    3. **歐盟問責制體現**：<span style="color: #7aa2f7">政府機構設立生成式 AI 監管機制</span>；**建議評估類型**：<span style="color: #7aa2f7">安全性評估</span>。
-    4. **臺灣 TAIDE 計畫**：主導單位為<span style="color: #7aa2f7">國科會 (NSTC)</span>，技術核心本質為<span style="color: #7aa2f7">機器學習 (ML, Machine Learning)</span>。
-  * **⚠️ 易錯陷阱**：
-    1. 聊天機器人是<span style="color: #7aa2f7">有限風險</span>（<span style="color: #e06c75">非高風險</span>）；影片推薦是<span style="color: #7aa2f7">最低風險</span>（<span style="color: #e06c75">非有限風險</span>）。
-    2. 族群受害選<span style="color: #7aa2f7">公平性</span>（<span style="color: #e06c75">切勿選問責性、隱私性或合法性</span>）。
-    3. AI 治理<span style="color: #e06c75">絕非部署完就結束</span>，且<span style="color: #e06c75">絕非僅由 IT 部門負責</span>！
-    4. **TAIDE** 的技術本質是<span style="color: #7aa2f7">機器學習</span>，<span style="color: #e06c75">切勿誤選為虛擬實境 (VR)、區塊鏈或量子計算</span>！
+    1. **AI 倫理五大原則**：<span style="color: #7aa2f7">以人為本、可信任、透明性、問責制、避免歧視</span>。
+    2. **各國 AI 倫理架構配對**：**歐盟**＝最早提出<span style="color: #7aa2f7">可信賴的 AI 指南</span>；**美國**＝由 <span style="color: #7aa2f7">NIST</span> 推出 <span style="color: #7aa2f7">AI 風險管理框架 1.0</span>；**加拿大**＝關注<span style="color: #7aa2f7">高風險 AI</span> 並加強<span style="color: #7aa2f7">稽核與可追溯機制</span>；**日本與英國**＝主張採用<span style="color: #7aa2f7">指導原則代替法律</span>。
+    3. **臺灣 TAIDE 計畫**：由<span style="color: #7aa2f7">國科會 (NSTC)</span> 主導，技術核心為<span style="color: #7aa2f7">機器學習 (ML)</span>。
+  * **⚠️ 易錯陷阱**：問「哪兩個國家主張用指導原則代替硬性法律」，必選 <span style="color: #7aa2f7">日本與英國</span>（<span style="color: #e06c75">歐盟則是制定強制法律 EU AI Act</span>）！
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
 ---
 
-### 4.3 資料治理三大目標與資安防護
-* **🔗 上下游串聯**：承接 **4.2 AI 風險三大來源中的「資料面向」**，若要從源頭杜絕訓練資料偏見、外洩與侵權，必須先落實本節的**資料治理三大目標**與**加密防護**，並進一步遵循 **4.4 全球隱私法規**。
+### 4.3 生成式 AI 著作權 深度偽造 (Deepfake) 與系統風險
+* **🔗 上下游串聯**：當生成式 AI 強大到能以假亂真時，向外會引發 **著作權爭議（AI 生成物無版權、AI 假 Drake 風波）** 與 **Deepfake 社會詐騙風險**；向內則必須提防 AI 系統本身的 **4 大內建漏洞**。
 * **核心名詞全稱**：
-  * **Data Governance（資料治理）**、**GIGO（垃圾進、垃圾出, Garbage In, Garbage Out）**
-  * **Symmetric Encryption（對稱加密）** vs **Asymmetric Encryption（非對稱加密）**
-  * **Access Control（存取權限控制）**、**Social Engineering（社交工程）**
-* **資料治理 3 大目標**：`① 保證資料品質 (Quality：完整性＋準確性)` ＋ `② 確保透明度與合規 (Transparency：記錄來源授權＋可解釋)` ＋ `③ 維持資料一致性 (Consistency：標準統一穩定輸出)`
+  * **Copyright（著作權 / 版權）**、**Deepfake（深度偽造，結合 Deep Learning 與 Fake）**
+  * **GAN（生成對抗網路, Generative Adversarial Network）**、**API（應用程式介面, Application Programming Interface）**
 
-* **資安加密與威脅速查表**：
-  | 資安維度 | 技術 / 威脅名稱 | 一句話白話秒懂（怎麼運作？） |
+* **1. 生成式 AI 的著作權、侵權與深度偽造 (Deepfake) 速查表**：
+  | 議題類別 | 核心考點與實務案例 | 關鍵結論（考試必記！） |
   | :--- | :--- | :--- |
-  | **資料加密** | **對稱加密 (Symmetric Encryption)** | 上鎖（加密）跟開鎖（解密）都用「<span style="color: #7aa2f7">同一把金鑰</span>」（速度快，適合鎖自己硬碟裡的大批檔案） |
-  | **資料加密** | **非對稱加密 (Asymmetric Encryption)** | 分成「<span style="color: #7aa2f7">公開金鑰</span>（像郵筒投信口，大家都能鎖）＋ <span style="color: #7aa2f7">私密金鑰</span>（像郵差鑰匙，只有本人能開）」，適合網路安全傳輸 |
-  | **權限管理** | **最小權限原則 (Access Control)** | 依職務只給剛好的權限，嚴格限制「<span style="color: #7aa2f7">誰能看、誰能改、誰能刪</span>」 |
-  | **人為威脅** | **社交工程 (Social Engineering)** | 不攻破電腦技術，而是利用<span style="color: #e06c75">人性弱點與騙術</span>（如釣魚信、假冒主管）騙你主動交出密碼個資 |
+  | **AI 生成物版權歸屬** | **版權到底算誰的？**（美國著作權局 ＆ 臺灣智慧財產局） | 純由 AI 生成的作品，「**<span style="color: #e06c75">不管畫得多美都不具備著作權</span>**」（著作權只保護「人類的精神創作」，**在臺灣也是同一套邏輯**！） |
+  | **音樂圈侵權案例** | **🎵 <span style="color: #7aa2f7">AI 假 Drake 風波</span>**（TikTok 爆紅神曲《Heart on My Sleeve》） | 網友用 AI 克隆模仿知名歌手 **Drake 與 The Weeknd** 的聲音對唱並在 TikTok 爆紅，引爆全球對 **AI 聲音克隆、肖像權與訓練資料侵權** 的法律爭議 |
+  | **深度偽造 (Deepfake)** | 基於 **<span style="color: #7aa2f7">GAN (生成對抗網路)</span>** 等技術進行逼真換臉與擬聲 | 引發 **3 大社會風險**：① <span style="color: #e06c75">身分盜用詐騙</span>、② <span style="color: #e06c75">造假影片與假新聞</span>、③ <span style="color: #e06c75">操弄政治與破壞選舉公平</span> |
+
+* **2. 系統層面的 4 大風險（AI 的內建漏洞）總覽表**：
+  | 系統層面四大風險 | 漏洞成因與白話解析（為什麼會出事？） | 影響後果與對應章節 |
+  | :--- | :--- | :--- |
+  | **① <span style="color: #e06c75">資料偏見與歧視</span>** | AI 會從歷史資料中學習；若**歷史資料本身存在歧視，AI 也會直接複製偏見** | 導致特定性別或族群受害（違反「<span style="color: #7aa2f7">公平性</span>」原則） |
+  | **② <span style="color: #e06c75">可解釋性與透明度不足</span>** | 深度學習神經網路結構極為複雜，如同「黑箱」，難以直接得知決策推論原因 | 高風險領域（醫療/核貸）不敢盲目採信（需靠 4.5 節 **LIME / SHAP** 拆解） |
+  | **③ <span style="color: #e06c75">資安與惡意使用的風險</span>** | 系統遭受駭客攻擊、惡意提示注入 (Prompt Injection)，或被拿去寫釣魚信與病毒 | 造成機密資料外洩、系統癱瘓或助長網路犯罪 |
+  | **④ <span style="color: #e06c75">協力廠商模型的不確定性</span>** | 許多 AI 系統是由**不同來源的 API 或開源模型拼裝組成** | **一旦其中一個第三方元件內含偏誤或漏洞，就會<span style="color: #e06c75">連帶影響整個系統的穩定性與可靠性</span>**！ |
 
 <details>
-<summary><b>💡 點擊展開白話案例：資料治理如同買保險與一把鑰匙 vs 郵筒投信（原著範例）</b></summary>
+<summary><b>💡 點擊展開白話案例：猴子自拍照與 AI 畫作無版權、TikTok 假 Drake 風波 ＆ 拼裝車漏洞</b></summary>
 
-> 🛡️ **資料治理像買保險**：不管好資料，就會引發資安外洩、版權挨告、模型胡言亂語與巨額罰款。
-> 🔑 **對稱 vs 非對稱加密**：**對稱加密**像一般保險箱，鎖門開門用「同一把鑰匙」；**非對稱加密**像街邊「郵筒」，路人都能用「公鑰（投信口）」把信投進去，但只有郵差拿「私鑰（後門鑰匙）」能打開拿信！
+> 🎨 **1. 為什麼 AI 畫得再美也沒有著作權？**：
+> 法律規定「著作權」只保護「人類大腦的創意表達」。如果你只輸入一句指令讓 Midjourney 畫出一幅絕美油畫，因為構圖與筆觸都是 AI 算出來的，所以在美國跟臺灣都一樣：**這張圖沒有著作權，任何人都能拿去印在馬克杯上賣，你告不了他！**
+>
+> 🎤 **2. 轟動音樂圈的「AI 假 Drake 風波」**：
+> 2023 年 TikTok 上突然爆紅一首聽起來百分之百像天王 **Drake 跟 The Weeknd** 合唱的新歌，結果兩位歌手本人根本沒唱過！這是網友用 AI 學習他們聲音合成出來的，最後被唱片公司緊急以侵權為由全球下架。
+>
+> 🧩 **3. 協力廠商模型的不確定性（拼裝車風險）**：
+> 就像一家餐廳自己不種菜，而是跟 A 廠商買肉、B 廠商買醬料、C 廠商買麵條（串接各家 **API 與開源模型**）；只要其中一家供應商的醬料有毒（內含偏誤或資安漏洞），整盤端給客人的菜就會跟著出事！
 </details>
 
 * **4.3 考點精華標記**：
   * **🔥 考試常考**：
-    1. **資料治理三大目標**：<span style="color: #7aa2f7">品質（完整/準確）、透明（合規/信任）、一致性（穩定表現）</span>。
-    2. **對稱 vs 非對稱加密**：<span style="color: #7aa2f7">同一把金鑰</span> vs <span style="color: #7aa2f7">公鑰＋私鑰</span>。
-  * **⚠️ 易錯陷阱**：AI 產出偏見與侵權的主因常源於「<span style="color: #e06c75">訓練資料治理不當</span>」，非單純演算法數學問題！
+    1. **AI 生成作品著作權**：純 AI 生成作品**不管畫得多美都<span style="color: #e06c75">不具備著作權</span>**（臺灣與美國皆同）。
+    2. **音樂圈 AI 侵權代表案例**：TikTok 爆紅的「**<span style="color: #7aa2f7">AI 假 Drake 風波</span>**」（模仿 Drake 與 The Weeknd 演唱）。
+    3. **系統層面 4 大內建風險**：① <span style="color: #e06c75">資料偏見與歧視</span>（複製歷史資料偏見）、② <span style="color: #e06c75">可解釋性與透明度不足</span>、③ <span style="color: #e06c75">資安與惡意使用風險</span>、④ <span style="color: #e06c75">協力廠商模型的不確定性</span>（串接不同 API 或開源模型，單一元件漏洞會連帶影響整體系統穩定與可靠度）。
+  * **⚠️ 易錯陷阱**：AI 產生偏見是因為「<span style="color: #7aa2f7">從存在歧視的歷史資料中學習並複製偏見</span>」，並非 AI 自己產生主觀意識！
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
 ---
 
-### 4.4 隱私法規 GDPR HIPAA 與個資法
-* **🔗 上下游串聯**：承接 **4.3 資料治理與加密技術**，當企業蒐集個資或醫療數據訓練 AI 時，技術上的「加密與刪除權限」即直接對應本節 **GDPR（被遺忘權）**、**HIPAA（加密保護病患資料）** 與 **臺灣個資法** 的強制合規要求。
+### 4.4 資料治理 四大隱私保護策略與隱私法規
+* **🔗 上下游串聯**：承接 **1.12 資料收集清理** 與 **4.3 系統資安風險**，為了防止 AI 訓練資料外洩個資或觸法，企業必須落實 **資料治理三大目標**、執行 **四大隱私保護策略**，並遵守 **GDPR、HIPAA 與臺灣個資法**。
 * **核心名詞全稱**：
-  * **GDPR（歐盟一般資料保護規則, General Data Protection Regulation）**、**Right to be Forgotten（被遺忘權）**
-  * **HIPAA（美國健康保險可攜性和責任法案, Health Insurance Portability and Accountability Act）**、**PHI（受保護健康資訊, Protected Health Information）**
-  * **PDPA（個人資料保護法 / 臺灣個資法, Personal Data Protection Act）**
+  * **Data Governance（資料治理）**、**De-identification（資料去識別化）**、**Data Minimization（數據最小化）**
+  * **Access Control（存取控制限制）**、**Symmetric / Asymmetric Encryption（對稱 / 非對稱加密）**、**Social Engineering（社交工程）**
+  * **GDPR（歐盟一般資料保護規則, General Data Protection Regulation）**、**HIPAA（美國健康保險可攜性和責任法案, Health Insurance Portability and Accountability Act）**、**PDPA（臺灣個人資料保護法, Personal Data Protection Act）**
+* **資料治理 3 大目標**：`① 保證資料品質（完整性＋準確性）` ＋ `② 確保透明度與合規（記錄來源授權＋可解釋）` ＋ `③ 維持資料一致性（標準統一穩定輸出）`
+* **4 大隱私保護策略（必背！）**：`① 資料去識別化` ＋ `② 存取控制限制` ＋ `③ 資料加密` ＋ `④ 數據最小化`
 
-* **全球三大隱私法規必背對照表**：
+* **1. 四大隱私保護策略與資安防護速查表**：
+  | 保護策略 / 資安維度 | 技術方法與細項 | 一句話白話秒懂（怎麼保護隱私？） |
+  | :--- | :--- | :--- |
+  | **① <span style="color: #7aa2f7">資料去識別化</span>** | 匿名化、假名化、遮蔽敏感欄位 | 把姓名、身分證字號、電話塗掉或換成代號，讓別人**看不出這筆資料是誰** |
+  | **② <span style="color: #7aa2f7">存取控制限制</span>** | 最小權限原則 (Access Control) | 依職務分級授權，嚴格限制「**<span style="color: #7aa2f7">誰能看、誰能改、誰能刪</span>**」，不相關的人進不去 |
+  | **③ <span style="color: #7aa2f7">資料加密</span>** | **對稱加密** vs **非對稱加密** | **對稱加密**＝鎖門開門用「<span style="color: #7aa2f7">同一把金鑰</span>」；**非對稱加密**＝分「<span style="color: #7aa2f7">公開金鑰</span>（大家鎖）＋ <span style="color: #7aa2f7">私密金鑰</span>（本人開）」 |
+  | **④ <span style="color: #7aa2f7">數據最小化</span>** | 只收集「必要」的最少量資料 | 辦會員只需要「信箱」就別硬討「身分證＋血型」，**收越少敏感資料、外洩風險越低** |
+  | **⚠️ 人為資安威脅** | **社交工程 (Social Engineering)** | 不攻破電腦技術，而是利用**<span style="color: #e06c75">人性弱點與騙術</span>**（如釣魚信、假冒主管）騙你主動交出密碼 |
+
+* **2. 全球三大隱私法規必背對照表**：
   | 法規名稱 | 管轄與適用領域 | 核心關鍵要求（必考！） | 違規最高罰則 / 條文 |
   | :--- | :--- | :--- | :--- |
-  | **歐盟 GDPR (General Data Protection Regulation)** | 歐盟／全球最嚴個資標準 | <span style="color: #7aa2f7">明確同意</span> (Explicit Consent)、<span style="color: #7aa2f7">被遺忘權（刪除權）</span>、隱私設計 | 最高處<span style="color: #e06c75">全球年度營收 4%</span>（或 2,000 萬歐元） |
-  | **美國 HIPAA (Health Insurance Portability and Accountability Act)** | 美國／<span style="color: #7aa2f7">醫療與健康資料</span> (PHI, Protected Health Information) | <span style="color: #7aa2f7">使用加密技術保護患者資料</span>、嚴格存取授權 | 鉅額民刑事罰款（⚠️ <span style="color: #e06c75">商業與非商業皆嚴格受管</span>） |
-  | **臺灣個資法 (PDPA, Personal Data Protection Act)** | 臺灣公私部門個資 | <span style="color: #7aa2f7">第 5 條</span>（明確告知蒐集目的）<br><span style="color: #7aa2f7">第 11 條</span>（當事人查詢、停止利用、刪除權） | 行政罰鍰、限期改正、民刑事責任 |
+  | **歐盟 GDPR** | 歐盟／全球最嚴個資標準 | <span style="color: #7aa2f7">明確同意</span> (Explicit Consent)、<span style="color: #7aa2f7">被遺忘權（刪除權）</span>、隱私設計 | 最高處<span style="color: #e06c75">全球年度營收 4%</span>（或 2,000 萬歐元） |
+  | **美國 HIPAA** | 美國／<span style="color: #7aa2f7">醫療與健康資料</span> (PHI) | <span style="color: #7aa2f7">使用加密技術保護患者資料</span>、嚴格存取授權 | 鉅額民刑事罰款（⚠️ <span style="color: #e06c75">商業與非商業皆嚴格受管</span>） |
+  | **臺灣個資法 (PDPA)** | 臺灣公私部門個資 | <span style="color: #7aa2f7">第 5 條</span>（明確告知蒐集目的）；<span style="color: #7aa2f7">第 11 條</span>（當事人查詢、停止利用、刪除權） | 行政罰鍰、限期改正、民刑事責任 |
 
 <details>
-<summary><b>💡 點擊展開白話案例：被遺忘權與病歷保險箱（法律生活比喻）</b></summary>
+<summary><b>💡 點擊展開白話案例：醫院病歷的「四大隱私防護罩」＆ 一把鑰匙 vs 郵筒投信</b></summary>
 
-> 🧽 **GDPR 被遺忘權**：用戶有權要求平台徹底刪除自己的個資足跡，不能偷偷留著訓練 AI。
-> 🏥 **HIPAA 病歷加密保險箱**：醫院處理病患健康資料，最重要的安全措施就是**「使用加密技術保護患者資料」**，絕不可公開或僅存紙本！
+> 🛡️ **醫院把病歷餵給 AI 訓練前的「四大隱私保護策略」**：
+> 1. **資料去識別化**：先把病歷上的「王小明、身分證 A123456789」塗掉換成「病患 #001」。
+> 2. **數據最小化**：研究感冒藥效只需要「年齡、症狀」，就不要連病患的「家庭住址、信用卡號」都收進來。
+> 3. **存取控制限制**：設定只有主治醫師與授權工程師能讀取，實習生與外人一律擋在門外。
+> 4. **資料加密**：把病歷檔案鎖進保險箱——自己硬碟備份用「同一把鑰匙」鎖（**對稱加密**）；跨院網路傳輸用「公鑰投信口＋私鑰後門鑰匙」（**非對稱加密**），完全符合美國 **HIPAA** 的加密要求！
 </details>
 
 * **4.4 考點精華標記**：
   * **🔥 考試常考**：
-    1. **GDPR**：<span style="color: #7aa2f7">明確同意、被遺忘權</span>、最高罰全球營收 <span style="color: #e06c75">4%</span>。
-    2. **美國 HIPAA 處理健康資料關鍵措施**：<span style="color: #7aa2f7">使用加密技術保護患者資料</span>。
-    3. **臺灣個資法**：<span style="color: #7aa2f7">第 5 條</span>（告知目的）、<span style="color: #7aa2f7">第 11 條</span>（查詢/停止/刪除權）。
+    1. **四大隱私保護策略**：① <span style="color: #7aa2f7">資料去識別化</span>、② <span style="color: #7aa2f7">存取控制限制</span>、③ <span style="color: #7aa2f7">資料加密</span>（對稱：同一把金鑰；非對稱：公鑰＋私鑰）、④ <span style="color: #7aa2f7">數據最小化</span>。
+    2. **資料治理三大目標**：<span style="color: #7aa2f7">品質（完整/準確）、透明（合規/信任）、一致性（穩定表現）</span>。
+    3. **三大隱私法規**：**GDPR**（明確同意、<span style="color: #7aa2f7">被遺忘權</span>、最高罰全球營收 <span style="color: #e06c75">4%</span>）；**美國 HIPAA**（醫療健康資料，<span style="color: #7aa2f7">使用加密技術保護患者資料</span>）；**臺灣個資法**（<span style="color: #7aa2f7">第 5 條</span>告知目的、<span style="color: #7aa2f7">第 11 條</span>查詢停止刪除權）。
   * **⚠️ 易錯陷阱**：HIPAA 考題切勿選「<span style="color: #e06c75">將患者資料公開</span>」、「<span style="color: #e06c75">保存於紙質檔案</span>」或「<span style="color: #e06c75">僅非商業用途受保護</span>」！
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
@@ -1431,7 +1548,7 @@
 ---
 
 ### 4.5 模型可解釋性 LIME vs SHAP
-* **🔗 上下游串聯**：落實 **4.2 可信賴 AI 四大原則中的「可解釋性 (Explainability)」**，為了解決 **1.3 深度學習神經網路的黑箱問題**，實務上便透過本節的 **LIME（單筆局部解釋）** 與 **SHAP（全局特徵貢獻）** 拆解 AI 的決策理由。
+* **🔗 上下游串聯**：落實 **4.1 可信任 AI 四大原則中的「可解釋性 (Explainability)」** 並解決 **4.3 系統層面風險中的「可解釋性與透明度不足（黑箱問題）」**，實務上便透過本節的 **LIME（單筆局部解釋）** 與 **SHAP（全局特徵貢獻）** 拆解 AI 的決策理由。
 * **核心名詞全稱**：
   * **XAI（可解釋人工智慧, Explainable Artificial Intelligence）**
   * **LIME（局部可解釋模型無關解釋, Local Interpretable Model-agnostic Explanations）**
@@ -1471,16 +1588,19 @@
 
 | 工具 / 模型 | 開發商 | 授權 / 架構 | 核心定位與受眾 | 💡 具體應用案例 | 🔥 考試常考重點 | ⚠️ 易錯陷阱提醒 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **ChatGPT ＆ GPTs** | **OpenAI** | 閉源商業<br>(Decoder-only + <span style="color: #7aa2f7">RLHF</span>) | 通用對話大語言模型與客製化 AI 生態系平臺 | 撰寫行銷文案、智能客服、透過 GPTs 打造專屬領域助手 | 對話式互動；具備<span style="color: #7aa2f7">上下文學習 (ICL)</span>、以 GPT-3.5 + <span style="color: #7aa2f7">RLHF 行為對齊</span>、打造 <span style="color: #7aa2f7">GPTs 平臺化生態系</span> | 閉源服務；仍會產生「<span style="color: #e06c75">幻覺</span> (Hallucination)」 |
-| **GPT-1 / 3 / 4V / 4o** | **OpenAI** | 閉源模型<br>(自迴歸 Decoder) | 業界標竿 LLM (Large Language Model) 底座（4V/4o 支援多模態） | 企業 API (Application Programming Interface) 串接、跨模態圖文音綜合推理 | <span style="color: #7aa2f7">單向文字接龍</span>；Few-shot 與多模態代表 | GPT-3 為純文字模型，<span style="color: #e06c75">無法直接生圖</span> |
-| **Gemini 1.5 系列<br>(Pro / Flash，原 Bard)** | **Google**<br>(DeepMind) | 閉源商業<br>(原生多模態) | 搜尋整合、手機端導入 (Pixel + Android)、跨文字影音代碼理解 | 上傳 1 小時影片或長篇 PDF 文件即時解析與檢索 | <span style="color: #7aa2f7">原生多模態架構</span>；<span style="color: #7aa2f7">搜尋與 Android 手機端整合</span>；Bard 已更名為 Gemini | 通用對話模型，<span style="color: #e06c75">非 IDE (Integrated Development Environment) 內建網頁代碼外掛</span> |
-| **Claude 3 系列<br>(Opus / Sonnet / Haiku)** | **Anthropic** | 閉源商業<br>(Constitutional AI) | 符合人類價值觀、高安全性、支援 <span style="color: #7aa2f7">200K tokens 超長上下文</span> | 大型代碼庫重構、長篇法規合約逐條審閱 | Anthropic 開發；<span style="color: #7aa2f7">憲政 AI 安全對齊</span>、<span style="color: #7aa2f7">200K 超長上下文</span> | 通用語言模型，<span style="color: #e06c75">非 IDE 專用代碼外掛</span> |
-| **Meta AI ＆ LLaMA 3** | **Meta** | **開源權重**<br>(Large Language Model Meta AI) | 全球最具代表性之開源大型語言模型與社群內建助手 | 企業免費下載 LLaMA 3 權重於本地微調部署；FB/IG 社群互動 | 主打「<span style="color: #7aa2f7">開源推廣</span>」標竿、<span style="color: #7aa2f7">社群導向整合</span>（Meta App 內建 AI 助手） | 屬開源權重模型，與閉源的 GPT-4 / Claude 路線不同 |
-| **Grok** | **xAI**<br>(Elon Musk) | 閉源商業 / 部分開源<br>(Transformer) | 深度結合 **X（原 Twitter）社群**之即時資訊對話模型 | 即時擷取 X 平台全球熱門貼文與突發新聞進行分析問答 | 結合 <span style="color: #7aa2f7">X (原 Twitter) 社群</span>、強調<span style="color: #7aa2f7">言論自由與即時資訊</span> | 開發商為 Elon Musk 創立的 <span style="color: #7aa2f7">xAI</span> |
-| **Apple Intelligence** | **Apple** | 閉源系統級整合<br>(Foundation Models 框架) | 蘋果生態系個人化智慧系統，強調裝置端運算與隱私 | iPhone / Mac 離線郵件摘要、Siri 跨 App 操作、通知重點整理 | 強調「<span style="color: #7aa2f7">離線運算、隱私保護</span>」與多語言支援 | 優先在終端設備離線處理，保護個人隱私 |
-| **Perplexity** | **Perplexity AI** | 閉源服務<br>(LLM + 即時搜尋) | 對話式搜尋引擎，提供即時檢索與引用來源 | 搜尋最新科技動態並產出附真實網址之報告 | 專長<span style="color: #7aa2f7">資訊檢索與摘要</span>；<span style="color: #e06c75">非生圖/生影片工具</span> | 常作為「生成電影風格圖片」之<span style="color: #e06c75">干擾誘答項</span>！ |
-| **TAIDE** | **臺灣國科會**<br>(NSTC, National Science and Technology Council) | 開源繁中模型<br>(基於 LLaMA 微調) | 臺灣在地文化、繁體中文與法規可信賴模型 (Trustworthy AI Dialog Engine) | 公部門公文擬稿、臺灣在地法規與用語問答 | 技術本質為<span style="color: #7aa2f7">機器學習 (ML, Machine Learning)</span>；國科會主導 | <span style="color: #e06c75">切勿誤選為 VR (Virtual Reality)、區塊鏈或量子計算</span>！ |
-| **BERT** | **Google**<br>(2018) | 開源模型<br>(雙向 Encoder) | NLU (Natural Language Understanding) 語言理解標竿，專攻分類與語意表徵 (Bidirectional Encoder Representations from Transformers) | Google 搜尋長句理解、金融留言正負情緒分類 | <span style="color: #e06c75">⚠️ 鑑別式 AI</span>、<span style="color: #7aa2f7">雙向 MLM (Masked Language Model) 猜詞 ＋ NSP (Next Sentence Prediction)</span> | 屬於「<span style="color: #e06c75">鑑別式 AI</span>」，<span style="color: #e06c75">絕非生成式 AI</span>！ |
+| <img src="https://www.google.com/s2/favicons?domain=chatgpt.com&sz=32" width="16" height="16" /> **ChatGPT ＆ GPTs** | **OpenAI** | 閉源商業 (Decoder-only + <span style="color: #7aa2f7">RLHF</span>) | 通用對話大語言模型與客製化 AI 生態系平臺 | 撰寫行銷文案、智能客服、透過 GPTs 打造專屬領域助手 | 對話式互動；具備<span style="color: #7aa2f7">上下文學習 (ICL)</span>、以 GPT-3.5 + <span style="color: #7aa2f7">RLHF 行為對齊</span>、打造 <span style="color: #7aa2f7">GPTs 平臺化生態系</span> | 閉源服務；仍會產生「<span style="color: #e06c75">幻覺</span> (Hallucination)」 |
+| <img src="https://www.google.com/s2/favicons?domain=openai.com&sz=32" width="16" height="16" /> **GPT-1 / 3 / 4V / 4o** | **OpenAI** | 閉源模型 (自迴歸 Decoder) | 業界標竿 LLM (Large Language Model) 底座（4V/4o 支援多模態） | 企業 API (Application Programming Interface) 串接、跨模態圖文音綜合推理 | <span style="color: #7aa2f7">單向文字接龍</span>；Few-shot 與多模態代表 | GPT-3 為純文字模型，<span style="color: #e06c75">無法直接生圖</span> |
+| <img src="https://www.google.com/s2/favicons?domain=gemini.google.com&sz=32" width="16" height="16" /> **Gemini 1.5 系列 (Pro / Flash，原 Bard)** | **Google** (DeepMind) | 閉源商業 (原生多模態) | 搜尋整合、手機端導入 (Pixel + Android)、跨文字影音代碼理解 | 上傳 1 小時影片或長篇 PDF 文件即時解析與檢索 | <span style="color: #7aa2f7">原生多模態架構</span>；<span style="color: #7aa2f7">搜尋與 Android 手機端整合</span>；Bard 已更名為 Gemini | 通用對話模型，<span style="color: #e06c75">非 IDE (Integrated Development Environment) 內建網頁代碼外掛</span> |
+| <img src="https://www.google.com/s2/favicons?domain=notebooklm.google.com&sz=32" width="16" height="16" /> **NotebookLM (Gemini Notebook)** | **Google** | 閉源免費服務 (基於 Gemini) | 個人化 AI 知識庫筆記與研究助手（嚴格基於用戶上傳來源回答） | 匯入多份講義 PDF 後進行問答整理，並一鍵生成雙人對談 Podcast 語音摘要 | 主打<span style="color: #7aa2f7">專屬知識庫 RAG 問答</span>與自動生成<span style="color: #7aa2f7">語音摘要 (Audio Overview)</span> | 僅根據用戶上傳之資料回答，大幅降低無中生有之幻覺 |
+| <img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=32" width="16" height="16" /> **Claude 3 系列 (Opus / Sonnet / Haiku)** | **Anthropic** | 閉源商業 (Constitutional AI) | 符合人類價值觀、高安全性、支援 <span style="color: #7aa2f7">200K tokens 超長上下文</span> | 大型代碼庫重構、長篇法規合約逐條審閱 | Anthropic 開發；<span style="color: #7aa2f7">憲政 AI 安全對齊</span>、<span style="color: #7aa2f7">200K 超長上下文</span> | 通用語言模型，<span style="color: #e06c75">非 IDE 專用代碼外掛</span> |
+| <img src="https://www.google.com/s2/favicons?domain=deepseek.com&sz=32" width="16" height="16" /> **DeepSeek (V3 / R1)** | **深度求索** (DeepSeek) | **開源權重** (MoE 專家混合 + RL 強化學習推理) | 高性價比開源通用對話與深度邏輯推理大模型 | 複雜數學邏輯推導、程式碼生成、企業低成本本地私有化部署 | 主打<span style="color: #7aa2f7">開源高性價比</span>與 <span style="color: #7aa2f7">DeepSeek-R1 深度思維鏈推理</span> | 屬開源權重模型，與閉源的 GPT-4o / Claude 路線不同 |
+| <img src="https://www.google.com/s2/favicons?domain=meta.ai&sz=32" width="16" height="16" /> **Meta AI ＆ LLaMA 3** | **Meta** | **開源權重** (Large Language Model Meta AI) | 全球最具代表性之開源大型語言模型與社群內建助手 | 企業免費下載 LLaMA 3 權重於本地微調部署；FB/IG 社群互動 | 主打「<span style="color: #7aa2f7">開源推廣</span>」標竿、<span style="color: #7aa2f7">社群導向整合</span>（Meta App 內建 AI 助手） | 屬開源權重模型，與閉源的 GPT-4 / Claude 路線不同 |
+| <img src="https://www.google.com/s2/favicons?domain=tongyi.aliyun.com&sz=32" width="16" height="16" /> **Qwen (通義千問)** | **阿里巴巴** (Alibaba Cloud) | **開源權重** ＋ 商業雲端服務 | 亞洲代表性開源與多模態大型語言模型家族 | 企業中英文雙語客服微調、長文本與視覺多模態解析 | 與 LLaMA、DeepSeek 並列全球主流<span style="color: #7aa2f7">開源大模型</span>代表 | 阿里巴巴開發（字節跳動為豆包 Doubao、月之暗面為 Kimi） |
+| <img src="https://www.google.com/s2/favicons?domain=grok.com&sz=32" width="16" height="16" /> **Grok** | **xAI** (Elon Musk) | 閉源商業 / 部分開源 (Transformer) | 深度結合 **X（原 Twitter）社群**之即時資訊對話模型 | 即時擷取 X 平台全球熱門貼文與突發新聞進行分析問答 | 結合 <span style="color: #7aa2f7">X (原 Twitter) 社群</span>、強調<span style="color: #7aa2f7">言論自由與即時資訊</span> | 開發商為 Elon Musk 創立的 <span style="color: #7aa2f7">xAI</span> |
+| <img src="https://www.google.com/s2/favicons?domain=apple.com&sz=32" width="16" height="16" /> **Apple Intelligence** | **Apple** | 閉源系統級整合 (Foundation Models 框架) | 蘋果生態系個人化智慧系統，強調裝置端運算與隱私 | iPhone / Mac 離線郵件摘要、Siri 跨 App 操作、通知重點整理 | 強調「<span style="color: #7aa2f7">離線運算、隱私保護</span>」與多語言支援 | 優先在終端設備離線處理，保護個人隱私 |
+| <img src="https://www.google.com/s2/favicons?domain=perplexity.ai&sz=32" width="16" height="16" /> **Perplexity** | **Perplexity AI** | 閉源服務 (LLM + 即時搜尋) | 對話式搜尋引擎，提供即時檢索與引用來源 | 搜尋最新科技動態並產出附真實網址之報告 | 專長<span style="color: #7aa2f7">資訊檢索與摘要</span>；<span style="color: #e06c75">非生圖/生影片工具</span> | 常作為「生成電影風格圖片」之<span style="color: #e06c75">干擾誘答項</span>！ |
+| <img src="https://www.google.com/s2/favicons?domain=taide.tw&sz=32" width="16" height="16" /> **TAIDE** | **臺灣國科會** (NSTC) | 開源繁中模型 (基於 LLaMA 微調) | 臺灣在地文化、繁體中文與法規可信賴模型 (Trustworthy AI Dialog Engine) | 公部門公文擬稿、臺灣在地法規與用語問答 | 技術本質為<span style="color: #7aa2f7">機器學習 (ML, Machine Learning)</span>；國科會主導 | <span style="color: #e06c75">切勿誤選為 VR (Virtual Reality)、區塊鏈或量子計算</span>！ |
+| <img src="https://www.google.com/s2/favicons?domain=google.com&sz=32" width="16" height="16" /> **BERT** | **Google** (2018) | 開源模型 (雙向 Encoder) | NLU (Natural Language Understanding) 語言理解標竿，專攻分類與語意表徵 (Bidirectional Encoder Representations from Transformers) | Google 搜尋長句理解、金融留言正負情緒分類 | <span style="color: #e06c75">⚠️ 鑑別式 AI</span>、<span style="color: #7aa2f7">雙向 MLM (Masked Language Model) 猜詞 ＋ NSP (Next Sentence Prediction)</span> | 屬於「<span style="color: #e06c75">鑑別式 AI</span>」，<span style="color: #e06c75">絕非生成式 AI</span>！ |
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
@@ -1490,13 +1610,14 @@
 
 | 工具 / 模型 | 開發商 | 授權 / 架構 | 核心定位與受眾 | 💡 具體應用案例 | 🔥 考試常考重點 | ⚠️ 易錯陷阱提醒 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **DALL·E 系列 ＆ CLIP** | **OpenAI** | 閉源商業<br>(Diffusion + CLIP, Contrastive Language-Image Pre-training) | 敘事式文字生圖 (Text-to-Image) 工具 | **生成電影風格圖片**、遊戲概念海報插畫 | 常用於生成<span style="color: #7aa2f7">電影風格圖片</span>；OpenAI 畫圖工具 | 是靜態畫圖工具，<span style="color: #e06c75">絕非影片生成工具</span>！ |
-| **Midjourney** | **Midjourney** | 閉源獨立平台<br>(自研 Diffusion) | 頂級藝術美感與光影質感生圖平台 | 時尚雜誌概念封面、奇幻場景氛圍渲染 | <span style="color: #7aa2f7">畫面風格穩定、藝術美感極強</span>；閉源平台 | <span style="color: #e06c75">無開源權重</span>，無法免費下載至本地部署 |
-| **Stable Diffusion** | **Stability AI**<br>(2022) | **開源免費**<br>(潛在擴散 LDM, Latent Diffusion Model) | 全球代表性開源生圖底座，支援自由微調 | 本地端顯卡部署，訓練企業專屬 LoRA (Low-Rank Adaptation) 模型 | <span style="color: #7aa2f7">開源、免費、可自由修改與本地部署</span> | 開發商是 <span style="color: #7aa2f7">Stability AI</span>（<span style="color: #e06c75">非 OpenAI/Google</span>） |
-| **DreamStudio** | **Stability AI** | 閉源網頁<br>(LDM, Latent Diffusion Model) | Stability AI 官方簡化版網頁操作介面 | 免裝環境，新手直接在瀏覽器輸入文字生圖 | 官方介面、操作簡易、<span style="color: #7aa2f7">適合初學者入門</span> | 為網頁介面，進階本地微調多直接用 SD (Stable Diffusion) |
-| **Leonardo AI** | **Leonardo.Ai** | 閉源平台<br>(微調 SD, Stable Diffusion) | 遊戲美術、概念設計與幻想風格創作平台 | 快速生成 RPG (Role-Playing Game) 遊戲角色立繪、道具與貼圖 | 擅長<span style="color: #7aa2f7">概念圖與幻想風格</span>，內建多微調模型 | 底層源於 SD，但平台本身為商業服務 |
-| **Adobe Firefly** | **Adobe** | 商業閉源<br>(自研 Diffusion) | 專為商業設計打造之無版權疑慮生圖引擎 | Photoshop「生成填色」擴展商業廣告海報 | <span style="color: #7aa2f7">合法授權素材訓練，商用版權安全無虞</span> | 考「合法素材來源、商用安全」唯一首選！ |
-| **Canva / Figma** | **Canva / Figma** | SaaS (Software as a Service) 平台 | 平面圖文排版 (Canva) 與 UI/UX (User Interface / User Experience) 設計 (Figma) | 製作社群宣傳圖卡；繪製 App 介面原型 | 視覺排版與介面工具，<span style="color: #e06c75">非 AI 作曲或寫碼工具</span> | 常在「結合 GPT 創作歌曲 (AIVA)」題當<span style="color: #e06c75">干擾項</span> |
+| <img src="https://www.google.com/s2/favicons?domain=openai.com&sz=32" width="16" height="16" /> **DALL·E 系列 ＆ CLIP** | **OpenAI** | 閉源商業 (Diffusion + CLIP) | 敘事式文字生圖 (Text-to-Image) 工具 | **生成電影風格圖片**、遊戲概念海報插畫 | 常用於生成<span style="color: #7aa2f7">電影風格圖片</span>；OpenAI 畫圖工具 | 是靜態畫圖工具，<span style="color: #e06c75">絕非影片生成工具</span>！ |
+| <img src="https://www.google.com/s2/favicons?domain=midjourney.com&sz=32" width="16" height="16" /> **Midjourney** | **Midjourney** | 閉源獨立平台 (自研 Diffusion) | 頂級藝術美感與光影質感生圖平台 | 時尚雜誌概念封面、奇幻場景氛圍渲染 | <span style="color: #7aa2f7">畫面風格穩定、藝術美感極強</span>；閉源平台 | <span style="color: #e06c75">無開源權重</span>，無法免費下載至本地部署 |
+| <img src="https://www.google.com/s2/favicons?domain=stability.ai&sz=32" width="16" height="16" /> **Stable Diffusion** | **Stability AI** (2022) | **開源免費** (潛在擴散 LDM, Latent Diffusion Model) | 全球代表性開源生圖底座，支援自由微調 | 本地端顯卡部署，訓練企業專屬 LoRA (Low-Rank Adaptation) 模型 | <span style="color: #7aa2f7">開源、免費、可自由修改與本地部署</span> | 開發商是 <span style="color: #7aa2f7">Stability AI</span>（<span style="color: #e06c75">非 OpenAI/Google</span>） |
+| <img src="https://www.google.com/s2/favicons?domain=stability.ai&sz=32" width="16" height="16" /> **DreamStudio** | **Stability AI** | 閉源網頁 (LDM, Latent Diffusion Model) | Stability AI 官方簡化版網頁操作介面 | 免裝環境，新手直接在瀏覽器輸入文字生圖 | 官方介面、操作簡易、<span style="color: #7aa2f7">適合初學者入門</span> | 為網頁介面，進階本地微調多直接用 SD (Stable Diffusion) |
+| <img src="https://www.google.com/s2/favicons?domain=leonardo.ai&sz=32" width="16" height="16" /> **Leonardo AI** | **Leonardo.Ai** | 閉源平台 (微調 SD, Stable Diffusion) | 遊戲美術、概念設計與幻想風格創作平台 | 快速生成 RPG (Role-Playing Game) 遊戲角色立繪、道具與貼圖 | 擅長<span style="color: #7aa2f7">概念圖與幻想風格</span>，內建多微調模型 | 底層源於 SD，但平台本身為商業服務 |
+| <img src="https://www.google.com/s2/favicons?domain=adobe.com&sz=32" width="16" height="16" /> **Adobe Firefly** | **Adobe** | 商業閉源 (自研 Diffusion) | 專為商業設計打造之無版權疑慮生圖引擎 | Photoshop「生成填色」擴展商業廣告海報 | <span style="color: #7aa2f7">合法授權素材訓練，商用版權安全無虞</span> | 考「合法素材來源、商用安全」唯一首選！ |
+| <img src="https://www.google.com/s2/favicons?domain=canva.com&sz=32" width="16" height="16" /> <img src="https://www.google.com/s2/favicons?domain=figma.com&sz=32" width="16" height="16" /> **Canva / Figma** | **Canva / Figma** | SaaS (Software as a Service) 平台 | 平面圖文排版 (Canva) 與 UI/UX (User Interface / User Experience) 設計 (Figma) | 製作社群宣傳圖卡；繪製 App 介面原型 | 視覺排版與介面工具，<span style="color: #e06c75">非 AI 作曲或寫碼工具</span> | 常在「結合 GPT 創作歌曲 (AIVA)」題當<span style="color: #e06c75">干擾項</span> |
+| <img src="https://www.google.com/s2/favicons?domain=remove.bg&sz=32" width="16" height="16" /> <img src="https://www.google.com/s2/favicons?domain=photoroom.com&sz=32" width="16" height="16" /> **remove.bg / Photoroom** | **Kaleido (Canva) / Photoroom** | 閉源雲端 SaaS | AI 一鍵自動去背與電商商品圖背景合成工具 | 上傳人像或網拍商品照，1 秒精準去背並換上商業攝影棚背景 | 專攻影像分割去背與商品圖修圖，屬實用型視覺輔助工具 | 為圖片後製編輯工具，非通用文字對話模型 |
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
@@ -1506,11 +1627,12 @@
 
 | 工具 / 模型 | 開發商 | 授權 / 架構 | 核心定位與受眾 | 💡 具體應用案例 | 🔥 考試常考重點 | ⚠️ 易錯陷阱提醒 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Sora** | **OpenAI**<br>(2024) | 閉源模型<br>(<span style="color: #7aa2f7">Diffusion + Transformer</span>) | 文生成影片（語意驅動敘事），長達 60 秒高連貫影片 | 一段文字生成好萊塢級動態街景或奇幻短片 | <span style="color: #7aa2f7">Diffusion 當畫圖工人、Transformer 當導演編劇（引導模組/條件控制器）</span>；畫質佳、敘事強、世界理解力高 | 是正港<span style="color: #7aa2f7">影片生成</span>工具（勿與 DALL·E 混淆） |
-| **Runway<br>(Gen-1 ~ Gen-4)** | **Runway ML** | 閉源網頁<br>(<span style="color: #7aa2f7">改良版 Diffusion</span>) | 創作者影片草圖、剪輯特效，賦能**非專業創作者** | 自媒體文字生影片、動態筆刷局部特效合成 | 目標客群為「<span style="color: #7aa2f7">非專業創作者</span>」；操作簡易、生成快速、商業已落地 | 受眾選<span style="color: #7aa2f7">非專業創作者</span>（<span style="color: #e06c75">非程式設計師/硬體師</span>） |
-| **Pika** | **Pika Labs** | 閉源平台<br>(<span style="color: #7aa2f7">動畫導向 Diffusion + 多模態控制</span>) | 原創角色動畫、社群短片生成平台 | 將靜態動漫人像一鍵生成眨眼微風吹拂短片 | <span style="color: #7aa2f7">風格自由、互動性高、創作流程友善</span> | 屬影片生成工具，非純靜態繪圖工具 |
-| **Google Lumiere / Veo** | **Google / DeepMind** | 閉源模型<br>(<span style="color: #7aa2f7">Space-Time U-Net</span>) | 高畫質敘事影片與自然語言超高清影片生成 | 輸入分鏡腳本一次生成整段時空連貫影視片段 | Lumiere 採用 <span style="color: #7aa2f7">Space-Time U-Net</span>；<span style="color: #7aa2f7">畫面穩定、邏輯一致、細節表現極佳</span> | 屬影片生成工具 |
-| **FlexClip** | **PearlMountain** | 閉源雲端 SaaS (Software as a Service) | 線上輕量化 AI 影片製作、文字轉影片平台 | 輸入行銷文案自動配音、上字幕生成宣傳短片 | 代表性<span style="color: #7aa2f7">線上 AI 影片生成與剪輯工具</span> | 屬<span style="color: #7aa2f7">影片生成與剪輯</span>工具（<span style="color: #e06c75">DALL·E 才不是</span>） |
+| <img src="https://www.google.com/s2/favicons?domain=openai.com&sz=32" width="16" height="16" /> **Sora** | **OpenAI** (2024) | 閉源模型 (<span style="color: #7aa2f7">Diffusion + Transformer</span>) | 文生成影片（語意驅動敘事），長達 60 秒高連貫影片 | 一段文字生成好萊塢級動態街景或奇幻短片 | <span style="color: #7aa2f7">Diffusion 當畫圖工人、Transformer 當導演編劇（引導模組/條件控制器）</span>；畫質佳、敘事強、世界理解力高 | 是正港<span style="color: #7aa2f7">影片生成</span>工具（勿與 DALL·E 混淆） |
+| <img src="https://www.google.com/s2/favicons?domain=runwayml.com&sz=32" width="16" height="16" /> **Runway (Gen-1 ~ Gen-4)** | **Runway ML** | 閉源網頁 (<span style="color: #7aa2f7">GAN + 自動編碼器 Autoencoder</span> / <span style="color: #7aa2f7">改良版 Diffusion</span>) | 創作者影片草圖、剪輯特效，賦能**非專業創作者** | 自媒體文字生影片、動態筆刷局部特效合成 | 核心技術原理考題選「<span style="color: #7aa2f7">GAN 與自動編碼器</span>」；目標客群為「<span style="color: #7aa2f7">非專業創作者</span>」 | 受眾選<span style="color: #7aa2f7">非專業創作者</span>（<span style="color: #e06c75">非程式設計師/硬體師</span>） |
+| <img src="https://www.google.com/s2/favicons?domain=pika.art&sz=32" width="16" height="16" /> **Pika** | **Pika Labs** | 閉源平台 (<span style="color: #7aa2f7">動畫導向 Diffusion + 多模態控制</span>) | 原創角色動畫、社群短片生成平台 | 將靜態動漫人像一鍵生成眨眼微風吹拂短片 | <span style="color: #7aa2f7">風格自由、互動性高、創作流程友善</span> | 屬影片生成工具，非純靜態繪圖工具 |
+| <img src="https://www.google.com/s2/favicons?domain=deepmind.google&sz=32" width="16" height="16" /> **Google Lumiere / Veo** | **Google / DeepMind** | 閉源模型 (<span style="color: #7aa2f7">Space-Time U-Net</span>) | 高畫質敘事影片與自然語言超高清影片生成 | 輸入分鏡腳本一次生成整段時空連貫影視片段 | Lumiere 採用 <span style="color: #7aa2f7">Space-Time U-Net</span>；<span style="color: #7aa2f7">畫面穩定、邏輯一致、細節表現極佳</span> | 屬影片生成工具 |
+| <img src="https://www.google.com/s2/favicons?domain=klingai.com&sz=32" width="16" height="16" /> **KlingAI (可靈)** | **快手 (Kuaishou)** | 閉源平台 (3D 時空注意力 Diffusion Transformer) | 高擬真長秒數 AI 文生影片與圖生影片平台 | 輸入商品或人物照片生成大幅度真實物理動態短片 | 主打高動態物理模擬與人物動作連貫之熱門 AI 生影片工具 | 屬影片生成工具，常與 Sora、Runway、Pika 並列比較 |
+| <img src="https://www.google.com/s2/favicons?domain=capcut.com&sz=32" width="16" height="16" /> <img src="https://www.google.com/s2/favicons?domain=flexclip.com&sz=32" width="16" height="16" /> **CapCut (剪映) / FlexClip** | **ByteDance (字節跳動) / PearlMountain** | 閉源雲端 SaaS 與剪輯軟體 | 普及率最高之大眾化 AI 影片剪輯、自動上字幕與文字成片工具 | 輸入行銷文案自動配音、上字幕、去背並合成短影音 | 代表性<span style="color: #7aa2f7">線上 AI 影片生成與剪輯工具</span>（考題常考 FlexClip） | 屬<span style="color: #7aa2f7">影片生成與剪輯</span>工具（<span style="color: #e06c75">DALL·E 才不是</span>） |
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
@@ -1520,9 +1642,11 @@
 
 | 工具 / 模型 | 開發商 | 授權 / 架構 | 核心定位與受眾 | 💡 具體應用案例 | 🔥 考試常考重點 | ⚠️ 易錯陷阱提醒 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **AIVA (Artificial Intelligence Virtual Artist)** | **AIVA Technologies** | 專利深度學習引擎 | AI 自動作曲與編曲平台（古典/流行/配樂） | **GPT 寫歌詞 ＋ AIVA 自動譜曲編曲**成完整歌 | <span style="color: #7aa2f7">常與 GPT 結合使用來創作歌曲的工具</span> | 勿選 <span style="color: #e06c75">Hugging Face、Figma 或 Canva</span>！ |
-| **Google Assistant / Siri** | **Google / Apple** | 閉源語音助理<br>(早期基於 **RNN, Recurrent Neural Network** 序列模型) | 智慧語音辨識 (Speech Recognition) 與語音指令理解助理 | 手機接收使用者連續語音指令，記住前詞並理解整句話意圖 | <span style="color: #7aa2f7">RNN 處理時間序列與語音辨識</span>之經典應用代表 | 依賴時序依賴性理解語音，<span style="color: #e06c75">非空間影像辨識 (CNN, Convolutional Neural Network)</span> |
-| **YouTube 自動字幕 / Google 翻譯** | **Google** | 閉源雲端服務<br>(早期基於 **RNN / Seq2Seq, Sequence-to-Sequence**) | 自動字幕生成 (Automatic Subtitling) 與跨語言機器翻譯 | YouTube 影片即時語音轉錄字幕；Google 翻譯依前後語境轉換語言 | <span style="color: #7aa2f7">RNN 記憶機制與時序依賴性</span>之經典應用案例 | 傳統純 RNN 遇超長句子易發生「<span style="color: #e06c75">梯度消失</span>」 |
+| <img src="https://www.google.com/s2/favicons?domain=aiva.ai&sz=32" width="16" height="16" /> **AIVA (Artificial Intelligence Virtual Artist)** | **AIVA Technologies** | 專利深度學習引擎 | AI 自動作曲與編曲平台（古典/流行/配樂） | **GPT 寫歌詞 ＋ AIVA 自動譜曲編曲**成完整歌 | <span style="color: #7aa2f7">常與 GPT 結合使用來創作歌曲的工具</span> | 勿選 <span style="color: #e06c75">Hugging Face、Figma 或 Canva</span>！ |
+| <img src="https://www.google.com/s2/favicons?domain=suno.com&sz=32" width="16" height="16" /> **Suno** | **Suno AI** | 閉源平台 (音訊 Diffusion + Transformer) | 文字一鍵生成完整流行歌曲（含人聲演唱、伴奏與編曲） | 輸入歌詞與曲風關鍵字，1 分鐘生成帶真實歌手唱腔的完整單曲 | 當前最普及之 <span style="color: #7aa2f7">AI 詞曲人聲同步生成</span>音樂平台（與 AIVA 並列音樂代表） | AIVA 偏重純配樂編曲；Suno 則能直接連同逼真人聲一起唱出整首歌 |
+| <img src="https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=32" width="16" height="16" /> **ElevenLabs** | **ElevenLabs** | 閉源商業平臺 (深度學習語音生成) | 頂級 AI 語音合成 (TTS, Text-to-Speech)、聲音克隆與多語配音平台 | 有聲書高情感擬真朗讀、YouTube 影片跨國語言自動配音並保留原聲線 | 主打高擬真<span style="color: #7aa2f7">語音合成 (TTS) 與聲音克隆 (Voice Cloning)</span> | 專攻人聲語音生成與配音，非音樂編曲或圖像生成工具 |
+| <img src="https://www.google.com/s2/favicons?domain=google.com&sz=32" width="16" height="16" /> <img src="https://www.google.com/s2/favicons?domain=apple.com&sz=32" width="16" height="16" /> **Google Assistant / Siri** | **Google / Apple** | 閉源語音助理 (早期基於 **RNN, Recurrent Neural Network** 序列模型) | 智慧語音辨識 (Speech Recognition) 與語音指令理解助理 | 手機接收使用者連續語音指令，記住前詞並理解整句話意圖 | <span style="color: #7aa2f7">RNN 處理時間序列與語音辨識</span>之經典應用代表 | 依賴時序依賴性理解語音，<span style="color: #e06c75">非空間影像辨識 (CNN, Convolutional Neural Network)</span> |
+| <img src="https://www.google.com/s2/favicons?domain=youtube.com&sz=32" width="16" height="16" /> <img src="https://www.google.com/s2/favicons?domain=translate.google.com&sz=32" width="16" height="16" /> **YouTube 自動字幕 / Google 翻譯** | **Google** | 閉源雲端服務 (早期基於 **RNN / Seq2Seq, Sequence-to-Sequence**) | 自動字幕生成 (Automatic Subtitling) 與跨語言機器翻譯 | YouTube 影片即時語音轉錄字幕；Google 翻譯依前後語境轉換語言 | <span style="color: #7aa2f7">RNN 記憶機制與時序依賴性</span>之經典應用案例 | 傳統純 RNN 遇超長句子易發生「<span style="color: #e06c75">梯度消失</span>」 |
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
@@ -1532,10 +1656,12 @@
 
 | 工具 / 模型 | 開發商 | 授權 / 架構 | 核心定位與受眾 | 💡 具體應用案例 | 🔥 考試常考重點 | ⚠️ 易錯陷阱提醒 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Copilot** | **GitHub / Microsoft** | 閉源商業外掛<br>(嵌入 VS Code 等 IDE, Integrated Development Environment) | 軟體工程師專用 AI 結對編程助手 (AI Pair Programmer) | 前端開發依註解**自動生成 HTML (HyperText Markup Language) 與 CSS (Cascading Style Sheets) 結構** | 網頁開發生成 <span style="color: #7aa2f7">HTML 與 CSS 結構</span>首選 <span style="color: #7aa2f7">Copilot</span> | 勿選 <span style="color: #e06c75">Bard (Gemini)、Claude 或 Notion</span>！ |
-| **CodeWhisperer** | **Amazon (AWS)** | 閉源雲端外掛<br>(AWS 生態系整合) | 企業級 B2B 程式碼即時生成與資安漏洞掃描助手 | 撰寫 AWS 雲端部署腳本與企業後端程式碼自動補全 | 結合 <span style="color: #7aa2f7">AWS 雲端整合、B2B 工具型 AI</span> | 與 Bedrock 同屬 Amazon 旗下企業級 AI 工具 |
-| **Zapier** | **Zapier** | SaaS (Software as a Service) 自動化平台 | No-Code 跨平台工作流程自動化串接工具 | 收到 Gmail 附件自動存 Drive 並發 Slack 通知 | 擅長<span style="color: #7aa2f7">傳通知/存檔/同步表格</span>；<span style="color: #e06c75">無法完整理解語意</span> | 問 Zapier 無法完成何事，必選「<span style="color: #e06c75">完整理解語意</span>」 |
-| **Notion / Notion AI** | **Notion Labs** | SaaS 協作軟體 | 多合一筆記、知識庫與文書整理軟體 | 團隊撰寫專案文件、會議紀錄整理擴寫 | 筆記知識庫工具，<span style="color: #e06c75">非生圖或 IDE 代碼生成工具</span> | 常作為生圖 (DALL·E) 或寫碼 (Copilot) 的<span style="color: #e06c75">干擾項</span> |
+| <img src="https://www.google.com/s2/favicons?domain=github.com&sz=32" width="16" height="16" /> **Copilot** | **GitHub / Microsoft** | 閉源商業外掛 (嵌入 VS Code 等 IDE, Integrated Development Environment) | 軟體工程師專用 AI 結對編程助手 (AI Pair Programmer) | 前端開發依註解**自動生成 HTML (HyperText Markup Language) 與 CSS (Cascading Style Sheets) 結構** | 網頁開發生成 <span style="color: #7aa2f7">HTML 與 CSS 結構</span>首選 <span style="color: #7aa2f7">Copilot</span> | 勿選 <span style="color: #e06c75">Bard (Gemini)、Claude 或 Notion</span>！ |
+| <img src="https://www.google.com/s2/favicons?domain=cursor.com&sz=32" width="16" height="16" /> **Cursor** | **Anysphere** | 閉源商業 IDE (基於 VS Code 改造，整合多模型) | AI 原生程式碼編輯器 (AI-First Code Editor)，支援跨檔案全局理解與自動改碼 | 用自然語言下令一次自動修改專案中十幾個關聯程式碼檔案 | 與 GitHub Copilot 同屬<span style="color: #7aa2f7">AI 程式開發輔助</span>代表工具 | 為獨立 AI 程式碼編輯器 (IDE)，非純聊天網頁 |
+| <img src="https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=32" width="16" height="16" /> **CodeWhisperer** | **Amazon (AWS)** | 閉源雲端外掛 (AWS 生態系整合) | 企業級 B2B 程式碼即時生成與資安漏洞掃描助手 | 撰寫 AWS 雲端部署腳本與企業後端程式碼自動補全 | 結合 <span style="color: #7aa2f7">AWS 雲端整合、B2B 工具型 AI</span> | 與 Bedrock 同屬 Amazon 旗下企業級 AI 工具 |
+| <img src="https://www.google.com/s2/favicons?domain=gamma.app&sz=32" width="16" height="16" /> **Gamma** | **Gamma Tech** | 閉源雲端 SaaS | AI 自動生成簡報 (PPT)、文件與輕量網頁之商務生產力工具 | 輸入一份企劃大綱或 Word 文件，1 分鐘自動排版生成完整簡報投影片 | 商務職場最常用之 <span style="color: #7aa2f7">AI 一鍵生成簡報 (PPT)</span> 代表工具 | 專攻簡報與文件自動排版生成，非底層大語言模型 |
+| <img src="https://www.google.com/s2/favicons?domain=zapier.com&sz=32" width="16" height="16" /> **Zapier** | **Zapier** | SaaS (Software as a Service) 自動化平台 | No-Code 跨平台工作流程自動化串接工具 | 收到 Gmail 附件自動存 Drive 並發 Slack 通知 | 擅長<span style="color: #7aa2f7">傳通知/存檔/同步表格</span>；<span style="color: #e06c75">無法完整理解語意</span> | 問 Zapier 無法完成何事，必選「<span style="color: #e06c75">完整理解語意</span>」 |
+| <img src="https://www.google.com/s2/favicons?domain=notion.so&sz=32" width="16" height="16" /> **Notion / Notion AI** | **Notion Labs** | SaaS 協作軟體 | 多合一筆記、知識庫與文書整理軟體 | 團隊撰寫專案文件、會議紀錄整理擴寫 | 筆記知識庫工具，<span style="color: #e06c75">非生圖或 IDE 代碼生成工具</span> | 常作為生圖 (DALL·E) 或寫碼 (Copilot) 的<span style="color: #e06c75">干擾項</span> |
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
@@ -1545,13 +1671,13 @@
 
 | 工具 / 模型 | 開發商 | 授權 / 架構 | 核心定位與受眾 | 💡 具體應用案例 | 🔥 考試常考重點 | ⚠️ 易錯陷阱提醒 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Kaggle** | **Google**<br>(Alphabet) | 免費雲端社群 | 全球最大資料科學競賽與動手實作平台 | 在免費雲端 Notebook 載入公開數據訓練模型 | <span style="color: #7aa2f7">最適合學習 AI 工具實作之平台</span>（競賽/學方案/論壇） | 勿選 Shorts/Reels/LINE；<span style="color: #e06c75">無「免費訂閱優惠會員」</span> |
-| **Hugging Face** | **Hugging Face Inc.** | 開源 AI 社群 | 全球最大開源模型與資料集共享樞紐 (AI 界 GitHub) | 下載開源模型權重微調，遵循 CC (Creative Commons) 授權商用 | 與 Kaggle 並列<span style="color: #7aa2f7">模型與數據共用</span>代表平台 | <span style="color: #e06c75">非音樂創作工具</span>（歌曲題勿選） |
-| **Amazon Bedrock** | **Amazon (AWS)** | 商業雲端平臺<br>(AWS 託管服務) | 企業級 B2B 雲端基礎模型託管與安全部署平臺 | 企業透過單一 API 調用 Claude / LLaMA 等模型並結合 AWS 部署 | 主打「<span style="color: #7aa2f7">雲端整合、B2B 工具型 AI、企業級部署</span>」 | 屬企業雲端 AI 部署平臺，非單一開源社群 |
-| **H100 / B100 ＆ NIMs** | **NVIDIA** | 硬體晶片與推論微服務<br>(NVIDIA Inference Microservices) | 提供全球 LLM 訓練與推論部署之核心算力基礎設施 | 資料中心建置千萬級參數大模型訓練叢集與高速推論服務 | 各家 AI 模型的「<span style="color: #7aa2f7">GPU 心臟</span>」；提供訓練與部署核心基礎 | 屬底層算力硬體與推論平臺，非終端聊天軟體 |
-| **LIME (Local Interpretable Model-agnostic Explanations)** | **開源演算法** | 開源 Python 庫<br>(局部代理模型) | 模型可解釋性 (XAI, Explainable AI) 工具，專注**單一局部解釋** | 解釋特定客戶「張三」為何被銀行拒貸 | 著重<span style="color: #7aa2f7">單一預測局部解釋</span> (Local) | 管「局部單筆」，<span style="color: #e06c75">勿與全局貢獻的 SHAP 記反</span> |
-| **SHAP (SHapley Additive exPlanations)** | **開源演算法** | 開源 Python 庫<br>(Shapley 賽局值) | 模型可解釋性 (XAI, Explainable AI) 工具，專注**整體特徵貢獻** | 計算全體核貸中收入、年齡、負債各佔多少權重 | 著重<span style="color: #7aa2f7">整體特徵貢獻分配</span>（基於賽局理論） | 管「整體特徵貢獻」，<span style="color: #e06c75">勿與 LIME 記反</span> |
-| **Hadoop / Spark** | **Apache 基金會** | 開源分散式框架 | 海量大數據分散式儲存與平行運算框架 | 百億筆電商交易日誌執行 ETL (Extract, Transform, Load) 平行清洗轉換 | <span style="color: #7aa2f7">ETL 流程</span>常搭配之<span style="color: #7aa2f7">大量平行運算</span>平台 | 屬後端大數據基礎設施，非終端生成軟體 |
+| <img src="https://www.google.com/s2/favicons?domain=kaggle.com&sz=32" width="16" height="16" /> **Kaggle** | **Google** (Alphabet) | 免費雲端社群 | 全球最大資料科學競賽與動手實作平台 | 在免費雲端 Notebook 載入公開數據訓練模型 | <span style="color: #7aa2f7">最適合學習 AI 工具實作之平台</span>（競賽/學方案/論壇） | 勿選 Shorts/Reels/LINE；<span style="color: #e06c75">無「免費訂閱優惠會員」</span> |
+| <img src="https://www.google.com/s2/favicons?domain=huggingface.co&sz=32" width="16" height="16" /> **Hugging Face** | **Hugging Face Inc.** | 開源 AI 社群 | 全球最大開源模型與資料集共享樞紐 (AI 界 GitHub) | 下載開源模型權重微調，遵循 CC (Creative Commons) 授權商用 | 與 Kaggle 並列<span style="color: #7aa2f7">模型與數據共用</span>代表平台 | <span style="color: #e06c75">非音樂創作工具</span>（歌曲題勿選） |
+| <img src="https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=32" width="16" height="16" /> **Amazon Bedrock** | **Amazon (AWS)** | 商業雲端平臺 (AWS 託管服務) | 企業級 B2B 雲端基礎模型託管與安全部署平臺 | 企業透過單一 API 調用 Claude / LLaMA 等模型並結合 AWS 部署 | 主打「<span style="color: #7aa2f7">雲端整合、B2B 工具型 AI、企業級部署</span>」 | 屬企業雲端 AI 部署平臺，非單一開源社群 |
+| <img src="https://www.google.com/s2/favicons?domain=nvidia.com&sz=32" width="16" height="16" /> **H100 / B100 ＆ NIMs** | **NVIDIA** | 硬體晶片與推論微服務 (NVIDIA Inference Microservices) | 提供全球 LLM 訓練與推論部署之核心算力基礎設施 | 資料中心建置千萬級參數大模型訓練叢集與高速推論服務 | 各家 AI 模型的「<span style="color: #7aa2f7">GPU 心臟</span>」；提供訓練與部署核心基礎 | 屬底層算力硬體與推論平臺，非終端聊天軟體 |
+| <img src="https://www.google.com/s2/favicons?domain=python.org&sz=32" width="16" height="16" /> **LIME (Local Interpretable Model-agnostic Explanations)** | **開源演算法** | 開源 Python 庫 (局部代理模型) | 模型可解釋性 (XAI, Explainable AI) 工具，專注**單一局部解釋** | 解釋特定客戶「張三」為何被銀行拒貸 | 著重<span style="color: #7aa2f7">單一預測局部解釋</span> (Local) | 管「局部單筆」，<span style="color: #e06c75">勿與全局貢獻的 SHAP 記反</span> |
+| <img src="https://www.google.com/s2/favicons?domain=python.org&sz=32" width="16" height="16" /> **SHAP (SHapley Additive exPlanations)** | **開源演算法** | 開源 Python 庫 (Shapley 賽局值) | 模型可解釋性 (XAI, Explainable AI) 工具，專注**整體特徵貢獻** | 計算全體核貸中收入、年齡、負債各佔多少權重 | 著重<span style="color: #7aa2f7">整體特徵貢獻分配</span>（基於賽局理論） | 管「整體特徵貢獻」，<span style="color: #e06c75">勿與 LIME 記反</span> |
+| <img src="https://www.google.com/s2/favicons?domain=apache.org&sz=32" width="16" height="16" /> **Hadoop / Spark** | **Apache 基金會** | 開源分散式框架 | 海量大數據分散式儲存與平行運算框架 | 百億筆電商交易日誌執行 ETL (Extract, Transform, Load) 平行清洗轉換 | <span style="color: #7aa2f7">ETL 流程</span>常搭配之<span style="color: #7aa2f7">大量平行運算</span>平台 | 屬後端大數據基礎設施，非終端生成軟體 |
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 
@@ -1561,26 +1687,55 @@
 
 | 開發商 / 組織 | 旗下代表性模型與工具 | 關鍵考點 1 行秒殺口訣 |
 | :--- | :--- | :--- |
-| **OpenAI** | **ChatGPT**, **GPTs**, **GPT-1/3/4V/4o**, **CLIP & DALL·E 3**, **Sora** | ChatGPT (<span style="color: #7aa2f7">GPT-3.5 + RLHF 對齊</span>)、GPTs (<span style="color: #7aa2f7">平臺化生態系</span>)、GPT-3 (<span style="color: #e06c75">純文字不生圖</span>)、DALL·E (<span style="color: #7aa2f7">畫圖</span><span style="color: #e06c75">非影片</span>)、Sora (<span style="color: #7aa2f7">生影片：Diffusion + Transformer</span>) |
-| **Google / DeepMind** | **Gemini 1.5 (Pro/Flash，原 Bard)**, **BERT**, **Lumiere / Veo**, **Kaggle**, **Assistant / 翻譯 / 字幕** | Gemini 1.5 (<span style="color: #7aa2f7">搜尋+手機 Pixel/Android 整合+長影音文件解析</span>)、BERT (<span style="color: #e06c75">鑑別式</span><span style="color: #7aa2f7">雙向理解</span>)、Lumiere (<span style="color: #7aa2f7">Space-Time U-Net</span>)、Kaggle (<span style="color: #7aa2f7">實作平台</span>) |
-| **Anthropic** | **Claude 3 系列 (Opus / Sonnet / Haiku)** | <span style="color: #7aa2f7">Constitutional AI</span> 符合人類價值觀、高安全性、支援 <span style="color: #7aa2f7">200K tokens 超長上下文</span> |
-| **Meta** | **Meta AI**, **LLaMA 3 (Large Language Model Meta AI)** | 主打「<span style="color: #7aa2f7">開源推廣</span>」標竿、社群導向整合（Meta App 內建 AI 助手） |
-| **xAI (Elon Musk)** | **Grok** | 結合 **X（原 Twitter）社群**、強調<span style="color: #7aa2f7">言論自由與即時資訊</span> |
-| **Amazon (AWS)** | **Bedrock**, **CodeWhisperer** | 雲端整合、<span style="color: #7aa2f7">B2B 工具型 AI、企業級部署</span>（與 AWS 深度結合） |
-| **Apple** | **Apple Intelligence**, **Siri** | Apple Intelligence (<span style="color: #7aa2f7">Foundation Models 框架、離線運算、隱私保護</span>)；Siri (早期基於 <span style="color: #7aa2f7">RNN</span> 語音辨識) |
-| **NVIDIA** | **H100 / B100 GPU**, **NIMs 推論平臺** | 提供 LLM 訓練與部署核心基礎，為各家 AI 模型的「<span style="color: #7aa2f7">GPU 心臟</span>」 |
-| **Stability AI** | **Stable Diffusion**, **DreamStudio** | Stable Diffusion (<span style="color: #7aa2f7">開源免費可本地部署</span>)、DreamStudio (<span style="color: #7aa2f7">官方入門介面</span>) |
-| **Runway ML** | **Runway (Gen-1 ~ Gen-4)** | <span style="color: #7aa2f7">改良版 Diffusion</span> 影片生成，專門協助「<span style="color: #7aa2f7">非專業創作者</span>」 |
-| **Adobe** | **Adobe Firefly** | 整合 Photoshop (PS)，主打「<span style="color: #7aa2f7">合法授權素材訓練、商用安全無侵權</span>」 |
-| **Microsoft / GitHub** | **GitHub Copilot** | IDE (Integrated Development Environment) 內建助手，網頁開發生成 <span style="color: #7aa2f7">HTML 與 CSS 結構</span> |
-| **AIVA Technologies** | **AIVA (Artificial Intelligence Virtual Artist)** | AI 作曲編曲，<span style="color: #7aa2f7">常與 GPT 結合創作歌曲</span> |
-| **Pika Labs** | **Pika** | <span style="color: #7aa2f7">動畫導向 Diffusion + 多模態控制</span>，原創角色動畫與社群短片 |
-| **PearlMountain** | **FlexClip** | 線上 <span style="color: #7aa2f7">AI 影片生成與剪輯</span>平台（文字轉短片） |
-| **Leonardo.Ai** | **Leonardo AI** | 微調 SD (Stable Diffusion)，擅長遊戲美術與<span style="color: #7aa2f7">概念圖/幻想風格</span> |
-| **臺灣國科會 (NSTC)** | **TAIDE (Trustworthy AI Dialog Engine)** | 臺灣繁中本土大模型，核心技術為<span style="color: #7aa2f7">機器學習 (ML, Machine Learning)</span> |
-| **Zapier** | **Zapier** | No-Code 自動化串接，致命限制為「<span style="color: #e06c75">無法完整理解語意</span>」 |
-| **Notion Labs** | **Notion / Notion AI** | 筆記知識庫軟體，<span style="color: #e06c75">非生圖或 IDE 寫碼工具</span> |
-| **Hugging Face Inc.** | **Hugging Face** | 全球<span style="color: #7aa2f7">開源模型與資料集共用</span>社群樞紐 |
-| **Apache 基金會** | **Hadoop, Spark** | 大數據平行運算，<span style="color: #7aa2f7">ETL (Extract, Transform, Load) 資料處理</span>經典搭配平台 |
+| <img src="https://www.google.com/s2/favicons?domain=openai.com&sz=32" width="16" height="16" /> **OpenAI** | **ChatGPT**, **GPTs**, **GPT-1/3/4V/4o**, **CLIP & DALL·E 3**, **Sora** | ChatGPT (<span style="color: #7aa2f7">GPT-3.5 + RLHF 對齊</span>)、GPTs (<span style="color: #7aa2f7">平臺化生態系</span>)、GPT-3 (<span style="color: #e06c75">純文字不生圖</span>)、DALL·E (<span style="color: #7aa2f7">畫圖</span><span style="color: #e06c75">非影片</span>)、Sora (<span style="color: #7aa2f7">生影片：Diffusion + Transformer</span>) |
+| <img src="https://www.google.com/s2/favicons?domain=google.com&sz=32" width="16" height="16" /> **Google / DeepMind** | **Gemini 1.5 (原 Bard)**, **NotebookLM**, **BERT**, **Lumiere / Veo**, **Kaggle**, **Assistant / 翻譯 / 字幕** | Gemini 1.5 (<span style="color: #7aa2f7">搜尋+手機 Pixel/Android 整合+長影音文件解析</span>)、NotebookLM (<span style="color: #7aa2f7">知識庫筆記+語音摘要</span>)、BERT (<span style="color: #e06c75">鑑別式</span><span style="color: #7aa2f7">雙向理解</span>)、Lumiere (<span style="color: #7aa2f7">Space-Time U-Net</span>)、Kaggle (<span style="color: #7aa2f7">實作平台</span>) |
+| <img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=32" width="16" height="16" /> **Anthropic** | **Claude 3 系列 (Opus / Sonnet / Haiku)** | <span style="color: #7aa2f7">Constitutional AI</span> 符合人類價值觀、高安全性、支援 <span style="color: #7aa2f7">200K tokens 超長上下文</span> |
+| <img src="https://www.google.com/s2/favicons?domain=meta.ai&sz=32" width="16" height="16" /> **Meta** | **Meta AI**, **LLaMA 3 (Large Language Model Meta AI)** | 主打「<span style="color: #7aa2f7">開源推廣</span>」標竿、社群導向整合（Meta App 內建 AI 助手） |
+| <img src="https://www.google.com/s2/favicons?domain=deepseek.com&sz=32" width="16" height="16" /> <img src="https://www.google.com/s2/favicons?domain=tongyi.aliyun.com&sz=32" width="16" height="16" /> **深度求索 (DeepSeek) / 阿里巴巴** | **DeepSeek (V3 / R1)**, **Qwen (通義千問)** | 皆為全球熱門<span style="color: #7aa2f7">開源權重大型語言模型</span>代表；DeepSeek 主打高性價比與 <span style="color: #7aa2f7">R1 強化學習深度推理</span> |
+| <img src="https://www.google.com/s2/favicons?domain=grok.com&sz=32" width="16" height="16" /> **xAI (Elon Musk)** | **Grok** | 結合 **X（原 Twitter）社群**、強調<span style="color: #7aa2f7">言論自由與即時資訊</span> |
+| <img src="https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=32" width="16" height="16" /> **Amazon (AWS)** | **Bedrock**, **CodeWhisperer** | 雲端整合、<span style="color: #7aa2f7">B2B 工具型 AI、企業級部署</span>（與 AWS 深度結合） |
+| <img src="https://www.google.com/s2/favicons?domain=apple.com&sz=32" width="16" height="16" /> **Apple** | **Apple Intelligence**, **Siri** | Apple Intelligence (<span style="color: #7aa2f7">Foundation Models 框架、離線運算、隱私保護</span>)；Siri (早期基於 <span style="color: #7aa2f7">RNN</span> 語音辨識) |
+| <img src="https://www.google.com/s2/favicons?domain=nvidia.com&sz=32" width="16" height="16" /> **NVIDIA** | **H100 / B100 GPU**, **NIMs 推論平臺** | 提供 LLM 訓練與部署核心基礎，為各家 AI 模型的「<span style="color: #7aa2f7">GPU 心臟</span>」 |
+| <img src="https://www.google.com/s2/favicons?domain=stability.ai&sz=32" width="16" height="16" /> **Stability AI** | **Stable Diffusion**, **DreamStudio** | Stable Diffusion (<span style="color: #7aa2f7">開源免費可本地部署</span>)、DreamStudio (<span style="color: #7aa2f7">官方入門介面</span>) |
+| <img src="https://www.google.com/s2/favicons?domain=runwayml.com&sz=32" width="16" height="16" /> **Runway ML** | **Runway (Gen-1 ~ Gen-4)** | 核心原理考題選「<span style="color: #7aa2f7">GAN ＋ 自動編碼器 (Autoencoder)</span>」（教材亦列<span style="color: #7aa2f7">改良版 Diffusion</span>），專門協助「<span style="color: #7aa2f7">非專業創作者</span>」 |
+| <img src="https://www.google.com/s2/favicons?domain=adobe.com&sz=32" width="16" height="16" /> **Adobe** | **Adobe Firefly** | 整合 Photoshop (PS)，主打「<span style="color: #7aa2f7">合法授權素材訓練、商用安全無侵權</span>」 |
+| <img src="https://www.google.com/s2/favicons?domain=github.com&sz=32" width="16" height="16" /> <img src="https://www.google.com/s2/favicons?domain=cursor.com&sz=32" width="16" height="16" /> **Microsoft / GitHub / Anysphere** | **GitHub Copilot**, **Cursor** | IDE 內建程式碼助手；網頁開發生成 <span style="color: #7aa2f7">HTML 與 CSS 結構</span>首選 <span style="color: #7aa2f7">Copilot</span> |
+| <img src="https://www.google.com/s2/favicons?domain=aiva.ai&sz=32" width="16" height="16" /> <img src="https://www.google.com/s2/favicons?domain=suno.com&sz=32" width="16" height="16" /> <img src="https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=32" width="16" height="16" /> **AIVA / Suno / ElevenLabs** | **AIVA**, **Suno**, **ElevenLabs** | AIVA (<span style="color: #7aa2f7">常與 GPT 結合創作歌曲配樂</span>)、Suno (<span style="color: #7aa2f7">文字生成完整人聲流行歌</span>)、ElevenLabs (<span style="color: #7aa2f7">AI 語音合成 TTS 與聲音克隆</span>) |
+| <img src="https://www.google.com/s2/favicons?domain=pika.art&sz=32" width="16" height="16" /> <img src="https://www.google.com/s2/favicons?domain=klingai.com&sz=32" width="16" height="16" /> <img src="https://www.google.com/s2/favicons?domain=capcut.com&sz=32" width="16" height="16" /> <img src="https://www.google.com/s2/favicons?domain=flexclip.com&sz=32" width="16" height="16" /> **Pika / 快手 / 字節跳動 / PearlMountain** | **Pika**, **KlingAI (可靈)**, **CapCut (剪映)**, **FlexClip** | Pika (<span style="color: #7aa2f7">動畫導向 Diffusion</span>)、KlingAI (高擬真生影片)、CapCut / FlexClip (<span style="color: #7aa2f7">線上 AI 影片生成與剪輯</span>) |
+| <img src="https://www.google.com/s2/favicons?domain=gamma.app&sz=32" width="16" height="16" /> **Gamma Tech** | **Gamma** | 商務職場代表工具，輸入大綱<span style="color: #7aa2f7">一鍵自動生成簡報 (PPT)</span> 與網頁 |
+| <img src="https://www.google.com/s2/favicons?domain=leonardo.ai&sz=32" width="16" height="16" /> **Leonardo.Ai** | **Leonardo AI** | 微調 SD (Stable Diffusion)，擅長遊戲美術與<span style="color: #7aa2f7">概念圖/幻想風格</span> |
+| <img src="https://www.google.com/s2/favicons?domain=taide.tw&sz=32" width="16" height="16" /> **臺灣國科會 (NSTC)** | **TAIDE (Trustworthy AI Dialog Engine)** | 臺灣繁中本土大模型，核心技術為<span style="color: #7aa2f7">機器學習 (ML, Machine Learning)</span> |
+| <img src="https://www.google.com/s2/favicons?domain=zapier.com&sz=32" width="16" height="16" /> **Zapier** | **Zapier** | No-Code 自動化串接，致命限制為「<span style="color: #e06c75">無法完整理解語意</span>」 |
+| <img src="https://www.google.com/s2/favicons?domain=notion.so&sz=32" width="16" height="16" /> **Notion Labs** | **Notion / Notion AI** | 筆記知識庫軟體，<span style="color: #e06c75">非生圖或 IDE 寫碼工具</span> |
+| <img src="https://www.google.com/s2/favicons?domain=huggingface.co&sz=32" width="16" height="16" /> **Hugging Face Inc.** | **Hugging Face** | 全球<span style="color: #7aa2f7">開源模型與資料集共用</span>社群樞紐 |
+| <img src="https://www.google.com/s2/favicons?domain=apache.org&sz=32" width="16" height="16" /> **Apache 基金會** | **Hadoop, Spark** | 大數據平行運算，<span style="color: #7aa2f7">ETL (Extract, Transform, Load) 資料處理</span>經典搭配平台 |
+
+<details>
+<summary>💡 <b>點擊展開補充：圖片「全球 Top 50 Gen AI 熱門網頁工具」完整分類速查（次要工具僅供留存備查，免死背！）</b></summary>
+
+> 📌 **記憶減負原則**：這張排行榜涵蓋全球流量前 50 名的網頁產品。其中**真正重要、實務與考試常出現的 20 個核心工具**已整理於上方 `5.1 ~ 5.6` 主表中；下方其餘 **30 個特定領域或地區性工具**僅需「看過有印象、考出來能認出類別」即可，**完全不用硬背**！
+>
+> * **一、綜合對話與區域型大模型（圖片排名 #8, #10, #21, #32, #33, #37, #43, #45）**
+>   * <img src="https://www.google.com/s2/favicons?domain=character.ai&sz=32" width="16" height="16" /> **Character.ai (#8)** / <img src="https://www.google.com/s2/favicons?domain=emochi.com&sz=32" width="16" height="16" /> **Emochi (#32)**：主打虛擬角色扮演（動漫、名人、自訂人格）之娛樂型 AI 伴侶聊天平台。
+>   * <img src="https://www.google.com/s2/favicons?domain=doubao.com&sz=32" width="16" height="16" /> **Doubao 豆包 (#10，字節跳動)** / <img src="https://www.google.com/s2/favicons?domain=kimi.moonshot.cn&sz=32" width="16" height="16" /> **Kimi (#21，月之暗面)** / <img src="https://www.google.com/s2/favicons?domain=chatglm.cn&sz=32" width="16" height="16" /> **Z.ai 智譜清言 (#33，智譜 AI)** / <img src="https://www.google.com/s2/favicons?domain=sktelecom.com&sz=32" width="16" height="16" /> **Adot (#45，韓國 SKT)**：各區域高流量之對話式 AI 助手（其中 **Kimi** 主打超長文本無損閱讀）。
+>   * <img src="https://www.google.com/s2/favicons?domain=duckduckgo.com&sz=32" width="16" height="16" /> **Duck.ai (#37，DuckDuckGo)** / <img src="https://www.google.com/s2/favicons?domain=venice.ai&sz=32" width="16" height="16" /> **Venice (#43)**：主打匿名、不追蹤個人紀錄與無審查之隱私導向 AI 聊天平台。
+> * **二、AI 搜尋、醫療查證與自動代理 Agent（圖片排名 #17, #38, #47, #50）**
+>   * <img src="https://www.google.com/s2/favicons?domain=manus.im&sz=32" width="16" height="16" /> **Manus (#38)**：通用型自主 **AI Agent（智慧代理）**，能自動拆解複雜任務、操作瀏覽器並交付完整報告或成果。
+>   * <img src="https://www.google.com/s2/favicons?domain=genspark.ai&sz=32" width="16" height="16" /> **Genspark (#50)**：AI 代理搜尋引擎，搜尋後自動彙整多方來源並即時生成專屬「Sparkpage」懶人包專題頁。
+>   * <img src="https://www.google.com/s2/favicons?domain=openevidence.com&sz=32" width="16" height="16" /> **OpenEvidence (#47)**：專為醫師與醫療人員打造的**醫學文獻實證 AI 搜尋引擎**。
+>   * <img src="https://www.google.com/s2/favicons?domain=quark.cn&sz=32" width="16" height="16" /> **Quark 夸克 (#17，阿里巴巴)**：結合雲端網盤、AI 搜尋與學習解題之綜合助手。
+> * **三、開發者平台、No-Code 建站與模型競技場（圖片排名 #11, #14, #18, #26, #40, #44, #46, #48）**
+>   * <img src="https://www.google.com/s2/favicons?domain=aistudio.google.com&sz=32" width="16" height="16" /> **Google AI Studio (#11)** / <img src="https://www.google.com/s2/favicons?domain=labs.google&sz=32" width="16" height="16" /> **Google Labs (#18)**：Google 供開發者快速測試 Gemini Prompt/API 的工作台（AI Studio）與新奇 AI 實驗產品測試區（Google Labs）。
+>   * <img src="https://www.google.com/s2/favicons?domain=deepmind.google&sz=32" width="16" height="16" /> **Google Antigravity (#44)**：Google DeepMind 打造之代理型 AI 軟體開發助手與 IDE 協作環境。
+>   * <img src="https://www.google.com/s2/favicons?domain=lovable.dev&sz=32" width="16" height="16" /> **Lovable (#14)** / <img src="https://www.google.com/s2/favicons?domain=base44.com&sz=32" width="16" height="16" /> **Base44 (#46)** / <img src="https://www.google.com/s2/favicons?domain=replit.com&sz=32" width="16" height="16" /> **Replit (#48)**：用自然語言對話就能直接生成並部署全端網頁與 App 的 **AI 寫程式 / No-Code 軟體建置平台**。
+>   * <img src="https://www.google.com/s2/favicons?domain=lmarena.ai&sz=32" width="16" height="16" /> **Arena (#26，LMSYS Chatbot Arena)**：全球最具公信力的 **LLM 盲測對戰排行榜**（讓兩個匿名模型回答同一問題，由人類投票分勝負）。
+>   * <img src="https://www.google.com/s2/favicons?domain=openrouter.ai&sz=32" width="16" height="16" /> **OpenRouter (#40)**：提供單一 API 介面統一串接全球數百個開源與閉源大模型之路由聚合平台。
+> * **四、圖像超解析、繪圖社群與影音文字工具（圖片排名 #13, #23, #27, #28, #30, #39, #41, #42）**
+>   * <img src="https://www.google.com/s2/favicons?domain=magnific.ai&sz=32" width="16" height="16" /> **Magnific (#13)** / <img src="https://www.google.com/s2/favicons?domain=picsart.com&sz=32" width="16" height="16" /> **Picsart (#41)** / <img src="https://www.google.com/s2/favicons?domain=seaart.ai&sz=32" width="16" height="16" /> **SeaArt.AI (#42)**：Magnific 專攻 **AI 圖片超解析度放大與細節重繪**；Picsart 為全方位 AI 修圖；SeaArt 為線上 Stable Diffusion 繪圖社群。
+>   * <img src="https://www.google.com/s2/favicons?domain=higgsfield.ai&sz=32" width="16" height="16" /> **Higgsfield (#28)**：專攻人物表情動作控制與社群短影音特效之 AI 影片生成工具。
+>   * <img src="https://www.google.com/s2/favicons?domain=turboscribe.ai&sz=32" width="16" height="16" /> **TurboScribe (#30)**：基於 OpenAI Whisper 技術的高精準度 **AI 語音轉文字（逐字稿）** 工具。
+>   * <img src="https://www.google.com/s2/favicons?domain=quillbot.com&sz=32" width="16" height="16" /> **QuillBot (#27)** / <img src="https://www.google.com/s2/favicons?domain=superhuman.com&sz=32" width="16" height="16" /> **Superhuman (#23)** / <img src="https://www.google.com/s2/favicons?domain=zerogpt.com&sz=32" width="16" height="16" /> **ZeroGPT (#39)**：QuillBot 專攻英文改寫潤稿 (Paraphrasing)；Superhuman 為 AI 高效郵件信箱；**ZeroGPT** 則是專門用來**偵測文章是否由 AI 生成**的檢測工具。
+
+</details>
 
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
