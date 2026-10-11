@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
 <meta name="theme-color" content="#16161e">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<title>&#x1F4DA; &#x751F;&#x6210;&#x5F0F; AI &#x8A8D;&#x8B49;&#x8003;&#x8A66;&#x91CD;&#x9EDE;&#x6574;&#x7406;&#xFF08;RWD &#x8DE8;&#x88DD;&#x7F6E;&#x96A8;&#x8EAB;&#x8907;&#x7FD2;&#x7248;&#xFF09;</title>
+<title>&#x1F4DA; &#x751F;&#x6210;&#x5F0F; AI &#x96A8;&#x8EAB;&#x66F8;</title>
 <style>
   :root {
     --bg-primary: #1a1b26;
@@ -27,7 +27,8 @@
     --border-color: #3b4261;
     --code-bg: #16161e;
     --shadow: 0 8px 24px rgba(0,0,0,0.35);
-    --topbar-height: 60px;
+    --topbar-height: 58px;
+    --sidebar-width: 300px;
   }
 
   body.light-mode {
@@ -66,19 +67,18 @@
 
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 84px;
+    scroll-padding-top: calc(var(--topbar-height) + 18px);
     -webkit-text-size-adjust: 100%;
-    overflow-x: hidden;
   }
 
   body {
     margin: 0;
+    padding-top: var(--topbar-height);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.72;
     font-size: clamp(14.5px, 1.05vw, 16px);
-    overflow-x: hidden;
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
@@ -90,15 +90,18 @@
     height: 3px;
     background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
     width: 0%;
-    z-index: 2000;
+    z-index: 2100;
     transition: width 0.1s ease;
   }
 
-  /* Sticky Top Navigation Bar */
+  /* Permanently Fixed Top Bar */
   .top-bar {
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 1000;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2000;
     background: var(--bg-secondary);
     border-bottom: 1px solid var(--border-color);
     padding: 10px 16px;
@@ -107,7 +110,7 @@
     justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.22);
+    box-shadow: 0 2px 14px rgba(0,0,0,0.28);
   }
 
   .top-bar-left {
@@ -118,7 +121,7 @@
 
   .brand-title {
     font-weight: 700;
-    font-size: clamp(14.5px, 1.4vw, 16.5px);
+    font-size: clamp(15px, 1.4vw, 17px);
     color: var(--accent-blue);
     white-space: nowrap;
   }
@@ -131,7 +134,7 @@
 
   .search-box input {
     width: 100%;
-    padding: 8px 14px;
+    padding: 7px 14px;
     border-radius: 8px;
     border: 1px solid var(--border-color);
     background: var(--bg-card);
@@ -157,7 +160,7 @@
     background: var(--bg-card);
     color: var(--text-primary);
     border: 1px solid var(--border-color);
-    padding: 7px 12px;
+    padding: 6px 12px;
     border-radius: 8px;
     font-size: 13.5px;
     cursor: pointer;
@@ -182,45 +185,25 @@
     font-weight: 600;
   }
 
-  /* Backdrop overlay for mobile/tablet drawer */
-  .sidebar-backdrop {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    z-index: 1040;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-  }
-
-  .sidebar-backdrop.show {
-    display: block;
-  }
-
-  /* Main Responsive Layout */
-  .layout {
-    display: flex;
-    max-width: 1480px;
-    margin: 0 auto;
-    position: relative;
-  }
-
+  /* Permanently Fixed Left Sidebar */
   .sidebar {
-    width: 300px;
-    flex-shrink: 0;
+    position: fixed;
+    top: var(--topbar-height);
+    left: 0;
+    bottom: 0;
+    width: var(--sidebar-width);
+    z-index: 1900;
     background: var(--bg-secondary);
     border-right: 1px solid var(--border-color);
-    height: calc(100vh - 57px);
-    position: sticky;
-    top: 57px;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     padding: 16px 12px 60px 12px;
-    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.22s ease;
+    box-shadow: 4px 0 18px rgba(0,0,0,0.22);
   }
 
-  .sidebar.collapsed {
-    display: none;
+  body.sidebar-closed .sidebar {
+    transform: translateX(-105%);
   }
 
   .sidebar-header {
@@ -232,16 +215,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .close-drawer-btn {
-    display: none;
-    background: transparent;
-    border: none;
-    color: var(--text-secondary);
-    font-size: 18px;
-    cursor: pointer;
-    padding: 4px 8px;
   }
 
   .nav-part {
@@ -279,11 +252,17 @@
     color: var(--accent-blue);
   }
 
+  /* Main Content Area shifts right when sidebar is open on desktop */
   .main-content {
-    flex: 1;
-    min-width: 0;
-    width: 100%;
-    padding: clamp(16px, 3vw, 32px) clamp(14px, 3.5vw, 40px) 80px;
+    margin-left: var(--sidebar-width);
+    max-width: 1180px;
+    padding: clamp(18px, 3vw, 32px) clamp(14px, 3.5vw, 40px) 80px;
+    transition: margin-left 0.22s ease;
+  }
+
+  body.sidebar-closed .main-content {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-header h1 {
@@ -583,7 +562,7 @@
     position: fixed;
     right: 20px;
     bottom: 24px;
-    z-index: 950;
+    z-index: 1850;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -617,18 +596,12 @@
 
   /* Tablet & Mobile Responsive Breakpoints */
   @media (max-width: 1024px) {
-    .sidebar {
-      position: fixed;
-      left: 0;
-      top: 0;
-      height: 100vh;
-      width: min(84vw, 320px);
-      z-index: 1050;
-      box-shadow: 4px 0 24px rgba(0,0,0,0.6);
-      padding-top: 18px;
+    .main-content {
+      margin-left: 0;
     }
-    .close-drawer-btn {
-      display: inline-block;
+    .sidebar {
+      width: min(82vw, 310px);
+      box-shadow: 6px 0 28px rgba(0,0,0,0.65);
     }
     .watershed-container {
       flex-direction: column;
@@ -642,9 +615,6 @@
   }
 
   @media (max-width: 767px) {
-    html {
-      scroll-padding-top: 118px;
-    }
     .top-bar {
       padding: 8px 12px;
       gap: 8px;
@@ -689,12 +659,11 @@
 </head>
 <body>
 <div id="progress-bar"></div>
-<div class="sidebar-backdrop" id="sidebar-backdrop"></div>
 
-<nav class="top-bar">
+<nav class="top-bar" id="top-bar">
   <div class="top-bar-left">
-    <button class="btn" id="toggle-sidebar-btn">&#x2630; &#x7AE0;&#x7BC0;&#x76EE;&#x9304;</button>
-    <span class="brand-title">&#x1F4DA; &#x751F;&#x6210;&#x5F0F; AI &#x5099;&#x8003;&#x96A8;&#x8EAB;&#x66F8;</span>
+    <button class="btn active" id="toggle-sidebar-btn">&#x2630; &#x7AE0;&#x7BC0;&#x76EE;&#x9304;</button>
+    <span class="brand-title">&#x1F4DA; &#x751F;&#x6210;&#x5F0F; AI &#x96A8;&#x8EAB;&#x66F8;</span>
   </div>
   <div class="search-box">
     <input type="search" id="search-input" placeholder="&#x1F50D; &#x641C;&#x5C0B;&#x95DC;&#x9375;&#x5B57;&#x7BE9;&#x9078;&#x7AE0;&#x7BC0; (&#x5982;: RAG, LoRA, Runway, ToT)..." />
@@ -706,13 +675,11 @@
   </div>
 </nav>
 
-<div class="layout">
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-      <span>&#x1F4D1; &#x7AE0;&#x7BC0;&#x5FEB;&#x901F;&#x8DF3;&#x8F49;</span>
-      <button class="close-drawer-btn" id="close-drawer-btn" aria-label="Close Menu">&#x2715;</button>
-    </div>
-    <div class="nav-part"><a href="#第一部分-生成式ai基礎知識">第一部分 生成式AI基礎知識</a></div>
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <span>&#x1F4D1; &#x7AE0;&#x7BC0;&#x5FEB;&#x901F;&#x8DF3;&#x8F49;</span>
+  </div>
+  <div class="nav-part"><a href="#第一部分-生成式ai基礎知識">第一部分 生成式AI基礎知識</a></div>
 <a class="nav-sub" href="#10-ai-技術發展時間軸與地圖">1.0 AI 技術發展時間軸與地圖</a>
 <a class="nav-sub" href="#11-神經網路基礎-感知器與反向傳播">1.1 神經網路基礎 感知器與反向傳播</a>
 <a class="nav-sub" href="#12-cnn-vs-rnn">1.2 CNN vs RNN</a>
@@ -755,10 +722,10 @@
 <a class="nav-sub" href="#55-程式輔助與工作流程自動化-coding-and-automation">5.5 程式輔助與工作流程自動化 (Coding and Automation)</a>
 <a class="nav-sub" href="#56-資料科學與開源社群平台-platforms-and-communities">5.6 資料科學與開源社群平台 (Platforms and Communities)</a>
 <a class="nav-sub" href="#57-開發商-vs-代表工具速查矩陣">5.7 開發商 vs 代表工具速查矩陣</a>
-  </aside>
+</aside>
 
-  <main class="main-content" id="main-content">
-    <header class="hero-header" id="top"><h1>📚 生成式 AI 認證考試重點整理（概念與理解導向）</h1></header>
+<main class="main-content" id="main-content">
+  <header class="hero-header" id="top"><h1>📚 生成式 AI 認證考試重點整理（概念與理解導向）</h1></header>
 <div class="story-box">
 <p>💡 <strong>定位原則</strong>：</p>
 <div class="story-bullet"><strong>1.</strong> 本筆記專注於「觀念理解、名詞定義與技術應用」，不涉及複雜數學計算。</div>
@@ -4579,13 +4546,26 @@
 <div align="right"><sub><a href="#top" style="text-decoration: none; color: #8b949e;">↑ Top</a></sub></div>
 </section>
 
-  </main>
-</div>
+</main>
 
 <button class="fab-top" id="fab-top" title="&#x56DE;&#x5230;&#x9802;&#x90E8;">&#x2191;</button>
 
 <script>
+  const topBar = document.getElementById('top-bar');
+  const toggleSidebarBtn = document.getElementById('toggle-sidebar-btn');
   const fabTop = document.getElementById('fab-top');
+
+  // Dynamically sync --topbar-height so fixed top-bar and fixed sidebar align to the exact pixel
+  function syncTopbarHeight() {
+    if (topBar) {
+      const h = topBar.offsetHeight;
+      document.documentElement.style.setProperty('--topbar-height', h + 'px');
+    }
+  }
+  window.addEventListener('resize', syncTopbarHeight);
+  window.addEventListener('load', syncTopbarHeight);
+  syncTopbarHeight();
+
   window.addEventListener('scroll', () => {
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
     const pct = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
@@ -4601,40 +4581,27 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  const sidebar = document.getElementById('sidebar');
-  const backdrop = document.getElementById('sidebar-backdrop');
-  const closeDrawerBtn = document.getElementById('close-drawer-btn');
-
+  // Sidebar stays open & floating on the left until user clicks the top-left toggle button!
   function setSidebarOpen(open) {
     if (open) {
-      sidebar.classList.remove('collapsed');
-      if (window.innerWidth <= 1024) {
-        backdrop.classList.add('show');
-      }
+      document.body.classList.remove('sidebar-closed');
+      toggleSidebarBtn.classList.add('active');
     } else {
-      sidebar.classList.add('collapsed');
-      backdrop.classList.remove('show');
+      document.body.classList.add('sidebar-closed');
+      toggleSidebarBtn.classList.remove('active');
     }
   }
 
-  if (window.innerWidth <= 1024) {
+  // Default closed on narrow phone screens so content is readable, default open on desktop/tablet
+  if (window.innerWidth <= 767) {
     setSidebarOpen(false);
+  } else {
+    setSidebarOpen(true);
   }
 
-  document.getElementById('toggle-sidebar-btn').addEventListener('click', () => {
-    const isCollapsed = sidebar.classList.contains('collapsed');
-    setSidebarOpen(isCollapsed);
-  });
-
-  backdrop.addEventListener('click', () => setSidebarOpen(false));
-  closeDrawerBtn.addEventListener('click', () => setSidebarOpen(false));
-
-  sidebar.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      if (window.innerWidth <= 1024) {
-        setSidebarOpen(false);
-      }
-    });
+  toggleSidebarBtn.addEventListener('click', () => {
+    const isClosed = document.body.classList.contains('sidebar-closed');
+    setSidebarOpen(isClosed);
   });
 
   const clozeBtn = document.getElementById('cloze-btn');
