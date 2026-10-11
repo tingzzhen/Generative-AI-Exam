@@ -4,31 +4,40 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
-<meta name="theme-color" content="#16161e">
+<meta name="theme-color" content="#1e1e22">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>&#x1F4DA; &#x751F;&#x6210;&#x5F0F; AI &#x96A8;&#x8EAB;&#x66F8;</title>
 <style>
   :root {
-    --bg-primary: #1a1b26;
-    --bg-secondary: #16161e;
-    --bg-card: #24283b;
-    --bg-card-hover: #292e42;
-    --bg-table-head: #1f2335;
-    --bg-table-even: #1d202f;
-    --bg-story: #1e2233;
-    --text-primary: #c0caf5;
-    --text-secondary: #9aa5ce;
-    --text-muted: #565f89;
-    --accent-blue: #7aa2f7;
-    --accent-red: #e06c75;
-    --accent-purple: #bb9af7;
-    --accent-green: #9ece6a;
-    --accent-amber: #e0af68;
-    --border-color: #3b4261;
-    --code-bg: #16161e;
-    --shadow: 0 8px 24px rgba(0,0,0,0.35);
+    --bg-primary: #17171a;
+    --bg-secondary: #1e1e22;
+    --bg-card: #252529;
+    --bg-card-hover: #2e2e33;
+    --bg-table-head: #2c2c31;
+    --bg-table-even: #212125;
+    --bg-story: #1d1d21;
+    --text-primary: #e5e7eb;
+    --text-secondary: #a1a1aa;
+    --text-muted: #71717a;
+    --accent-blue: #60a5fa;
+    --accent-red: #f87171;
+    --accent-purple: #c084fc;
+    --accent-green: #4ade80;
+    --accent-amber: #fbbf24;
+    --border-color: #3a3a40;
+    --code-bg: #18181b;
+    --shadow: 0 8px 24px rgba(0,0,0,0.42);
     --topbar-height: 58px;
     --sidebar-width: 300px;
+  }
+
+  .hl-blue {
+    color: #60a5fa !important;
+    font-weight: 600;
+  }
+  .hl-red {
+    color: #f87171 !important;
+    font-weight: 600;
   }
 
   body.light-mode {
@@ -206,20 +215,13 @@
     transform: translateX(-105%);
   }
 
-  .sidebar-header {
-    font-size: 13px;
-    color: var(--text-muted);
-    font-weight: 700;
-    margin-bottom: 10px;
-    padding: 0 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   .nav-part {
     margin-top: 14px;
     margin-bottom: 4px;
+  }
+
+  .nav-part:first-of-type {
+    margin-top: 0;
   }
 
   .nav-part a {
@@ -265,24 +267,19 @@
     margin-right: auto;
   }
 
-  .hero-header h1 {
-    font-size: clamp(20px, 2.5vw, 26px);
-    margin: 0 0 16px 0;
-    color: var(--accent-blue);
-    border-bottom: 2px solid var(--border-color);
-    padding-bottom: 12px;
-    line-height: 1.35;
-  }
-
   .part-heading {
     font-size: clamp(18px, 2vw, 22px);
     color: var(--accent-purple);
     margin: 34px 0 16px 0;
     padding: 10px 16px;
-    background: linear-gradient(90deg, rgba(187,154,247,0.14), transparent);
+    background: linear-gradient(90deg, rgba(192,132,252,0.14), transparent);
     border-left: 4px solid var(--accent-purple);
     border-radius: 0 8px 8px 0;
     line-height: 1.4;
+  }
+
+  .part-heading:first-of-type {
+    margin-top: 4px;
   }
 
   .topic-card {
@@ -322,11 +319,11 @@
   }
 
   .watershed-left {
-    background: rgba(122, 162, 247, 0.04);
+    background: rgba(255, 255, 255, 0.015);
   }
 
   .watershed-right {
-    background: rgba(187, 154, 247, 0.05);
+    background: rgba(255, 255, 255, 0.03);
   }
 
   .watershed-divider {
@@ -525,8 +522,12 @@
     margin: 10px 0 6px 0;
     padding: 10px 14px;
     border-left: 3px solid var(--accent-blue);
-    background: rgba(122, 162, 247, 0.06);
+    background: rgba(255, 255, 255, 0.03);
     border-radius: 0 6px 6px 0;
+  }
+
+  body.light-mode .story-box {
+    background: rgba(15, 23, 42, 0.035);
   }
 
   .story-box p {
@@ -541,7 +542,7 @@
   body.cloze-mode .hl-blue,
   body.cloze-mode .hl-red {
     filter: blur(5px);
-    background: rgba(122, 162, 247, 0.22);
+    background: rgba(255, 255, 255, 0.16);
     border-radius: 4px;
     padding: 0 4px;
     cursor: pointer;
@@ -676,9 +677,6 @@
 </nav>
 
 <aside class="sidebar" id="sidebar">
-  <div class="sidebar-header">
-    <span>&#x1F4D1; &#x7AE0;&#x7BC0;&#x5FEB;&#x901F;&#x8DF3;&#x8F49;</span>
-  </div>
   <div class="nav-part"><a href="#第一部分-生成式ai基礎知識">第一部分 生成式AI基礎知識</a></div>
 <a class="nav-sub" href="#10-ai-技術發展時間軸與地圖">1.0 AI 技術發展時間軸與地圖</a>
 <a class="nav-sub" href="#11-神經網路基礎-感知器與反向傳播">1.1 神經網路基礎 感知器與反向傳播</a>
@@ -725,14 +723,8 @@
 </aside>
 
 <main class="main-content" id="main-content">
-  <header class="hero-header" id="top"><h1>📚 生成式 AI 認證考試重點整理（概念與理解導向）</h1></header>
-<div class="story-box">
-<p>💡 <strong>定位原則</strong>：</p>
-<div class="story-bullet"><strong>1.</strong> 本筆記專注於「觀念理解、名詞定義與技術應用」，不涉及複雜數學計算。</div>
-<div class="story-bullet"><strong>2.</strong> 全面採用<strong>「5 秒掃讀法（1 行流程箭頭 ＋ 極簡關鍵字表格 ＋ 折疊白話故事）」</strong>，並於各章節首次登場時標註<strong>專有名詞英文全稱</strong>，助你考前極速複習。</div>
-</div>
-<a id="top"></a>
-<h2 class="part-heading" id="第一部分-生成式ai基礎知識">第一部分 生成式AI基礎知識</h2>
+  <a id="top"></a>
+  <h2 class="part-heading" id="第一部分-生成式ai基礎知識">第一部分 生成式AI基礎知識</h2>
 <section class="topic-card">
 <h3 class="topic-heading" id="10-ai-技術發展時間軸與地圖">1.0 AI 技術發展時間軸與地圖</h3>
 <ul>
