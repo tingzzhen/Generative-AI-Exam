@@ -29,6 +29,35 @@
     --shadow: 0 8px 24px rgba(0,0,0,0.42);
     --topbar-height: 58px;
     --sidebar-width: 300px;
+    --font-scale: 1;
+  }
+
+  /* Sleek Modern Scrollbars */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(160, 160, 180, 0.35) transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(160, 160, 180, 0.35);
+    border-radius: 999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-blue);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
   }
 
   .hl-blue {
@@ -61,6 +90,18 @@
     --shadow: 0 4px 16px rgba(15,23,42,0.07);
   }
 
+  body.light-mode * {
+    scrollbar-color: rgba(100, 116, 139, 0.35) transparent;
+  }
+
+  body.light-mode ::-webkit-scrollbar-thumb {
+    background: rgba(100, 116, 139, 0.35);
+  }
+
+  body.light-mode ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-blue);
+  }
+
   body.light-mode .hl-blue {
     color: #1d4ed8 !important;
     font-weight: 600;
@@ -87,9 +128,10 @@
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.72;
-    font-size: clamp(14.5px, 1.05vw, 16px);
+    font-size: calc(clamp(14.5px, 1.05vw, 16px) * var(--font-scale));
     word-wrap: break-word;
     overflow-wrap: break-word;
+    transition: font-size 0.15s ease;
   }
 
   #progress-bar {
@@ -203,6 +245,62 @@
     font-weight: 600;
   }
 
+  /* Font size controls */
+  .font-btn-group {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--bg-card);
+  }
+
+  .btn-font {
+    border: none;
+    border-radius: 0;
+    padding: 6px 11px;
+    min-height: 36px;
+    font-weight: 700;
+    font-size: 13.5px;
+    background: transparent;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: manipulation;
+  }
+
+  .btn-font:hover {
+    background: rgba(96, 165, 250, 0.15);
+    color: var(--accent-blue);
+  }
+
+  .btn-font:active {
+    transform: scale(0.95);
+  }
+
+  #font-decrease-btn {
+    border-right: 1px solid var(--border-color);
+  }
+
+  /* Search keyword highlight */
+  mark.search-highlight {
+    background-color: #ffd000 !important;
+    color: #111111 !important;
+    font-weight: 700;
+    padding: 1px 4px;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
+  }
+
+  body.light-mode mark.search-highlight {
+    background-color: #fef08a !important;
+    color: #854d0e !important;
+    box-shadow: 0 0 0 1px rgba(202, 138, 4, 0.3);
+  }
+
   /* Permanently Fixed Left Sidebar */
   .sidebar {
     position: fixed;
@@ -241,10 +339,19 @@
     text-decoration: none;
     padding: 6px 8px;
     border-radius: 6px;
+    transition: all 0.18s ease;
   }
 
   .nav-part a:hover {
     background: var(--bg-card);
+  }
+
+  .nav-part a.active {
+    background: rgba(192, 132, 252, 0.22) !important;
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    border-left: 3px solid var(--accent-purple);
+    padding-left: 5px;
   }
 
   .nav-sub {
@@ -256,11 +363,30 @@
     border-radius: 6px;
     line-height: 1.45;
     margin-bottom: 2px;
+    transition: all 0.18s ease;
   }
 
   .nav-sub:hover {
     background: var(--bg-card);
     color: var(--accent-blue);
+  }
+
+  .nav-sub.active {
+    background: rgba(96, 165, 250, 0.18) !important;
+    color: var(--accent-blue) !important;
+    font-weight: 700 !important;
+    border-left: 3px solid var(--accent-blue);
+    padding-left: 11px;
+  }
+
+  body.light-mode .nav-sub.active {
+    background: #e0e7ff !important;
+    color: #1d4ed8 !important;
+  }
+
+  body.light-mode .nav-part a.active {
+    background: #ede9fe !important;
+    color: #6d28d9 !important;
   }
 
   /* Main Content Area stretches full remaining width with zero right-side gap */
@@ -682,6 +808,10 @@
     <input type="search" id="search-input" placeholder="&#x1F50D; &#x641C;&#x5C0B;&#x95DC;&#x9375;&#x5B57;&#x7BE9;&#x9078;&#x7AE0;&#x7BC0; (&#x5982;: RAG, LoRA, Runway, ToT)..." />
   </div>
   <div class="toolbar-actions">
+    <div class="font-btn-group" title="&#x8ABF;&#x6574;&#x5B57;&#x9AD4;&#x5927;&#x5C0F;">
+      <button class="btn-font" id="font-decrease-btn" title="&#x7E2E;&#x5C0F;&#x5B57;&#x9AD4;">A&#8722;</button>
+      <button class="btn-font" id="font-increase-btn" title="&#x653E;&#x5927;&#x5B57;&#x9AD4;">A&#43;</button>
+    </div>
     <button class="btn" id="cloze-btn">&#x1F3AF; &#x8A18;&#x61B6;&#x906E;&#x7F69;</button>
     <button class="btn" id="details-btn">&#x1F4C2; &#x5C55;&#x958B;&#x6848;&#x4F8B;</button>
     <button class="btn" id="theme-btn">&#x2600;&#xFE0F; &#x6DFA;&#x8272;</button>
@@ -4654,16 +4784,165 @@
     themeBtn.innerHTML = isLight ? '&#x1F319; &#x6DF1;&#x8272;' : '&#x2600;&#xFE0F; &#x6DFA;&#x8272;';
   });
 
+  // Font Size Adjuster
+  let currentFontScale = parseFloat(localStorage.getItem('study_font_scale')) || 1.0;
+  function applyFontScale(scale) {
+    currentFontScale = Math.min(1.5, Math.max(0.8, Math.round(scale * 10) / 10));
+    document.documentElement.style.setProperty('--font-scale', currentFontScale);
+    localStorage.setItem('study_font_scale', currentFontScale);
+  }
+  applyFontScale(currentFontScale);
+
+  const fontDecBtn = document.getElementById('font-decrease-btn');
+  const fontIncBtn = document.getElementById('font-increase-btn');
+  if (fontDecBtn) fontDecBtn.addEventListener('click', () => applyFontScale(currentFontScale - 0.1));
+  if (fontIncBtn) fontIncBtn.addEventListener('click', () => applyFontScale(currentFontScale + 0.1));
+
+  // Active Chapter Scrollspy & Auto-scroll Sidebar
+  const headings = Array.from(document.querySelectorAll('.part-heading[id], .topic-heading[id]'));
+  const sidebarLinks = Array.from(document.querySelectorAll('.sidebar a[href^="#"]'));
+  const linkMap = new Map();
+  sidebarLinks.forEach(link => {
+    const rawHref = link.getAttribute('href');
+    if (rawHref) {
+      const id = decodeURIComponent(rawHref.substring(1));
+      linkMap.set(id, link);
+    }
+  });
+
+  let currentActiveId = null;
+  let isAutoScrollingSidebar = false;
+
+  function updateActiveChapter() {
+    const topBarHeight = topBar ? topBar.offsetHeight : 58;
+    const triggerOffset = topBarHeight + 70;
+
+    let activeEl = null;
+    for (let i = 0; i < headings.length; i++) {
+      const rect = headings[i].getBoundingClientRect();
+      if (rect.top <= triggerOffset) {
+        activeEl = headings[i];
+      } else {
+        break;
+      }
+    }
+    if (!activeEl && headings.length > 0) {
+      activeEl = headings[0];
+    }
+
+    if (activeEl && activeEl.id !== currentActiveId) {
+      currentActiveId = activeEl.id;
+      sidebarLinks.forEach(link => link.classList.remove('active'));
+      const activeLink = linkMap.get(activeEl.id);
+      if (activeLink) {
+        activeLink.classList.add('active');
+
+        const sidebar = document.getElementById('sidebar');
+        if (sidebar && !isAutoScrollingSidebar) {
+          const sRect = sidebar.getBoundingClientRect();
+          const lRect = activeLink.getBoundingClientRect();
+          if (lRect.top < sRect.top + 40 || lRect.bottom > sRect.bottom - 40) {
+            isAutoScrollingSidebar = true;
+            activeLink.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+            setTimeout(() => { isAutoScrollingSidebar = false; }, 350);
+          }
+        }
+      }
+    }
+  }
+
+  window.addEventListener('scroll', () => {
+    requestAnimationFrame(updateActiveChapter);
+  }, { passive: true });
+  window.addEventListener('load', updateActiveChapter);
+  updateActiveChapter();
+
+  // Search keyword highlighting
+  function clearSearchHighlights() {
+    const marks = document.querySelectorAll('mark.search-highlight');
+    marks.forEach(mark => {
+      const parent = mark.parentNode;
+      if (parent) {
+        while (mark.firstChild) {
+          parent.insertBefore(mark.firstChild, mark);
+        }
+        parent.removeChild(mark);
+        parent.normalize();
+      }
+    });
+  }
+
+  function highlightMatches(root, regex) {
+    const textNodes = [];
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(node) {
+        if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        const p = node.parentElement;
+        if (!p) return NodeFilter.FILTER_REJECT;
+        const tag = p.tagName;
+        if (tag === 'SCRIPT' || tag === 'STYLE' || p.classList.contains('search-highlight')) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    while (walker.nextNode()) {
+      if (regex.test(walker.currentNode.nodeValue)) {
+        textNodes.push(walker.currentNode);
+      }
+    }
+
+    textNodes.forEach(node => {
+      const val = node.nodeValue;
+      regex.lastIndex = 0;
+      const frag = document.createDocumentFragment();
+      let lastIdx = 0;
+      let match;
+      while ((match = regex.exec(val)) !== null) {
+        if (match.index > lastIdx) {
+          frag.appendChild(document.createTextNode(val.substring(lastIdx, match.index)));
+        }
+        const mark = document.createElement('mark');
+        mark.className = 'search-highlight';
+        mark.textContent = match[0];
+        frag.appendChild(mark);
+        lastIdx = regex.lastIndex;
+      }
+      if (lastIdx < val.length) {
+        frag.appendChild(document.createTextNode(val.substring(lastIdx)));
+      }
+      if (node.parentNode) {
+        node.parentNode.replaceChild(frag, node);
+      }
+    });
+  }
+
   const searchInput = document.getElementById('search-input');
   searchInput.addEventListener('input', () => {
-    const q = searchInput.value.trim().toLowerCase();
+    clearSearchHighlights();
+    const rawQ = searchInput.value.trim();
     const cards = document.querySelectorAll('.topic-card');
+    if (!rawQ) {
+      cards.forEach(card => card.style.display = '');
+      return;
+    }
+
+    const specials = ".*+?^" + String.fromCharCode(36) + "{}()|[]\\\\";
+    let escaped = "";
+    for (let k = 0; k < rawQ.length; k++) {
+      const ch = rawQ[k];
+      escaped += specials.indexOf(ch) !== -1 ? ("\\" + ch) : ch;
+    }
+    const regex = new RegExp('(' + escaped + ')', 'gi');
+    const qLower = rawQ.toLowerCase();
+
     cards.forEach(card => {
-      if (!q) {
+      const text = card.innerText.toLowerCase();
+      if (text.includes(qLower)) {
         card.style.display = '';
+        highlightMatches(card, regex);
       } else {
-        const text = card.innerText.toLowerCase();
-        card.style.display = text.includes(q) ? '' : 'none';
+        card.style.display = 'none';
       }
     });
   });
